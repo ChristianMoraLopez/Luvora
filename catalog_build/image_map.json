@@ -1,0 +1,4115 @@
+{
+  "bucket": "product-images",
+  "convention": "products/{catalog}/{product-slug}/{NN}.webp  (01 = primary; add 02,03… for gallery)",
+  "variant_convention": "products/{catalog}/{product-slug}/variants/{sku}.webp  (color/flavor swatch)",
+  "note": "candidate_raw_images are ALL sizable rasters on the source page — a page may hold several products, so an operator picks/crops the right shot into target_storage_path. For MALLAS each spread is a single high-res photo per product.",
+  "count": 235,
+  "items": [
+    {
+      "product_slug": "splash-con-feromonas-frutos-rojos",
+      "name": "Splash con Feromonas Frutos Rojos",
+      "catalog": "eb1",
+      "source_page": 2,
+      "skus": [
+        "11672"
+      ],
+      "target_storage_path": "products/eb1/splash-con-feromonas-frutos-rojos/01.webp",
+      "page_preview": "eb1/page-02.jpg",
+      "candidate_raw_images": [
+        "eb1/page-02/01.jpeg",
+        "eb1/page-02/02.jpeg",
+        "eb1/page-02/03.jpeg",
+        "eb1/page-02/04.jpeg",
+        "eb1/page-02/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "crema-humectante-con-feromonas-frutos-rojos",
+      "name": "Crema Humectante con Feromonas Frutos Rojos",
+      "catalog": "eb1",
+      "source_page": 2,
+      "skus": [
+        "11671"
+      ],
+      "target_storage_path": "products/eb1/crema-humectante-con-feromonas-frutos-rojos/01.webp",
+      "page_preview": "eb1/page-02.jpg",
+      "candidate_raw_images": [
+        "eb1/page-02/01.jpeg",
+        "eb1/page-02/02.jpeg",
+        "eb1/page-02/03.jpeg",
+        "eb1/page-02/04.jpeg",
+        "eb1/page-02/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "agua-de-rosas-con-feromonas-magnetic-elixir",
+      "name": "Agua de Rosas con Feromonas Magnetic Elixir",
+      "catalog": "eb1",
+      "source_page": 3,
+      "skus": [
+        "11688"
+      ],
+      "target_storage_path": "products/eb1/agua-de-rosas-con-feromonas-magnetic-elixir/01.webp",
+      "page_preview": "eb1/page-03.jpg",
+      "candidate_raw_images": [
+        "eb1/page-03/01.jpeg",
+        "eb1/page-03/04.jpeg",
+        "eb1/page-03/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-para-masajes-fragancia",
+      "name": "Aceite para Masajes (Fragancia)",
+      "catalog": "eb1",
+      "source_page": 4,
+      "skus": [
+        "11295",
+        "11296"
+      ],
+      "target_storage_path": "products/eb1/aceite-para-masajes-fragancia/01.webp",
+      "page_preview": "eb1/page-04.jpg",
+      "candidate_raw_images": [
+        "eb1/page-04/01.jpeg",
+        "eb1/page-04/02.jpeg",
+        "eb1/page-04/03.jpeg",
+        "eb1/page-04/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-corporal-con-feromonas-para-masajes-y-aromaterapia",
+      "name": "Aceite Corporal con Feromonas para Masajes y Aromaterapia",
+      "catalog": "eb1",
+      "source_page": 5,
+      "skus": [
+        "11685"
+      ],
+      "target_storage_path": "products/eb1/aceite-corporal-con-feromonas-para-masajes-y-aromaterapia/01.webp",
+      "page_preview": "eb1/page-05.jpg",
+      "candidate_raw_images": [
+        "eb1/page-05/02.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-trifasico-para-masajes",
+      "name": "Aceite Trifásico para Masajes",
+      "catalog": "eb1",
+      "source_page": 6,
+      "skus": [
+        "10393"
+      ],
+      "target_storage_path": "products/eb1/aceite-trifasico-para-masajes/01.webp",
+      "page_preview": "eb1/page-06.jpg",
+      "candidate_raw_images": [
+        "eb1/page-06/01.jpeg",
+        "eb1/page-06/02.jpeg",
+        "eb1/page-06/03.jpeg",
+        "eb1/page-06/04.jpeg",
+        "eb1/page-06/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "crema-de-manos-seducer-rose",
+      "name": "Crema de Manos Seducer Rose",
+      "catalog": "eb1",
+      "source_page": 6,
+      "skus": [
+        "10392"
+      ],
+      "target_storage_path": "products/eb1/crema-de-manos-seducer-rose/01.webp",
+      "page_preview": "eb1/page-06.jpg",
+      "candidate_raw_images": [
+        "eb1/page-06/01.jpeg",
+        "eb1/page-06/02.jpeg",
+        "eb1/page-06/03.jpeg",
+        "eb1/page-06/04.jpeg",
+        "eb1/page-06/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vela-para-masaje",
+      "name": "Vela para Masaje",
+      "catalog": "eb1",
+      "source_page": 6,
+      "skus": [
+        "10944",
+        "10945"
+      ],
+      "target_storage_path": "products/eb1/vela-para-masaje/01.webp",
+      "page_preview": "eb1/page-06.jpg",
+      "candidate_raw_images": [
+        "eb1/page-06/01.jpeg",
+        "eb1/page-06/02.jpeg",
+        "eb1/page-06/03.jpeg",
+        "eb1/page-06/04.jpeg",
+        "eb1/page-06/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "locion-con-feromonas-deluxe",
+      "name": "Loción con Feromonas Deluxe",
+      "catalog": "eb1",
+      "source_page": 7,
+      "skus": [
+        "11659",
+        "11658"
+      ],
+      "target_storage_path": "products/eb1/locion-con-feromonas-deluxe/01.webp",
+      "page_preview": "eb1/page-07.jpg",
+      "candidate_raw_images": [
+        "eb1/page-07/04.jpeg",
+        "eb1/page-07/05.jpeg",
+        "eb1/page-07/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "splash-corporal-con-feromonas",
+      "name": "Splash Corporal con Feromonas",
+      "catalog": "eb1",
+      "source_page": 8,
+      "skus": [
+        "11653",
+        "11654",
+        "11656",
+        "11657",
+        "11655"
+      ],
+      "target_storage_path": "products/eb1/splash-corporal-con-feromonas/01.webp",
+      "page_preview": "eb1/page-08.jpg",
+      "candidate_raw_images": [
+        "eb1/page-08/01.jpeg",
+        "eb1/page-08/02.jpeg",
+        "eb1/page-08/03.jpeg",
+        "eb1/page-08/04.jpeg",
+        "eb1/page-08/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "piu-amore-splash-con-feromonas",
+      "name": "Piu Amore — Splash con Feromonas",
+      "catalog": "eb1",
+      "source_page": 10,
+      "skus": [
+        "10388",
+        "10652"
+      ],
+      "target_storage_path": "products/eb1/piu-amore-splash-con-feromonas/01.webp",
+      "page_preview": "eb1/page-10.jpg",
+      "candidate_raw_images": [
+        "eb1/page-10/02.jpeg",
+        "eb1/page-10/03.jpeg",
+        "eb1/page-10/04.jpeg",
+        "eb1/page-10/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "seduccion-rose-splash-con-feromonas",
+      "name": "Seducción Rose — Splash con Feromonas",
+      "catalog": "eb1",
+      "source_page": 10,
+      "skus": [
+        "10389",
+        "10653"
+      ],
+      "target_storage_path": "products/eb1/seduccion-rose-splash-con-feromonas/01.webp",
+      "page_preview": "eb1/page-10.jpg",
+      "candidate_raw_images": [
+        "eb1/page-10/02.jpeg",
+        "eb1/page-10/03.jpeg",
+        "eb1/page-10/04.jpeg",
+        "eb1/page-10/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dolce-passione-splash-con-feromonas",
+      "name": "Dolce Passione — Splash con Feromonas",
+      "catalog": "eb1",
+      "source_page": 10,
+      "skus": [
+        "10390",
+        "10654"
+      ],
+      "target_storage_path": "products/eb1/dolce-passione-splash-con-feromonas/01.webp",
+      "page_preview": "eb1/page-10.jpg",
+      "candidate_raw_images": [
+        "eb1/page-10/02.jpeg",
+        "eb1/page-10/03.jpeg",
+        "eb1/page-10/04.jpeg",
+        "eb1/page-10/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "crema-de-manos-grape",
+      "name": "Crema de Manos Grape",
+      "catalog": "eb1",
+      "source_page": 12,
+      "skus": [
+        "11284"
+      ],
+      "target_storage_path": "products/eb1/crema-de-manos-grape/01.webp",
+      "page_preview": "eb1/page-12.jpg",
+      "candidate_raw_images": [
+        "eb1/page-12/01.jpeg",
+        "eb1/page-12/02.jpeg",
+        "eb1/page-12/03.jpeg",
+        "eb1/page-12/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "exfoliante-corporal",
+      "name": "Exfoliante Corporal",
+      "catalog": "eb1",
+      "source_page": 12,
+      "skus": [
+        "11290",
+        "11291"
+      ],
+      "target_storage_path": "products/eb1/exfoliante-corporal/01.webp",
+      "page_preview": "eb1/page-12.jpg",
+      "candidate_raw_images": [
+        "eb1/page-12/01.jpeg",
+        "eb1/page-12/02.jpeg",
+        "eb1/page-12/03.jpeg",
+        "eb1/page-12/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-neutro-con-acido-hialuronico-y-aloe-vera",
+      "name": "Lubricante Íntimo Neutro con Ácido Hialurónico y Aloe Vera",
+      "catalog": "eb1",
+      "source_page": 13,
+      "skus": [
+        "11673"
+      ],
+      "target_storage_path": "products/eb1/lubricante-intimo-neutro-con-acido-hialuronico-y-aloe-vera/01.webp",
+      "page_preview": "eb1/page-13.jpg",
+      "candidate_raw_images": [
+        "eb1/page-13/01.jpeg",
+        "eb1/page-13/02.jpeg",
+        "eb1/page-13/03.jpeg",
+        "eb1/page-13/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "gel-anal-pocket-pleasure",
+      "name": "Gel Anal Pocket Pleasure",
+      "catalog": "eb1",
+      "source_page": 14,
+      "skus": [
+        "10142"
+      ],
+      "target_storage_path": "products/eb1/gel-anal-pocket-pleasure/01.webp",
+      "page_preview": "eb1/page-14.jpg",
+      "candidate_raw_images": [
+        "eb1/page-14/01.jpeg",
+        "eb1/page-14/02.jpeg",
+        "eb1/page-14/04.jpeg",
+        "eb1/page-14/05.jpeg",
+        "eb1/page-14/06.jpeg",
+        "eb1/page-14/08.jpeg",
+        "eb1/page-14/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "like-a-virgin-pocket-pleasure",
+      "name": "Like a Virgin Pocket Pleasure",
+      "catalog": "eb1",
+      "source_page": 14,
+      "skus": [
+        "10143"
+      ],
+      "target_storage_path": "products/eb1/like-a-virgin-pocket-pleasure/01.webp",
+      "page_preview": "eb1/page-14.jpg",
+      "candidate_raw_images": [
+        "eb1/page-14/01.jpeg",
+        "eb1/page-14/02.jpeg",
+        "eb1/page-14/04.jpeg",
+        "eb1/page-14/05.jpeg",
+        "eb1/page-14/06.jpeg",
+        "eb1/page-14/08.jpeg",
+        "eb1/page-14/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "retardante-pocket-pleasure",
+      "name": "Retardante Pocket Pleasure",
+      "catalog": "eb1",
+      "source_page": 14,
+      "skus": [
+        "10144"
+      ],
+      "target_storage_path": "products/eb1/retardante-pocket-pleasure/01.webp",
+      "page_preview": "eb1/page-14.jpg",
+      "candidate_raw_images": [
+        "eb1/page-14/01.jpeg",
+        "eb1/page-14/02.jpeg",
+        "eb1/page-14/04.jpeg",
+        "eb1/page-14/05.jpeg",
+        "eb1/page-14/06.jpeg",
+        "eb1/page-14/08.jpeg",
+        "eb1/page-14/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-mas-dados",
+      "name": "Lubricante Íntimo + Dados",
+      "catalog": "eb1",
+      "source_page": 15,
+      "skus": [
+        "11304",
+        "11305",
+        "11647"
+      ],
+      "target_storage_path": "products/eb1/lubricante-intimo-mas-dados/01.webp",
+      "page_preview": "eb1/page-15.jpg",
+      "candidate_raw_images": [
+        "eb1/page-15/02.jpeg",
+        "eb1/page-15/03.jpeg",
+        "eb1/page-15/04.jpeg",
+        "eb1/page-15/05.jpeg",
+        "eb1/page-15/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-estrechante-virgin-dream-sen",
+      "name": "Lubricante Estrechante Virgin Dream Sen",
+      "catalog": "eb1",
+      "source_page": 16,
+      "skus": [
+        "10394"
+      ],
+      "target_storage_path": "products/eb1/lubricante-estrechante-virgin-dream-sen/01.webp",
+      "page_preview": "eb1/page-16.jpg",
+      "candidate_raw_images": [
+        "eb1/page-16/01.jpeg",
+        "eb1/page-16/03.jpeg",
+        "eb1/page-16/04.jpeg",
+        "eb1/page-16/05.jpeg",
+        "eb1/page-16/07.jpeg",
+        "eb1/page-16/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-anal-sen",
+      "name": "Lubricante Anal Sen",
+      "catalog": "eb1",
+      "source_page": 16,
+      "skus": [
+        "10395"
+      ],
+      "target_storage_path": "products/eb1/lubricante-anal-sen/01.webp",
+      "page_preview": "eb1/page-16.jpg",
+      "candidate_raw_images": [
+        "eb1/page-16/01.jpeg",
+        "eb1/page-16/03.jpeg",
+        "eb1/page-16/04.jpeg",
+        "eb1/page-16/05.jpeg",
+        "eb1/page-16/07.jpeg",
+        "eb1/page-16/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmos-sen",
+      "name": "Multiorgasmos Sen",
+      "catalog": "eb1",
+      "source_page": 16,
+      "skus": [
+        "10396"
+      ],
+      "target_storage_path": "products/eb1/multiorgasmos-sen/01.webp",
+      "page_preview": "eb1/page-16.jpg",
+      "candidate_raw_images": [
+        "eb1/page-16/01.jpeg",
+        "eb1/page-16/03.jpeg",
+        "eb1/page-16/04.jpeg",
+        "eb1/page-16/05.jpeg",
+        "eb1/page-16/07.jpeg",
+        "eb1/page-16/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmos-electrizante-sen",
+      "name": "Multiorgasmos Electrizante Sen",
+      "catalog": "eb1",
+      "source_page": 17,
+      "skus": [
+        "10397"
+      ],
+      "target_storage_path": "products/eb1/multiorgasmos-electrizante-sen/01.webp",
+      "page_preview": "eb1/page-17.jpg",
+      "candidate_raw_images": [
+        "eb1/page-17/03.jpeg",
+        "eb1/page-17/05.jpeg",
+        "eb1/page-17/06.jpeg",
+        "eb1/page-17/08.jpeg",
+        "eb1/page-17/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-liquido-frio-multiorgasmo-electrizante",
+      "name": "Vibrador Líquido Frío Multiorgasmo Electrizante",
+      "catalog": "eb1",
+      "source_page": 17,
+      "skus": [
+        "11674"
+      ],
+      "target_storage_path": "products/eb1/vibrador-liquido-frio-multiorgasmo-electrizante/01.webp",
+      "page_preview": "eb1/page-17.jpg",
+      "candidate_raw_images": [
+        "eb1/page-17/03.jpeg",
+        "eb1/page-17/05.jpeg",
+        "eb1/page-17/06.jpeg",
+        "eb1/page-17/08.jpeg",
+        "eb1/page-17/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "hemolub-calmante-para-hemorroides",
+      "name": "HemoLub — Calmante para Hemorroides",
+      "catalog": "eb1",
+      "source_page": 18,
+      "skus": [
+        "11677"
+      ],
+      "target_storage_path": "products/eb1/hemolub-calmante-para-hemorroides/01.webp",
+      "page_preview": "eb1/page-18.jpg",
+      "candidate_raw_images": [
+        "eb1/page-18/02.jpeg",
+        "eb1/page-18/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-estrechante-vaginal-friction",
+      "name": "Lubricante Estrechante Vaginal Friction",
+      "catalog": "eb1",
+      "source_page": 19,
+      "skus": [
+        "11686"
+      ],
+      "target_storage_path": "products/eb1/lubricante-estrechante-vaginal-friction/01.webp",
+      "page_preview": "eb1/page-19.jpg",
+      "candidate_raw_images": [
+        "eb1/page-19/02.jpeg",
+        "eb1/page-19/03.jpeg",
+        "eb1/page-19/05.jpeg",
+        "eb1/page-19/06.jpx"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-multi-o",
+      "name": "Multiorgasmo Multi-O",
+      "catalog": "eb1",
+      "source_page": 19,
+      "skus": [
+        "11689"
+      ],
+      "target_storage_path": "products/eb1/multiorgasmo-multi-o/01.webp",
+      "page_preview": "eb1/page-19.jpg",
+      "candidate_raw_images": [
+        "eb1/page-19/02.jpeg",
+        "eb1/page-19/03.jpeg",
+        "eb1/page-19/05.jpeg",
+        "eb1/page-19/06.jpx"
+      ]
+    },
+    {
+      "product_slug": "vibrador-liquido-frequency-intense",
+      "name": "Vibrador Líquido Frequency Intense",
+      "catalog": "eb1",
+      "source_page": 20,
+      "skus": [
+        "11680"
+      ],
+      "target_storage_path": "products/eb1/vibrador-liquido-frequency-intense/01.webp",
+      "page_preview": "eb1/page-20.jpg",
+      "candidate_raw_images": [
+        "eb1/page-20/01.jpeg",
+        "eb1/page-20/02.jpeg",
+        "eb1/page-20/03.jpeg",
+        "eb1/page-20/04.jpeg",
+        "eb1/page-20/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-liquido-frequency",
+      "name": "Vibrador Líquido Frequency",
+      "catalog": "eb1",
+      "source_page": 20,
+      "skus": [
+        "11675"
+      ],
+      "target_storage_path": "products/eb1/vibrador-liquido-frequency/01.webp",
+      "page_preview": "eb1/page-20.jpg",
+      "candidate_raw_images": [
+        "eb1/page-20/01.jpeg",
+        "eb1/page-20/02.jpeg",
+        "eb1/page-20/03.jpeg",
+        "eb1/page-20/04.jpeg",
+        "eb1/page-20/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-cool-sensation",
+      "name": "Lubricante Cool Sensation",
+      "catalog": "eb1",
+      "source_page": 21,
+      "skus": [
+        "11678"
+      ],
+      "target_storage_path": "products/eb1/lubricante-cool-sensation/01.webp",
+      "page_preview": "eb1/page-21.jpg",
+      "candidate_raw_images": [
+        "eb1/page-21/02.jpeg",
+        "eb1/page-21/03.jpeg",
+        "eb1/page-21/04.jpeg",
+        "eb1/page-21/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-5-sensaciones",
+      "name": "Lubricante 5 Sensaciones",
+      "catalog": "eb1",
+      "source_page": 21,
+      "skus": [
+        "11681"
+      ],
+      "target_storage_path": "products/eb1/lubricante-5-sensaciones/01.webp",
+      "page_preview": "eb1/page-21.jpg",
+      "candidate_raw_images": [
+        "eb1/page-21/02.jpeg",
+        "eb1/page-21/03.jpeg",
+        "eb1/page-21/04.jpeg",
+        "eb1/page-21/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "blow-pop-elixir",
+      "name": "Blow Pop Elixir",
+      "catalog": "eb1",
+      "source_page": 22,
+      "skus": [
+        "11643"
+      ],
+      "target_storage_path": "products/eb1/blow-pop-elixir/01.webp",
+      "page_preview": "eb1/page-22.jpg",
+      "candidate_raw_images": [
+        "eb1/page-22/01.jpeg",
+        "eb1/page-22/02.jpeg",
+        "eb1/page-22/03.jpeg",
+        "eb1/page-22/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-saborizado-elixir",
+      "name": "Lubricante Saborizado Elixir",
+      "catalog": "eb1",
+      "source_page": 23,
+      "skus": [
+        "11644",
+        "11645",
+        "11646"
+      ],
+      "target_storage_path": "products/eb1/lubricante-saborizado-elixir/01.webp",
+      "page_preview": "eb1/page-23.jpg",
+      "candidate_raw_images": [
+        "eb1/page-23/01.jpeg",
+        "eb1/page-23/02.jpeg",
+        "eb1/page-23/03.jpeg",
+        "eb1/page-23/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "flavor-sex-lubricante-caliente",
+      "name": "Flavor Sex — Lubricante Caliente",
+      "catalog": "eb1",
+      "source_page": 24,
+      "skus": [
+        "10083",
+        "10084",
+        "10093",
+        "10094"
+      ],
+      "target_storage_path": "products/eb1/flavor-sex-lubricante-caliente/01.webp",
+      "page_preview": "eb1/page-24.jpg",
+      "candidate_raw_images": [
+        "eb1/page-24/01.jpeg",
+        "eb1/page-24/02.jpeg",
+        "eb1/page-24/03.jpeg",
+        "eb1/page-24/04.jpeg",
+        "eb1/page-24/06.jpeg",
+        "eb1/page-24/07.jpeg",
+        "eb1/page-24/08.jpeg",
+        "eb1/page-24/09.jpeg",
+        "eb1/page-24/10.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-neutro",
+      "name": "Lubricante Neutro",
+      "catalog": "eb1",
+      "source_page": 25,
+      "skus": [
+        "10088"
+      ],
+      "target_storage_path": "products/eb1/lubricante-neutro/01.webp",
+      "page_preview": "eb1/page-25.jpg",
+      "candidate_raw_images": [
+        "eb1/page-25/04.jpeg",
+        "eb1/page-25/06.jpeg",
+        "eb1/page-25/12.jpeg",
+        "eb1/page-25/13.jpeg",
+        "eb1/page-25/14.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-sensation",
+      "name": "Multiorgasmo Sensation",
+      "catalog": "eb1",
+      "source_page": 25,
+      "skus": [
+        "10095"
+      ],
+      "target_storage_path": "products/eb1/multiorgasmo-sensation/01.webp",
+      "page_preview": "eb1/page-25.jpg",
+      "candidate_raw_images": [
+        "eb1/page-25/04.jpeg",
+        "eb1/page-25/06.jpeg",
+        "eb1/page-25/12.jpeg",
+        "eb1/page-25/13.jpeg",
+        "eb1/page-25/14.jpeg"
+      ]
+    },
+    {
+      "product_slug": "estrechante-corpo-stress",
+      "name": "Estrechante Corpo Stress",
+      "catalog": "eb1",
+      "source_page": 25,
+      "skus": [
+        "10096"
+      ],
+      "target_storage_path": "products/eb1/estrechante-corpo-stress/01.webp",
+      "page_preview": "eb1/page-25.jpg",
+      "candidate_raw_images": [
+        "eb1/page-25/04.jpeg",
+        "eb1/page-25/06.jpeg",
+        "eb1/page-25/12.jpeg",
+        "eb1/page-25/13.jpeg",
+        "eb1/page-25/14.jpeg"
+      ]
+    },
+    {
+      "product_slug": "retardante-delay-for-men",
+      "name": "Retardante Delay for Men",
+      "catalog": "eb1",
+      "source_page": 25,
+      "skus": [
+        "10097"
+      ],
+      "target_storage_path": "products/eb1/retardante-delay-for-men/01.webp",
+      "page_preview": "eb1/page-25.jpg",
+      "candidate_raw_images": [
+        "eb1/page-25/04.jpeg",
+        "eb1/page-25/06.jpeg",
+        "eb1/page-25/12.jpeg",
+        "eb1/page-25/13.jpeg",
+        "eb1/page-25/14.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-erotic-corazon-lubricante-caliente",
+      "name": "Aceite Erotic Corazón — Lubricante Caliente",
+      "catalog": "eb1",
+      "source_page": 26,
+      "skus": [
+        "10763",
+        "10765",
+        "10766",
+        "10767",
+        "10768"
+      ],
+      "target_storage_path": "products/eb1/aceite-erotic-corazon-lubricante-caliente/01.webp",
+      "page_preview": "eb1/page-26.jpg",
+      "candidate_raw_images": [
+        "eb1/page-26/01.jpeg",
+        "eb1/page-26/02.jpeg",
+        "eb1/page-26/03.jpeg",
+        "eb1/page-26/04.jpeg",
+        "eb1/page-26/05.jpeg",
+        "eb1/page-26/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "sachet-erotic-scence-3gr",
+      "name": "Sachet Erotic Scence 3gr",
+      "catalog": "eb1",
+      "source_page": 27,
+      "skus": [
+        "10776",
+        "10778",
+        "10779",
+        "10780"
+      ],
+      "target_storage_path": "products/eb1/sachet-erotic-scence-3gr/01.webp",
+      "page_preview": "eb1/page-27.jpg",
+      "candidate_raw_images": [
+        "eb1/page-27/01.jpeg",
+        "eb1/page-27/02.jpeg",
+        "eb1/page-27/03.jpeg",
+        "eb1/page-27/04.jpeg",
+        "eb1/page-27/06.jpeg",
+        "eb1/page-27/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "crema-retardante-minotauro-prolong",
+      "name": "Crema Retardante Minotauro Prolong",
+      "catalog": "eb1",
+      "source_page": 27,
+      "skus": [
+        "11597"
+      ],
+      "target_storage_path": "products/eb1/crema-retardante-minotauro-prolong/01.webp",
+      "page_preview": "eb1/page-27.jpg",
+      "candidate_raw_images": [
+        "eb1/page-27/01.jpeg",
+        "eb1/page-27/02.jpeg",
+        "eb1/page-27/03.jpeg",
+        "eb1/page-27/04.jpeg",
+        "eb1/page-27/06.jpeg",
+        "eb1/page-27/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "gel-erotic-anal",
+      "name": "Gel Erotic Anal",
+      "catalog": "eb1",
+      "source_page": 28,
+      "skus": [
+        "11614"
+      ],
+      "target_storage_path": "products/eb1/gel-erotic-anal/01.webp",
+      "page_preview": "eb1/page-28.jpg",
+      "candidate_raw_images": [
+        "eb1/page-28/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "retardante-thunder-erotic-gel",
+      "name": "Retardante Thunder Erotic Gel",
+      "catalog": "eb1",
+      "source_page": 28,
+      "skus": [
+        "11617"
+      ],
+      "target_storage_path": "products/eb1/retardante-thunder-erotic-gel/01.webp",
+      "page_preview": "eb1/page-28.jpg",
+      "candidate_raw_images": [
+        "eb1/page-28/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multi-ohh-gel",
+      "name": "Multi Ohh Gel",
+      "catalog": "eb1",
+      "source_page": 28,
+      "skus": [
+        "11615"
+      ],
+      "target_storage_path": "products/eb1/multi-ohh-gel/01.webp",
+      "page_preview": "eb1/page-28.jpg",
+      "candidate_raw_images": [
+        "eb1/page-28/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "virgin-feel-gel",
+      "name": "Virgin Feel Gel",
+      "catalog": "eb1",
+      "source_page": 28,
+      "skus": [
+        "11611"
+      ],
+      "target_storage_path": "products/eb1/virgin-feel-gel/01.webp",
+      "page_preview": "eb1/page-28.jpg",
+      "candidate_raw_images": [
+        "eb1/page-28/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-ice-gel",
+      "name": "Lubricante Ice Gel",
+      "catalog": "eb1",
+      "source_page": 29,
+      "skus": [
+        "10774"
+      ],
+      "target_storage_path": "products/eb1/lubricante-ice-gel/01.webp",
+      "page_preview": "eb1/page-29.jpg",
+      "candidate_raw_images": [
+        "eb1/page-29/01.jpeg",
+        "eb1/page-29/02.jpeg",
+        "eb1/page-29/03.jpeg",
+        "eb1/page-29/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-hot-gel",
+      "name": "Lubricante Hot Gel",
+      "catalog": "eb1",
+      "source_page": 29,
+      "skus": [
+        "10775"
+      ],
+      "target_storage_path": "products/eb1/lubricante-hot-gel/01.webp",
+      "page_preview": "eb1/page-29.jpg",
+      "candidate_raw_images": [
+        "eb1/page-29/01.jpeg",
+        "eb1/page-29/02.jpeg",
+        "eb1/page-29/03.jpeg",
+        "eb1/page-29/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "cocool-sensacion-fria",
+      "name": "Cocool Sensación Fría",
+      "catalog": "eb1",
+      "source_page": 29,
+      "skus": [
+        "10783"
+      ],
+      "target_storage_path": "products/eb1/cocool-sensacion-fria/01.webp",
+      "page_preview": "eb1/page-29.jpg",
+      "candidate_raw_images": [
+        "eb1/page-29/01.jpeg",
+        "eb1/page-29/02.jpeg",
+        "eb1/page-29/03.jpeg",
+        "eb1/page-29/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "power-x-rosada-para-dama",
+      "name": "Power-X Rosada para Dama",
+      "catalog": "eb1",
+      "source_page": 30,
+      "skus": [
+        "11694"
+      ],
+      "target_storage_path": "products/eb1/power-x-rosada-para-dama/01.webp",
+      "page_preview": "eb1/page-30.jpg",
+      "candidate_raw_images": [
+        "eb1/page-30/01.jpeg",
+        "eb1/page-30/02.jpeg",
+        "eb1/page-30/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "perlas-hot-y-ice-exotic-ball-x3",
+      "name": "Perlas Hot & Ice Exotic Ball x3",
+      "catalog": "eb1",
+      "source_page": 30,
+      "skus": [
+        "11698"
+      ],
+      "target_storage_path": "products/eb1/perlas-hot-y-ice-exotic-ball-x3/01.webp",
+      "page_preview": "eb1/page-30.jpg",
+      "candidate_raw_images": [
+        "eb1/page-30/01.jpeg",
+        "eb1/page-30/02.jpeg",
+        "eb1/page-30/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "scx-bull-x2",
+      "name": "SCX Bull x2",
+      "catalog": "eb1",
+      "source_page": 31,
+      "skus": [
+        "11146"
+      ],
+      "target_storage_path": "products/eb1/scx-bull-x2/01.webp",
+      "page_preview": "eb1/page-31.jpg",
+      "candidate_raw_images": [
+        "eb1/page-31/01.jpeg",
+        "eb1/page-31/03.jpeg",
+        "eb1/page-31/04.jpeg",
+        "eb1/page-31/05.jpeg",
+        "eb1/page-31/06.jpeg",
+        "eb1/page-31/08.jpeg",
+        "eb1/page-31/09.jpx"
+      ]
+    },
+    {
+      "product_slug": "emental-suplemento-x3",
+      "name": "Emental Suplemento x3",
+      "catalog": "eb1",
+      "source_page": 31,
+      "skus": [
+        "11555"
+      ],
+      "target_storage_path": "products/eb1/emental-suplemento-x3/01.webp",
+      "page_preview": "eb1/page-31.jpg",
+      "candidate_raw_images": [
+        "eb1/page-31/01.jpeg",
+        "eb1/page-31/03.jpeg",
+        "eb1/page-31/04.jpeg",
+        "eb1/page-31/05.jpeg",
+        "eb1/page-31/06.jpeg",
+        "eb1/page-31/08.jpeg",
+        "eb1/page-31/09.jpx"
+      ]
+    },
+    {
+      "product_slug": "powers-x",
+      "name": "Powers-X",
+      "catalog": "eb1",
+      "source_page": 31,
+      "skus": [
+        "11147"
+      ],
+      "target_storage_path": "products/eb1/powers-x/01.webp",
+      "page_preview": "eb1/page-31.jpg",
+      "candidate_raw_images": [
+        "eb1/page-31/01.jpeg",
+        "eb1/page-31/03.jpeg",
+        "eb1/page-31/04.jpeg",
+        "eb1/page-31/05.jpeg",
+        "eb1/page-31/06.jpeg",
+        "eb1/page-31/08.jpeg",
+        "eb1/page-31/09.jpx"
+      ]
+    },
+    {
+      "product_slug": "mega-vit-advance",
+      "name": "Mega Vit Advance",
+      "catalog": "eb1",
+      "source_page": 31,
+      "skus": [
+        "11175"
+      ],
+      "target_storage_path": "products/eb1/mega-vit-advance/01.webp",
+      "page_preview": "eb1/page-31.jpg",
+      "candidate_raw_images": [
+        "eb1/page-31/01.jpeg",
+        "eb1/page-31/03.jpeg",
+        "eb1/page-31/04.jpeg",
+        "eb1/page-31/05.jpeg",
+        "eb1/page-31/06.jpeg",
+        "eb1/page-31/08.jpeg",
+        "eb1/page-31/09.jpx"
+      ]
+    },
+    {
+      "product_slug": "verdad-o-se-atreve-juego-erotico",
+      "name": "Verdad o Se Atreve — Juego Erótico",
+      "catalog": "eb1",
+      "source_page": 32,
+      "skus": [
+        "11691"
+      ],
+      "target_storage_path": "products/eb1/verdad-o-se-atreve-juego-erotico/01.webp",
+      "page_preview": "eb1/page-32.jpg",
+      "candidate_raw_images": [
+        "eb1/page-32/01.jpeg",
+        "eb1/page-32/03.jpeg",
+        "eb1/page-32/05.jpeg",
+        "eb1/page-32/06.jpeg",
+        "eb1/page-32/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "juego-de-cartas-hot-drinks",
+      "name": "Juego de Cartas Hot Drinks",
+      "catalog": "eb1",
+      "source_page": 32,
+      "skus": [
+        "11682"
+      ],
+      "target_storage_path": "products/eb1/juego-de-cartas-hot-drinks/01.webp",
+      "page_preview": "eb1/page-32.jpg",
+      "candidate_raw_images": [
+        "eb1/page-32/01.jpeg",
+        "eb1/page-32/03.jpeg",
+        "eb1/page-32/05.jpeg",
+        "eb1/page-32/06.jpeg",
+        "eb1/page-32/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "fondo-blanco-juego-de-cartas",
+      "name": "Fondo Blanco — Juego de Cartas",
+      "catalog": "eb1",
+      "source_page": 32,
+      "skus": [
+        "11683"
+      ],
+      "target_storage_path": "products/eb1/fondo-blanco-juego-de-cartas/01.webp",
+      "page_preview": "eb1/page-32.jpg",
+      "candidate_raw_images": [
+        "eb1/page-32/01.jpeg",
+        "eb1/page-32/03.jpeg",
+        "eb1/page-32/05.jpeg",
+        "eb1/page-32/06.jpeg",
+        "eb1/page-32/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "poker-kamasutra-lesbico",
+      "name": "Póker Kamasutra Lésbico",
+      "catalog": "eb1",
+      "source_page": 33,
+      "skus": [
+        "11692"
+      ],
+      "target_storage_path": "products/eb1/poker-kamasutra-lesbico/01.webp",
+      "page_preview": "eb1/page-33.jpg",
+      "candidate_raw_images": [
+        "eb1/page-33/01.jpeg",
+        "eb1/page-33/02.jpeg",
+        "eb1/page-33/03.jpeg",
+        "eb1/page-33/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "poker-kamasutra-gay",
+      "name": "Póker Kamasutra Gay",
+      "catalog": "eb1",
+      "source_page": 33,
+      "skus": [
+        "11693"
+      ],
+      "target_storage_path": "products/eb1/poker-kamasutra-gay/01.webp",
+      "page_preview": "eb1/page-33.jpg",
+      "candidate_raw_images": [
+        "eb1/page-33/01.jpeg",
+        "eb1/page-33/02.jpeg",
+        "eb1/page-33/03.jpeg",
+        "eb1/page-33/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "juego-jenga-hot-picante",
+      "name": "Juego Jenga Hot Picante",
+      "catalog": "eb1",
+      "source_page": 34,
+      "skus": [
+        "11690"
+      ],
+      "target_storage_path": "products/eb1/juego-jenga-hot-picante/01.webp",
+      "page_preview": "eb1/page-34.jpg",
+      "candidate_raw_images": [
+        "eb1/page-34/02.jpeg",
+        "eb1/page-34/03.jpeg",
+        "eb1/page-34/04.jpeg",
+        "eb1/page-34/05.jpeg",
+        "eb1/page-34/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "juego-jenga-hot-erotico",
+      "name": "Juego Jenga Hot Erótico",
+      "catalog": "eb1",
+      "source_page": 34,
+      "skus": [
+        "11684"
+      ],
+      "target_storage_path": "products/eb1/juego-jenga-hot-erotico/01.webp",
+      "page_preview": "eb1/page-34.jpg",
+      "candidate_raw_images": [
+        "eb1/page-34/02.jpeg",
+        "eb1/page-34/03.jpeg",
+        "eb1/page-34/04.jpeg",
+        "eb1/page-34/05.jpeg",
+        "eb1/page-34/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "tapa-ojos-antifaz",
+      "name": "Tapa Ojos (Antifaz)",
+      "catalog": "eb1",
+      "source_page": 35,
+      "skus": [
+        "10110"
+      ],
+      "target_storage_path": "products/eb1/tapa-ojos-antifaz/01.webp",
+      "page_preview": "eb1/page-35.jpg",
+      "candidate_raw_images": [
+        "eb1/page-35/01.jpx",
+        "eb1/page-35/03.jpeg",
+        "eb1/page-35/04.jpeg",
+        "eb1/page-35/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "esposas-de-terciopelo",
+      "name": "Esposas de Terciopelo",
+      "catalog": "eb1",
+      "source_page": 35,
+      "skus": [
+        "10111"
+      ],
+      "target_storage_path": "products/eb1/esposas-de-terciopelo/01.webp",
+      "page_preview": "eb1/page-35.jpg",
+      "candidate_raw_images": [
+        "eb1/page-35/01.jpx",
+        "eb1/page-35/03.jpeg",
+        "eb1/page-35/04.jpeg",
+        "eb1/page-35/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "pezoneras",
+      "name": "Pezoneras",
+      "catalog": "eb1",
+      "source_page": 35,
+      "skus": [
+        "11529",
+        "11528"
+      ],
+      "target_storage_path": "products/eb1/pezoneras/01.webp",
+      "page_preview": "eb1/page-35.jpg",
+      "candidate_raw_images": [
+        "eb1/page-35/01.jpx",
+        "eb1/page-35/03.jpeg",
+        "eb1/page-35/04.jpeg",
+        "eb1/page-35/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "kit-lover-fara-fetish-esposas-mas-tapa-ojos-mas-latigo",
+      "name": "Kit Lover Fara Fetish — Esposas + Tapa Ojos + Látigo",
+      "catalog": "eb1",
+      "source_page": 36,
+      "skus": [
+        "10751"
+      ],
+      "target_storage_path": "products/eb1/kit-lover-fara-fetish-esposas-mas-tapa-ojos-mas-latigo/01.webp",
+      "page_preview": "eb1/page-36.jpg",
+      "candidate_raw_images": [
+        "eb1/page-36/01.jpx",
+        "eb1/page-36/03.jpeg",
+        "eb1/page-36/04.jpeg",
+        "eb1/page-36/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "sujetador-fetish-con-ball-gag",
+      "name": "Sujetador Fetish con Ball Gag",
+      "catalog": "eb1",
+      "source_page": 37,
+      "skus": [
+        "11660"
+      ],
+      "target_storage_path": "products/eb1/sujetador-fetish-con-ball-gag/01.webp",
+      "page_preview": "eb1/page-37.jpg",
+      "candidate_raw_images": [
+        "eb1/page-37/01.jpeg",
+        "eb1/page-37/02.jpeg",
+        "eb1/page-37/03.jpeg",
+        "eb1/page-37/04.jpeg",
+        "eb1/page-37/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "kit-mordaza-ball-gag-mas-pezonera",
+      "name": "Kit Mordaza Ball Gag + Pezonera",
+      "catalog": "eb1",
+      "source_page": 37,
+      "skus": [
+        "11457"
+      ],
+      "target_storage_path": "products/eb1/kit-mordaza-ball-gag-mas-pezonera/01.webp",
+      "page_preview": "eb1/page-37.jpg",
+      "candidate_raw_images": [
+        "eb1/page-37/01.jpeg",
+        "eb1/page-37/02.jpeg",
+        "eb1/page-37/03.jpeg",
+        "eb1/page-37/04.jpeg",
+        "eb1/page-37/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "latigo-thor-corto-de-flecos",
+      "name": "Látigo Thor — Corto de Flecos",
+      "catalog": "eb1",
+      "source_page": 38,
+      "skus": [
+        "11213"
+      ],
+      "target_storage_path": "products/eb1/latigo-thor-corto-de-flecos/01.webp",
+      "page_preview": "eb1/page-38.jpg",
+      "candidate_raw_images": [
+        "eb1/page-38/03.jpeg",
+        "eb1/page-38/04.jpeg",
+        "eb1/page-38/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "latigo-luke-negro-corto",
+      "name": "Látigo Luke Negro Corto",
+      "catalog": "eb1",
+      "source_page": 38,
+      "skus": [
+        "11308"
+      ],
+      "target_storage_path": "products/eb1/latigo-luke-negro-corto/01.webp",
+      "page_preview": "eb1/page-38.jpg",
+      "candidate_raw_images": [
+        "eb1/page-38/03.jpeg",
+        "eb1/page-38/04.jpeg",
+        "eb1/page-38/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bomba-para-el-pene-remo",
+      "name": "Bomba para el Pene Remo",
+      "catalog": "eb1",
+      "source_page": 39,
+      "skus": [
+        "10584"
+      ],
+      "target_storage_path": "products/eb1/bomba-para-el-pene-remo/01.webp",
+      "page_preview": "eb1/page-39.jpg",
+      "candidate_raw_images": [
+        "eb1/page-39/03.jpeg",
+        "eb1/page-39/04.jpeg",
+        "eb1/page-39/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "ducha-anal-boxter",
+      "name": "Ducha Anal Boxter",
+      "catalog": "eb1",
+      "source_page": 40,
+      "skus": [
+        "11696"
+      ],
+      "target_storage_path": "products/eb1/ducha-anal-boxter/01.webp",
+      "page_preview": "eb1/page-40.jpg",
+      "candidate_raw_images": [
+        "eb1/page-40/02.jpeg",
+        "eb1/page-40/03.jpeg",
+        "eb1/page-40/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "enema-para-limpieza-anal-jervis",
+      "name": "Enema para Limpieza Anal Jervis",
+      "catalog": "eb1",
+      "source_page": 40,
+      "skus": [
+        "11695"
+      ],
+      "target_storage_path": "products/eb1/enema-para-limpieza-anal-jervis/01.webp",
+      "page_preview": "eb1/page-40.jpg",
+      "candidate_raw_images": [
+        "eb1/page-40/02.jpeg",
+        "eb1/page-40/03.jpeg",
+        "eb1/page-40/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "enema-para-limpieza-anal",
+      "name": "Enema para Limpieza Anal",
+      "catalog": "eb1",
+      "source_page": 40,
+      "skus": [
+        "11023"
+      ],
+      "target_storage_path": "products/eb1/enema-para-limpieza-anal/01.webp",
+      "page_preview": "eb1/page-40.jpg",
+      "candidate_raw_images": [
+        "eb1/page-40/02.jpeg",
+        "eb1/page-40/03.jpeg",
+        "eb1/page-40/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "plug-anal-metalico-aquiles-tornasol",
+      "name": "Plug Anal Metálico Aquiles Tornasol",
+      "catalog": "eb1",
+      "source_page": 41,
+      "skus": [
+        "10830"
+      ],
+      "target_storage_path": "products/eb1/plug-anal-metalico-aquiles-tornasol/01.webp",
+      "page_preview": "eb1/page-41.jpg",
+      "candidate_raw_images": [
+        "eb1/page-41/03.jpeg",
+        "eb1/page-41/05.jpeg",
+        "eb1/page-41/06.jpeg",
+        "eb1/page-41/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-atum-anal-prostata",
+      "name": "Anillo Atum — Anal Próstata",
+      "catalog": "eb1",
+      "source_page": 41,
+      "skus": [
+        "11697"
+      ],
+      "target_storage_path": "products/eb1/anillo-atum-anal-prostata/01.webp",
+      "page_preview": "eb1/page-41.jpg",
+      "candidate_raw_images": [
+        "eb1/page-41/03.jpeg",
+        "eb1/page-41/05.jpeg",
+        "eb1/page-41/06.jpeg",
+        "eb1/page-41/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-stay-hard-x3",
+      "name": "Anillo Stay Hard x3",
+      "catalog": "eb1",
+      "source_page": 41,
+      "skus": [
+        "11371"
+      ],
+      "target_storage_path": "products/eb1/anillo-stay-hard-x3/01.webp",
+      "page_preview": "eb1/page-41.jpg",
+      "candidate_raw_images": [
+        "eb1/page-41/03.jpeg",
+        "eb1/page-41/05.jpeg",
+        "eb1/page-41/06.jpeg",
+        "eb1/page-41/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-vibrador",
+      "name": "Anillo Vibrador",
+      "catalog": "eb1",
+      "source_page": 42,
+      "skus": [
+        "10099"
+      ],
+      "target_storage_path": "products/eb1/anillo-vibrador/01.webp",
+      "page_preview": "eb1/page-42.jpg",
+      "candidate_raw_images": [
+        "eb1/page-42/03.jpeg",
+        "eb1/page-42/04.jpeg",
+        "eb1/page-42/06.jpeg",
+        "eb1/page-42/08.jpeg",
+        "eb1/page-42/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-bala",
+      "name": "Anillo Bala",
+      "catalog": "eb1",
+      "source_page": 42,
+      "skus": [
+        "11661"
+      ],
+      "target_storage_path": "products/eb1/anillo-bala/01.webp",
+      "page_preview": "eb1/page-42.jpg",
+      "candidate_raw_images": [
+        "eb1/page-42/03.jpeg",
+        "eb1/page-42/04.jpeg",
+        "eb1/page-42/06.jpeg",
+        "eb1/page-42/08.jpeg",
+        "eb1/page-42/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bala-con-carga-usb",
+      "name": "Bala con Carga USB",
+      "catalog": "eb1",
+      "source_page": 42,
+      "skus": [
+        "10825"
+      ],
+      "target_storage_path": "products/eb1/bala-con-carga-usb/01.webp",
+      "page_preview": "eb1/page-42.jpg",
+      "candidate_raw_images": [
+        "eb1/page-42/03.jpeg",
+        "eb1/page-42/04.jpeg",
+        "eb1/page-42/06.jpeg",
+        "eb1/page-42/08.jpeg",
+        "eb1/page-42/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-jelly-sweet-7-rosado",
+      "name": "Vibrador Jelly Sweet 7 Rosado",
+      "catalog": "eb1",
+      "source_page": 43,
+      "skus": [
+        "10106"
+      ],
+      "target_storage_path": "products/eb1/vibrador-jelly-sweet-7-rosado/01.webp",
+      "page_preview": "eb1/page-43.jpg",
+      "candidate_raw_images": [
+        "eb1/page-43/01.jpeg",
+        "eb1/page-43/02.jpeg",
+        "eb1/page-43/04.jpeg",
+        "eb1/page-43/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "consolador-con-ventosa-midra",
+      "name": "Consolador con Ventosa Midra",
+      "catalog": "eb1",
+      "source_page": 43,
+      "skus": [
+        "10590"
+      ],
+      "target_storage_path": "products/eb1/consolador-con-ventosa-midra/01.webp",
+      "page_preview": "eb1/page-43.jpg",
+      "candidate_raw_images": [
+        "eb1/page-43/01.jpeg",
+        "eb1/page-43/02.jpeg",
+        "eb1/page-43/04.jpeg",
+        "eb1/page-43/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-aphrodisia-crystal",
+      "name": "Vibrador Aphrodisia Crystal",
+      "catalog": "eb1",
+      "source_page": 44,
+      "skus": [
+        "10746"
+      ],
+      "target_storage_path": "products/eb1/vibrador-aphrodisia-crystal/01.webp",
+      "page_preview": "eb1/page-44.jpg",
+      "candidate_raw_images": [
+        "eb1/page-44/01.jpeg",
+        "eb1/page-44/02.jpeg",
+        "eb1/page-44/03.jpeg",
+        "eb1/page-44/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "succionador-bear",
+      "name": "Succionador Bear",
+      "catalog": "eb1",
+      "source_page": 45,
+      "skus": [
+        "11624"
+      ],
+      "target_storage_path": "products/eb1/succionador-bear/01.webp",
+      "page_preview": "eb1/page-45.jpg",
+      "candidate_raw_images": [
+        "eb1/page-45/01.jpeg",
+        "eb1/page-45/02.jpeg",
+        "eb1/page-45/03.jpeg",
+        "eb1/page-45/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bala-vibradora-lilo-we-love-osito",
+      "name": "Bala Vibradora Lilo We-love Osito",
+      "catalog": "eb1",
+      "source_page": 46,
+      "skus": [
+        "11625"
+      ],
+      "target_storage_path": "products/eb1/bala-vibradora-lilo-we-love-osito/01.webp",
+      "page_preview": "eb1/page-46.jpg",
+      "candidate_raw_images": [
+        "eb1/page-46/01.jpeg",
+        "eb1/page-46/02.jpeg",
+        "eb1/page-46/03.jpeg",
+        "eb1/page-46/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-vibrador-inalambrico",
+      "name": "Huevo Vibrador Inalámbrico",
+      "catalog": "eb1",
+      "source_page": 46,
+      "skus": [
+        "10832"
+      ],
+      "target_storage_path": "products/eb1/huevo-vibrador-inalambrico/01.webp",
+      "page_preview": "eb1/page-46.jpg",
+      "candidate_raw_images": [
+        "eb1/page-46/01.jpeg",
+        "eb1/page-46/02.jpeg",
+        "eb1/page-46/03.jpeg",
+        "eb1/page-46/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-doble-tifany",
+      "name": "Vibrador Doble Tifany",
+      "catalog": "eb1",
+      "source_page": 47,
+      "skus": [
+        "11662"
+      ],
+      "target_storage_path": "products/eb1/vibrador-doble-tifany/01.webp",
+      "page_preview": "eb1/page-47.jpg",
+      "candidate_raw_images": [
+        "eb1/page-47/01.jpeg",
+        "eb1/page-47/02.jpeg",
+        "eb1/page-47/03.jpeg",
+        "eb1/page-47/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-doble-estimulacion-lausa-ohlala",
+      "name": "Vibrador Doble Estimulación Lausa Ohlala",
+      "catalog": "eb1",
+      "source_page": 48,
+      "skus": [
+        "11679"
+      ],
+      "target_storage_path": "products/eb1/vibrador-doble-estimulacion-lausa-ohlala/01.webp",
+      "page_preview": "eb1/page-48.jpg",
+      "candidate_raw_images": [
+        "eb1/page-48/02.jpeg",
+        "eb1/page-48/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "satisfyer-pro-2-generacion-2",
+      "name": "Satisfyer Pro 2 Generación 2",
+      "catalog": "eb1",
+      "source_page": 49,
+      "skus": [
+        "10473"
+      ],
+      "target_storage_path": "products/eb1/satisfyer-pro-2-generacion-2/01.webp",
+      "page_preview": "eb1/page-49.jpg",
+      "candidate_raw_images": [
+        "eb1/page-49/01.jpeg",
+        "eb1/page-49/02.jpeg",
+        "eb1/page-49/03.jpeg",
+        "eb1/page-49/04.jpeg",
+        "eb1/page-49/07.png"
+      ]
+    },
+    {
+      "product_slug": "satisfyer-curvy-1-mas",
+      "name": "Satisfyer Curvy 1+",
+      "catalog": "eb1",
+      "source_page": 49,
+      "skus": [
+        "10962"
+      ],
+      "target_storage_path": "products/eb1/satisfyer-curvy-1-mas/01.webp",
+      "page_preview": "eb1/page-49.jpg",
+      "candidate_raw_images": [
+        "eb1/page-49/01.jpeg",
+        "eb1/page-49/02.jpeg",
+        "eb1/page-49/03.jpeg",
+        "eb1/page-49/04.jpeg",
+        "eb1/page-49/07.png"
+      ]
+    },
+    {
+      "product_slug": "satisfyer-curvy-2-mas",
+      "name": "Satisfyer Curvy 2+",
+      "catalog": "eb1",
+      "source_page": 49,
+      "skus": [
+        "10963"
+      ],
+      "target_storage_path": "products/eb1/satisfyer-curvy-2-mas/01.webp",
+      "page_preview": "eb1/page-49.jpg",
+      "candidate_raw_images": [
+        "eb1/page-49/01.jpeg",
+        "eb1/page-49/02.jpeg",
+        "eb1/page-49/03.jpeg",
+        "eb1/page-49/04.jpeg",
+        "eb1/page-49/07.png"
+      ]
+    },
+    {
+      "product_slug": "splash-corporales",
+      "name": "Splash Corporales",
+      "catalog": "eb2",
+      "source_page": 2,
+      "skus": [
+        "10670",
+        "10671",
+        "10672",
+        "10673",
+        "10674"
+      ],
+      "target_storage_path": "products/eb2/splash-corporales/01.webp",
+      "page_preview": "eb2/page-02.jpg",
+      "candidate_raw_images": [
+        "eb2/page-02/01.png",
+        "eb2/page-02/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "splash-corporal-dulce-pecado",
+      "name": "Splash Corporal Dulce Pecado",
+      "catalog": "eb2",
+      "source_page": 3,
+      "skus": [
+        "11375",
+        "11372"
+      ],
+      "target_storage_path": "products/eb2/splash-corporal-dulce-pecado/01.webp",
+      "page_preview": "eb2/page-03.jpg",
+      "candidate_raw_images": [
+        "eb2/page-03/01.png",
+        "eb2/page-03/02.jpx",
+        "eb2/page-03/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "splash-corporal-pasion-magica",
+      "name": "Splash Corporal Pasión Mágica",
+      "catalog": "eb2",
+      "source_page": 4,
+      "skus": [
+        "11376",
+        "11373"
+      ],
+      "target_storage_path": "products/eb2/splash-corporal-pasion-magica/01.webp",
+      "page_preview": "eb2/page-04.jpg",
+      "candidate_raw_images": [
+        "eb2/page-04/01.png",
+        "eb2/page-04/02.jpeg",
+        "eb2/page-04/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "splash-corporal-amor-puro",
+      "name": "Splash Corporal Amor Puro",
+      "catalog": "eb2",
+      "source_page": 4,
+      "skus": [
+        "11377",
+        "11374"
+      ],
+      "target_storage_path": "products/eb2/splash-corporal-amor-puro/01.webp",
+      "page_preview": "eb2/page-04.jpg",
+      "candidate_raw_images": [
+        "eb2/page-04/01.png",
+        "eb2/page-04/02.jpeg",
+        "eb2/page-04/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "feromonas-femeninas",
+      "name": "Feromonas Femeninas",
+      "catalog": "eb2",
+      "source_page": 5,
+      "skus": [
+        "10459"
+      ],
+      "target_storage_path": "products/eb2/feromonas-femeninas/01.webp",
+      "page_preview": "eb2/page-05.jpg",
+      "candidate_raw_images": [
+        "eb2/page-05/01.png",
+        "eb2/page-05/04.jpeg",
+        "eb2/page-05/05.jpeg",
+        "eb2/page-05/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "feromonas-concentradas-woman",
+      "name": "Feromonas Concentradas Woman",
+      "catalog": "eb2",
+      "source_page": 5,
+      "skus": [
+        "10140"
+      ],
+      "target_storage_path": "products/eb2/feromonas-concentradas-woman/01.webp",
+      "page_preview": "eb2/page-05.jpg",
+      "candidate_raw_images": [
+        "eb2/page-05/01.png",
+        "eb2/page-05/04.jpeg",
+        "eb2/page-05/05.jpeg",
+        "eb2/page-05/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "feromonas-concentradas-men",
+      "name": "Feromonas Concentradas Men",
+      "catalog": "eb2",
+      "source_page": 5,
+      "skus": [
+        "10312"
+      ],
+      "target_storage_path": "products/eb2/feromonas-concentradas-men/01.webp",
+      "page_preview": "eb2/page-05.jpg",
+      "candidate_raw_images": [
+        "eb2/page-05/01.png",
+        "eb2/page-05/04.jpeg",
+        "eb2/page-05/05.jpeg",
+        "eb2/page-05/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "feromona-feroz",
+      "name": "Feromona Feroz",
+      "catalog": "eb2",
+      "source_page": 6,
+      "skus": [
+        "11652"
+      ],
+      "target_storage_path": "products/eb2/feromona-feroz/01.webp",
+      "page_preview": "eb2/page-06.jpg",
+      "candidate_raw_images": [
+        "eb2/page-06/01.jpx",
+        "eb2/page-06/02.jpeg",
+        "eb2/page-06/03.jpeg",
+        "eb2/page-06/04.jpeg",
+        "eb2/page-06/06.jpeg",
+        "eb2/page-06/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "brillo-labial-con-feromonas-15-ml",
+      "name": "Brillo Labial con Feromonas 15 ml",
+      "catalog": "eb2",
+      "source_page": 6,
+      "skus": [
+        "10678"
+      ],
+      "target_storage_path": "products/eb2/brillo-labial-con-feromonas-15-ml/01.webp",
+      "page_preview": "eb2/page-06.jpg",
+      "candidate_raw_images": [
+        "eb2/page-06/01.jpx",
+        "eb2/page-06/02.jpeg",
+        "eb2/page-06/03.jpeg",
+        "eb2/page-06/04.jpeg",
+        "eb2/page-06/06.jpeg",
+        "eb2/page-06/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "brillo-labial-con-feromonas-10-ml",
+      "name": "Brillo Labial con Feromonas 10 ml",
+      "catalog": "eb2",
+      "source_page": 6,
+      "skus": [
+        "10139"
+      ],
+      "target_storage_path": "products/eb2/brillo-labial-con-feromonas-10-ml/01.webp",
+      "page_preview": "eb2/page-06.jpg",
+      "candidate_raw_images": [
+        "eb2/page-06/01.jpx",
+        "eb2/page-06/02.jpeg",
+        "eb2/page-06/03.jpeg",
+        "eb2/page-06/04.jpeg",
+        "eb2/page-06/06.jpeg",
+        "eb2/page-06/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "desodorante-intimo",
+      "name": "Desodorante Íntimo",
+      "catalog": "eb2",
+      "source_page": 7,
+      "skus": [
+        "11387",
+        "11388"
+      ],
+      "target_storage_path": "products/eb2/desodorante-intimo/01.webp",
+      "page_preview": "eb2/page-07.jpg",
+      "candidate_raw_images": [
+        "eb2/page-07/01.png",
+        "eb2/page-07/02.png",
+        "eb2/page-07/04.png",
+        "eb2/page-07/05.jpeg",
+        "eb2/page-07/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "jabon-intimo-sen",
+      "name": "Jabón Íntimo Sen",
+      "catalog": "eb2",
+      "source_page": 8,
+      "skus": [
+        "10680"
+      ],
+      "target_storage_path": "products/eb2/jabon-intimo-sen/01.webp",
+      "page_preview": "eb2/page-08.jpg",
+      "candidate_raw_images": [
+        "eb2/page-08/01.png",
+        "eb2/page-08/02.png",
+        "eb2/page-08/03.jpeg",
+        "eb2/page-08/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "desodorante-intimo-feroz-for-women",
+      "name": "Desodorante Íntimo Feroz for Women",
+      "catalog": "eb2",
+      "source_page": 8,
+      "skus": [
+        "10679"
+      ],
+      "target_storage_path": "products/eb2/desodorante-intimo-feroz-for-women/01.webp",
+      "page_preview": "eb2/page-08.jpg",
+      "candidate_raw_images": [
+        "eb2/page-08/01.png",
+        "eb2/page-08/02.png",
+        "eb2/page-08/03.jpeg",
+        "eb2/page-08/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "despigmentante-y-aclarante-de-zonas-intimas",
+      "name": "Despigmentante y Aclarante de Zonas Íntimas",
+      "catalog": "eb2",
+      "source_page": 9,
+      "skus": [
+        "11598"
+      ],
+      "target_storage_path": "products/eb2/despigmentante-y-aclarante-de-zonas-intimas/01.webp",
+      "page_preview": "eb2/page-09.jpg",
+      "candidate_raw_images": [
+        "eb2/page-09/01.png",
+        "eb2/page-09/02.png",
+        "eb2/page-09/05.jpeg",
+        "eb2/page-09/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-para-masajes-euforia-cannabis",
+      "name": "Aceite para Masajes Euforia (Cannabis)",
+      "catalog": "eb2",
+      "source_page": 11,
+      "skus": [
+        "10684"
+      ],
+      "target_storage_path": "products/eb2/aceite-para-masajes-euforia-cannabis/01.webp",
+      "page_preview": "eb2/page-11.jpg",
+      "candidate_raw_images": [
+        "eb2/page-11/01.jpx",
+        "eb2/page-11/03.jpeg",
+        "eb2/page-11/04.jpx",
+        "eb2/page-11/05.jpeg",
+        "eb2/page-11/06.png",
+        "eb2/page-11/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "aceite-corporal-erotika-para-masajes",
+      "name": "Aceite Corporal Erotika para Masajes",
+      "catalog": "eb2",
+      "source_page": 11,
+      "skus": [
+        "10453",
+        "10454"
+      ],
+      "target_storage_path": "products/eb2/aceite-corporal-erotika-para-masajes/01.webp",
+      "page_preview": "eb2/page-11.jpg",
+      "candidate_raw_images": [
+        "eb2/page-11/01.jpx",
+        "eb2/page-11/03.jpeg",
+        "eb2/page-11/04.jpx",
+        "eb2/page-11/05.jpeg",
+        "eb2/page-11/06.png",
+        "eb2/page-11/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vela-sensual-para-masajes",
+      "name": "Vela Sensual para Masajes",
+      "catalog": "eb2",
+      "source_page": 12,
+      "skus": [
+        "10681"
+      ],
+      "target_storage_path": "products/eb2/vela-sensual-para-masajes/01.webp",
+      "page_preview": "eb2/page-12.jpg",
+      "candidate_raw_images": [
+        "eb2/page-12/01.png",
+        "eb2/page-12/03.jpeg",
+        "eb2/page-12/04.jpeg",
+        "eb2/page-12/05.jpeg",
+        "eb2/page-12/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "sensual-warming-aceite-efecto-calor",
+      "name": "Sensual Warming — Aceite Efecto Calor",
+      "catalog": "eb2",
+      "source_page": 12,
+      "skus": [
+        "10682",
+        "10683"
+      ],
+      "target_storage_path": "products/eb2/sensual-warming-aceite-efecto-calor/01.webp",
+      "page_preview": "eb2/page-12.jpg",
+      "candidate_raw_images": [
+        "eb2/page-12/01.png",
+        "eb2/page-12/03.jpeg",
+        "eb2/page-12/04.jpeg",
+        "eb2/page-12/05.jpeg",
+        "eb2/page-12/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "hot-ball-duplo-esfera-lubricante",
+      "name": "Hot Ball Duplo — Esfera Lubricante",
+      "catalog": "eb2",
+      "source_page": 13,
+      "skus": [
+        "11390",
+        "11391",
+        "11392",
+        "11393",
+        "11395"
+      ],
+      "target_storage_path": "products/eb2/hot-ball-duplo-esfera-lubricante/01.webp",
+      "page_preview": "eb2/page-13.jpg",
+      "candidate_raw_images": [
+        "eb2/page-13/01.png",
+        "eb2/page-13/02.jpeg",
+        "eb2/page-13/03.jpeg",
+        "eb2/page-13/04.jpeg",
+        "eb2/page-13/05.jpeg",
+        "eb2/page-13/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "hot-ball-mix-de-sabores-x4",
+      "name": "Hot Ball Mix de Sabores x4",
+      "catalog": "eb2",
+      "source_page": 14,
+      "skus": [
+        "11396"
+      ],
+      "target_storage_path": "products/eb2/hot-ball-mix-de-sabores-x4/01.webp",
+      "page_preview": "eb2/page-14.jpg",
+      "candidate_raw_images": [
+        "eb2/page-14/01.jpeg",
+        "eb2/page-14/02.jpeg",
+        "eb2/page-14/03.jpeg",
+        "eb2/page-14/04.png"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-multiorgasmos-sen",
+      "name": "Lubricante Íntimo Multiorgasmos Sen",
+      "catalog": "eb2",
+      "source_page": 15,
+      "skus": [
+        "10456"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-multiorgasmos-sen/01.webp",
+      "page_preview": "eb2/page-15.jpg",
+      "candidate_raw_images": [
+        "eb2/page-15/03.jpeg",
+        "eb2/page-15/04.jpeg",
+        "eb2/page-15/05.jpeg",
+        "eb2/page-15/06.png",
+        "eb2/page-15/07.jpx"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-anal-sen",
+      "name": "Lubricante Íntimo Anal Sen",
+      "catalog": "eb2",
+      "source_page": 15,
+      "skus": [
+        "10457"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-anal-sen/01.webp",
+      "page_preview": "eb2/page-15.jpg",
+      "candidate_raw_images": [
+        "eb2/page-15/03.jpeg",
+        "eb2/page-15/04.jpeg",
+        "eb2/page-15/05.jpeg",
+        "eb2/page-15/06.png",
+        "eb2/page-15/07.jpx"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-retardante-sen",
+      "name": "Lubricante Íntimo Retardante Sen",
+      "catalog": "eb2",
+      "source_page": 15,
+      "skus": [
+        "10458"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-retardante-sen/01.webp",
+      "page_preview": "eb2/page-15.jpg",
+      "candidate_raw_images": [
+        "eb2/page-15/03.jpeg",
+        "eb2/page-15/04.jpeg",
+        "eb2/page-15/05.jpeg",
+        "eb2/page-15/06.png",
+        "eb2/page-15/07.jpx"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-bassika",
+      "name": "Lubricante Íntimo Bassika",
+      "catalog": "eb2",
+      "source_page": 16,
+      "skus": [
+        "10442",
+        "10441",
+        "10443",
+        "10444",
+        "10446",
+        "10445"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-bassika/01.webp",
+      "page_preview": "eb2/page-16.jpg",
+      "candidate_raw_images": [
+        "eb2/page-16/01.jpx",
+        "eb2/page-16/02.png",
+        "eb2/page-16/06.jpeg",
+        "eb2/page-16/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-anal-gel-con-aroma",
+      "name": "Lubricante Íntimo Anal Gel con Aroma",
+      "catalog": "eb2",
+      "source_page": 17,
+      "skus": [
+        "10439"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-anal-gel-con-aroma/01.webp",
+      "page_preview": "eb2/page-17.jpg",
+      "candidate_raw_images": [
+        "eb2/page-17/02.png",
+        "eb2/page-17/04.jpeg",
+        "eb2/page-17/05.jpeg",
+        "eb2/page-17/06.jpeg",
+        "eb2/page-17/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "retardante-intimo-extra-placer-en-spray",
+      "name": "Retardante Íntimo Extra Placer en Spray",
+      "catalog": "eb2",
+      "source_page": 17,
+      "skus": [
+        "10440"
+      ],
+      "target_storage_path": "products/eb2/retardante-intimo-extra-placer-en-spray/01.webp",
+      "page_preview": "eb2/page-17.jpg",
+      "candidate_raw_images": [
+        "eb2/page-17/02.png",
+        "eb2/page-17/04.jpeg",
+        "eb2/page-17/05.jpeg",
+        "eb2/page-17/06.jpeg",
+        "eb2/page-17/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-trio-sabor-frutos-rojos",
+      "name": "Lubricante Íntimo Trío Sabor Frutos Rojos",
+      "catalog": "eb2",
+      "source_page": 18,
+      "skus": [
+        "10438"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-trio-sabor-frutos-rojos/01.webp",
+      "page_preview": "eb2/page-18.jpg",
+      "candidate_raw_images": [
+        "eb2/page-18/01.jpx",
+        "eb2/page-18/03.jpeg",
+        "eb2/page-18/04.jpeg",
+        "eb2/page-18/05.jpeg",
+        "eb2/page-18/06.jpeg",
+        "eb2/page-18/07.jpeg",
+        "eb2/page-18/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-efecto-caliente-sabor-fresa",
+      "name": "Lubricante Íntimo Efecto Caliente Sabor Fresa",
+      "catalog": "eb2",
+      "source_page": 18,
+      "skus": [
+        "10435"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-efecto-caliente-sabor-fresa/01.webp",
+      "page_preview": "eb2/page-18.jpg",
+      "candidate_raw_images": [
+        "eb2/page-18/01.jpx",
+        "eb2/page-18/03.jpeg",
+        "eb2/page-18/04.jpeg",
+        "eb2/page-18/05.jpeg",
+        "eb2/page-18/06.jpeg",
+        "eb2/page-18/07.jpeg",
+        "eb2/page-18/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-efecto-frio-sabor-menta",
+      "name": "Lubricante Íntimo Efecto Frío Sabor Menta",
+      "catalog": "eb2",
+      "source_page": 18,
+      "skus": [
+        "10436"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-efecto-frio-sabor-menta/01.webp",
+      "page_preview": "eb2/page-18.jpg",
+      "candidate_raw_images": [
+        "eb2/page-18/01.jpx",
+        "eb2/page-18/03.jpeg",
+        "eb2/page-18/04.jpeg",
+        "eb2/page-18/05.jpeg",
+        "eb2/page-18/06.jpeg",
+        "eb2/page-18/07.jpeg",
+        "eb2/page-18/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-anal-sen-sachet",
+      "name": "Lubricante Anal Sen Sachet",
+      "catalog": "eb2",
+      "source_page": 19,
+      "skus": [
+        "10133"
+      ],
+      "target_storage_path": "products/eb2/lubricante-anal-sen-sachet/01.webp",
+      "page_preview": "eb2/page-19.jpg",
+      "candidate_raw_images": [
+        "eb2/page-19/01.jpx",
+        "eb2/page-19/02.jpeg",
+        "eb2/page-19/03.jpeg",
+        "eb2/page-19/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "estrechante-sen-sachet",
+      "name": "Estrechante Sen Sachet",
+      "catalog": "eb2",
+      "source_page": 19,
+      "skus": [
+        "10135"
+      ],
+      "target_storage_path": "products/eb2/estrechante-sen-sachet/01.webp",
+      "page_preview": "eb2/page-19.jpg",
+      "candidate_raw_images": [
+        "eb2/page-19/01.jpx",
+        "eb2/page-19/02.jpeg",
+        "eb2/page-19/03.jpeg",
+        "eb2/page-19/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-sen-sachet",
+      "name": "Multiorgasmo Sen Sachet",
+      "catalog": "eb2",
+      "source_page": 19,
+      "skus": [
+        "10137"
+      ],
+      "target_storage_path": "products/eb2/multiorgasmo-sen-sachet/01.webp",
+      "page_preview": "eb2/page-19.jpg",
+      "candidate_raw_images": [
+        "eb2/page-19/01.jpx",
+        "eb2/page-19/02.jpeg",
+        "eb2/page-19/03.jpeg",
+        "eb2/page-19/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-sachet-hemp-cannabis",
+      "name": "Lubricante Íntimo Sachet Hemp Cannabis",
+      "catalog": "eb2",
+      "source_page": 20,
+      "skus": [
+        "10465"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-sachet-hemp-cannabis/01.webp",
+      "page_preview": "eb2/page-20.jpg",
+      "candidate_raw_images": [
+        "eb2/page-20/01.jpx",
+        "eb2/page-20/02.jpeg",
+        "eb2/page-20/03.jpeg",
+        "eb2/page-20/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-anal-electrizante-sachet",
+      "name": "Lubricante Íntimo Anal Electrizante Sachet",
+      "catalog": "eb2",
+      "source_page": 20,
+      "skus": [
+        "11650"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-anal-electrizante-sachet/01.webp",
+      "page_preview": "eb2/page-20.jpg",
+      "candidate_raw_images": [
+        "eb2/page-20/01.jpx",
+        "eb2/page-20/02.jpeg",
+        "eb2/page-20/03.jpeg",
+        "eb2/page-20/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-electrizante-lychee-sachet",
+      "name": "Lubricante Íntimo Electrizante Lychee Sachet",
+      "catalog": "eb2",
+      "source_page": 20,
+      "skus": [
+        "11649"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-electrizante-lychee-sachet/01.webp",
+      "page_preview": "eb2/page-20.jpg",
+      "candidate_raw_images": [
+        "eb2/page-20/01.jpx",
+        "eb2/page-20/02.jpeg",
+        "eb2/page-20/03.jpeg",
+        "eb2/page-20/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-caliente-sen-sachet",
+      "name": "Lubricante Caliente Sen Sachet",
+      "catalog": "eb2",
+      "source_page": 21,
+      "skus": [
+        "10463",
+        "11651",
+        "11663"
+      ],
+      "target_storage_path": "products/eb2/lubricante-caliente-sen-sachet/01.webp",
+      "page_preview": "eb2/page-21.jpg",
+      "candidate_raw_images": [
+        "eb2/page-21/01.jpx",
+        "eb2/page-21/02.jpeg",
+        "eb2/page-21/03.jpeg",
+        "eb2/page-21/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "estrechante-vaginal-sen-corazon",
+      "name": "Estrechante Vaginal Sen Corazón",
+      "catalog": "eb2",
+      "source_page": 22,
+      "skus": [
+        "10134"
+      ],
+      "target_storage_path": "products/eb2/estrechante-vaginal-sen-corazon/01.webp",
+      "page_preview": "eb2/page-22.jpg",
+      "candidate_raw_images": [
+        "eb2/page-22/01.png",
+        "eb2/page-22/02.jpx",
+        "eb2/page-22/03.jpeg",
+        "eb2/page-22/04.jpeg",
+        "eb2/page-22/05.jpeg",
+        "eb2/page-22/06.jpeg",
+        "eb2/page-22/07.jpeg",
+        "eb2/page-22/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-anal-sen-corazon",
+      "name": "Lubricante Anal Sen Corazón",
+      "catalog": "eb2",
+      "source_page": 22,
+      "skus": [
+        "10132"
+      ],
+      "target_storage_path": "products/eb2/lubricante-anal-sen-corazon/01.webp",
+      "page_preview": "eb2/page-22.jpg",
+      "candidate_raw_images": [
+        "eb2/page-22/01.png",
+        "eb2/page-22/02.jpx",
+        "eb2/page-22/03.jpeg",
+        "eb2/page-22/04.jpeg",
+        "eb2/page-22/05.jpeg",
+        "eb2/page-22/06.jpeg",
+        "eb2/page-22/07.jpeg",
+        "eb2/page-22/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-sen-corazon",
+      "name": "Multiorgasmo Sen Corazón",
+      "catalog": "eb2",
+      "source_page": 22,
+      "skus": [
+        "10136"
+      ],
+      "target_storage_path": "products/eb2/multiorgasmo-sen-corazon/01.webp",
+      "page_preview": "eb2/page-22.jpg",
+      "candidate_raw_images": [
+        "eb2/page-22/01.png",
+        "eb2/page-22/02.jpx",
+        "eb2/page-22/03.jpeg",
+        "eb2/page-22/04.jpeg",
+        "eb2/page-22/05.jpeg",
+        "eb2/page-22/06.jpeg",
+        "eb2/page-22/07.jpeg",
+        "eb2/page-22/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-trio",
+      "name": "Lubricante Íntimo Trío",
+      "catalog": "eb2",
+      "source_page": 23,
+      "skus": [
+        "10686"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-trio/01.webp",
+      "page_preview": "eb2/page-23.jpg",
+      "candidate_raw_images": [
+        "eb2/page-23/01.png",
+        "eb2/page-23/02.jpeg",
+        "eb2/page-23/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-besable-saborizado",
+      "name": "Lubricante Besable Saborizado",
+      "catalog": "eb2",
+      "source_page": 24,
+      "skus": [
+        "10125",
+        "11397",
+        "10462"
+      ],
+      "target_storage_path": "products/eb2/lubricante-besable-saborizado/01.webp",
+      "page_preview": "eb2/page-24.jpg",
+      "candidate_raw_images": [
+        "eb2/page-24/01.png",
+        "eb2/page-24/02.jpeg",
+        "eb2/page-24/03.jpeg",
+        "eb2/page-24/04.jpeg",
+        "eb2/page-24/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-frio-y-calor",
+      "name": "Multiorgasmo Frío & Calor",
+      "catalog": "eb2",
+      "source_page": 25,
+      "skus": [
+        "10325"
+      ],
+      "target_storage_path": "products/eb2/multiorgasmo-frio-y-calor/01.webp",
+      "page_preview": "eb2/page-25.jpg",
+      "candidate_raw_images": [
+        "eb2/page-25/01.jpx",
+        "eb2/page-25/02.jpx",
+        "eb2/page-25/04.jpeg",
+        "eb2/page-25/05.jpeg",
+        "eb2/page-25/06.jpeg",
+        "eb2/page-25/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-euforia-cannabis",
+      "name": "Lubricante Íntimo Euforia Cannabis",
+      "catalog": "eb2",
+      "source_page": 25,
+      "skus": [
+        "10129"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-euforia-cannabis/01.webp",
+      "page_preview": "eb2/page-25.jpg",
+      "candidate_raw_images": [
+        "eb2/page-25/01.jpx",
+        "eb2/page-25/02.jpx",
+        "eb2/page-25/04.jpeg",
+        "eb2/page-25/05.jpeg",
+        "eb2/page-25/06.jpeg",
+        "eb2/page-25/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-electrizante",
+      "name": "Lubricante Íntimo Electrizante",
+      "catalog": "eb2",
+      "source_page": 26,
+      "skus": [
+        "11398",
+        "11399"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-electrizante/01.webp",
+      "page_preview": "eb2/page-26.jpg",
+      "candidate_raw_images": [
+        "eb2/page-26/01.jpx",
+        "eb2/page-26/02.png",
+        "eb2/page-26/04.jpeg",
+        "eb2/page-26/05.jpeg",
+        "eb2/page-26/06.jpeg",
+        "eb2/page-26/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-electrizante-crema-de-whisky",
+      "name": "Lubricante Íntimo Electrizante Crema de Whisky",
+      "catalog": "eb2",
+      "source_page": 27,
+      "skus": [
+        "11400"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-electrizante-crema-de-whisky/01.webp",
+      "page_preview": "eb2/page-27.jpg",
+      "candidate_raw_images": [
+        "eb2/page-27/01.png",
+        "eb2/page-27/03.jpeg",
+        "eb2/page-27/04.jpeg",
+        "eb2/page-27/05.jpeg",
+        "eb2/page-27/06.jpeg",
+        "eb2/page-27/07.jpeg",
+        "eb2/page-27/08.jpeg",
+        "eb2/page-27/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "body-paint-chocolate",
+      "name": "Body Paint Chocolate",
+      "catalog": "eb2",
+      "source_page": 27,
+      "skus": [
+        "11172"
+      ],
+      "target_storage_path": "products/eb2/body-paint-chocolate/01.webp",
+      "page_preview": "eb2/page-27.jpg",
+      "candidate_raw_images": [
+        "eb2/page-27/01.png",
+        "eb2/page-27/03.jpeg",
+        "eb2/page-27/04.jpeg",
+        "eb2/page-27/05.jpeg",
+        "eb2/page-27/06.jpeg",
+        "eb2/page-27/07.jpeg",
+        "eb2/page-27/08.jpeg",
+        "eb2/page-27/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-ice-cream-crema-besable",
+      "name": "Lubricante Ice Cream Crema Besable",
+      "catalog": "eb2",
+      "source_page": 27,
+      "skus": [
+        "11173"
+      ],
+      "target_storage_path": "products/eb2/lubricante-ice-cream-crema-besable/01.webp",
+      "page_preview": "eb2/page-27.jpg",
+      "candidate_raw_images": [
+        "eb2/page-27/01.png",
+        "eb2/page-27/03.jpeg",
+        "eb2/page-27/04.jpeg",
+        "eb2/page-27/05.jpeg",
+        "eb2/page-27/06.jpeg",
+        "eb2/page-27/07.jpeg",
+        "eb2/page-27/08.jpeg",
+        "eb2/page-27/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "ejaculation-delay-sen",
+      "name": "Ejaculation Delay Sen",
+      "catalog": "eb2",
+      "source_page": 28,
+      "skus": [
+        "10130"
+      ],
+      "target_storage_path": "products/eb2/ejaculation-delay-sen/01.webp",
+      "page_preview": "eb2/page-28.jpg",
+      "candidate_raw_images": [
+        "eb2/page-28/01.png",
+        "eb2/page-28/02.jpeg",
+        "eb2/page-28/03.jpeg",
+        "eb2/page-28/04.jpx",
+        "eb2/page-28/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-desensibilizante-garganta-profunda",
+      "name": "Lubricante Desensibilizante Garganta Profunda",
+      "catalog": "eb2",
+      "source_page": 28,
+      "skus": [
+        "11627"
+      ],
+      "target_storage_path": "products/eb2/lubricante-desensibilizante-garganta-profunda/01.webp",
+      "page_preview": "eb2/page-28.jpg",
+      "candidate_raw_images": [
+        "eb2/page-28/01.png",
+        "eb2/page-28/02.jpeg",
+        "eb2/page-28/03.jpeg",
+        "eb2/page-28/04.jpx",
+        "eb2/page-28/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-anal-electrizante",
+      "name": "Lubricante Anal Electrizante",
+      "catalog": "eb2",
+      "source_page": 29,
+      "skus": [
+        "11622"
+      ],
+      "target_storage_path": "products/eb2/lubricante-anal-electrizante/01.webp",
+      "page_preview": "eb2/page-29.jpg",
+      "candidate_raw_images": [
+        "eb2/page-29/01.png",
+        "eb2/page-29/02.jpeg",
+        "eb2/page-29/03.jpeg",
+        "eb2/page-29/04.jpeg",
+        "eb2/page-29/05.jpeg",
+        "eb2/page-29/06.jpeg",
+        "eb2/page-29/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-tequila-electrizante-edicion-especial",
+      "name": "Lubricante Tequila Electrizante Edición Especial",
+      "catalog": "eb2",
+      "source_page": 29,
+      "skus": [
+        "11626"
+      ],
+      "target_storage_path": "products/eb2/lubricante-tequila-electrizante-edicion-especial/01.webp",
+      "page_preview": "eb2/page-29.jpg",
+      "candidate_raw_images": [
+        "eb2/page-29/01.png",
+        "eb2/page-29/02.jpeg",
+        "eb2/page-29/03.jpeg",
+        "eb2/page-29/04.jpeg",
+        "eb2/page-29/05.jpeg",
+        "eb2/page-29/06.jpeg",
+        "eb2/page-29/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-natural",
+      "name": "Lubricante Íntimo Natural",
+      "catalog": "eb2",
+      "source_page": 30,
+      "skus": [
+        "10693"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-natural/01.webp",
+      "page_preview": "eb2/page-30.jpg",
+      "candidate_raw_images": [
+        "eb2/page-30/01.jpx",
+        "eb2/page-30/02.jpeg",
+        "eb2/page-30/03.jpeg",
+        "eb2/page-30/04.jpeg",
+        "eb2/page-30/05.png"
+      ]
+    },
+    {
+      "product_slug": "lubricante-neutro-10689",
+      "name": "Lubricante Neutro",
+      "catalog": "eb2",
+      "source_page": 30,
+      "skus": [
+        "10689"
+      ],
+      "target_storage_path": "products/eb2/lubricante-neutro-10689/01.webp",
+      "page_preview": "eb2/page-30.jpg",
+      "candidate_raw_images": [
+        "eb2/page-30/01.jpx",
+        "eb2/page-30/02.jpeg",
+        "eb2/page-30/03.jpeg",
+        "eb2/page-30/04.jpeg",
+        "eb2/page-30/05.png"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-milk",
+      "name": "Lubricante Íntimo Milk",
+      "catalog": "eb2",
+      "source_page": 31,
+      "skus": [
+        "10690"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-milk/01.webp",
+      "page_preview": "eb2/page-31.jpg",
+      "candidate_raw_images": [
+        "eb2/page-31/01.jpx",
+        "eb2/page-31/03.jpeg",
+        "eb2/page-31/04.jpeg",
+        "eb2/page-31/05.png"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-cum",
+      "name": "Lubricante Íntimo Cum",
+      "catalog": "eb2",
+      "source_page": 31,
+      "skus": [
+        "10691"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-cum/01.webp",
+      "page_preview": "eb2/page-31.jpg",
+      "candidate_raw_images": [
+        "eb2/page-31/01.jpx",
+        "eb2/page-31/03.jpeg",
+        "eb2/page-31/04.jpeg",
+        "eb2/page-31/05.png"
+      ]
+    },
+    {
+      "product_slug": "gel-lubricante-intimo-natural-elixir",
+      "name": "Gel Lubricante Íntimo Natural Elixir",
+      "catalog": "eb2",
+      "source_page": 32,
+      "skus": [
+        "11027",
+        "11025",
+        "11026"
+      ],
+      "target_storage_path": "products/eb2/gel-lubricante-intimo-natural-elixir/01.webp",
+      "page_preview": "eb2/page-32.jpg",
+      "candidate_raw_images": [
+        "eb2/page-32/01.png",
+        "eb2/page-32/02.jpeg",
+        "eb2/page-32/03.jpeg",
+        "eb2/page-32/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-natural-20-ml",
+      "name": "Lubricante Íntimo Natural 20 ml",
+      "catalog": "eb2",
+      "source_page": 33,
+      "skus": [
+        "10316"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-natural-20-ml/01.webp",
+      "page_preview": "eb2/page-33.jpg",
+      "candidate_raw_images": [
+        "eb2/page-33/01.png",
+        "eb2/page-33/02.png",
+        "eb2/page-33/05.jpeg",
+        "eb2/page-33/06.jpeg",
+        "eb2/page-33/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "lubricante-intimo-frio-20-ml",
+      "name": "Lubricante Íntimo Frío 20 ml",
+      "catalog": "eb2",
+      "source_page": 33,
+      "skus": [
+        "10317"
+      ],
+      "target_storage_path": "products/eb2/lubricante-intimo-frio-20-ml/01.webp",
+      "page_preview": "eb2/page-33.jpg",
+      "candidate_raw_images": [
+        "eb2/page-33/01.png",
+        "eb2/page-33/02.png",
+        "eb2/page-33/05.jpeg",
+        "eb2/page-33/06.jpeg",
+        "eb2/page-33/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "perlas-intimas-x3",
+      "name": "Perlas Íntimas x3",
+      "catalog": "eb2",
+      "source_page": 33,
+      "skus": [
+        "10685"
+      ],
+      "target_storage_path": "products/eb2/perlas-intimas-x3/01.webp",
+      "page_preview": "eb2/page-33.jpg",
+      "candidate_raw_images": [
+        "eb2/page-33/01.png",
+        "eb2/page-33/02.png",
+        "eb2/page-33/05.jpeg",
+        "eb2/page-33/06.jpeg",
+        "eb2/page-33/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dilatador-anal-corpolub",
+      "name": "Dilatador Anal Corpolub",
+      "catalog": "eb2",
+      "source_page": 34,
+      "skus": [
+        "10152"
+      ],
+      "target_storage_path": "products/eb2/dilatador-anal-corpolub/01.webp",
+      "page_preview": "eb2/page-34.jpg",
+      "candidate_raw_images": [
+        "eb2/page-34/01.jpx",
+        "eb2/page-34/02.png",
+        "eb2/page-34/03.png",
+        "eb2/page-34/04.jpeg",
+        "eb2/page-34/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "multiorgasmo-up",
+      "name": "Multiorgasmo Up",
+      "catalog": "eb2",
+      "source_page": 34,
+      "skus": [
+        "10151"
+      ],
+      "target_storage_path": "products/eb2/multiorgasmo-up/01.webp",
+      "page_preview": "eb2/page-34.jpg",
+      "candidate_raw_images": [
+        "eb2/page-34/01.jpx",
+        "eb2/page-34/02.png",
+        "eb2/page-34/03.png",
+        "eb2/page-34/04.jpeg",
+        "eb2/page-34/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "la-ruleta-erotica-3-play",
+      "name": "La Ruleta Erótica 3 Play",
+      "catalog": "eb2",
+      "source_page": 35,
+      "skus": [
+        "11593"
+      ],
+      "target_storage_path": "products/eb2/la-ruleta-erotica-3-play/01.webp",
+      "page_preview": "eb2/page-35.jpg",
+      "candidate_raw_images": [
+        "eb2/page-35/01.jpx",
+        "eb2/page-35/02.jpeg",
+        "eb2/page-35/03.jpeg",
+        "eb2/page-35/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "parques-erotico",
+      "name": "Parqués Erótico",
+      "catalog": "eb2",
+      "source_page": 35,
+      "skus": [
+        "11638"
+      ],
+      "target_storage_path": "products/eb2/parques-erotico/01.webp",
+      "page_preview": "eb2/page-35.jpg",
+      "candidate_raw_images": [
+        "eb2/page-35/01.jpx",
+        "eb2/page-35/02.jpeg",
+        "eb2/page-35/03.jpeg",
+        "eb2/page-35/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "toma-todo-posiciones-y-condiciones",
+      "name": "Toma Todo Posiciones y Condiciones",
+      "catalog": "eb2",
+      "source_page": 36,
+      "skus": [
+        "10354"
+      ],
+      "target_storage_path": "products/eb2/toma-todo-posiciones-y-condiciones/01.webp",
+      "page_preview": "eb2/page-36.jpg",
+      "candidate_raw_images": [
+        "eb2/page-36/01.png",
+        "eb2/page-36/02.png",
+        "eb2/page-36/03.jpeg",
+        "eb2/page-36/04.jpeg",
+        "eb2/page-36/05.jpeg",
+        "eb2/page-36/06.jpeg",
+        "eb2/page-36/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dados-x2-amart-negros",
+      "name": "Dados x2 Amart Negros",
+      "catalog": "eb2",
+      "source_page": 36,
+      "skus": [
+        "10700"
+      ],
+      "target_storage_path": "products/eb2/dados-x2-amart-negros/01.webp",
+      "page_preview": "eb2/page-36.jpg",
+      "candidate_raw_images": [
+        "eb2/page-36/01.png",
+        "eb2/page-36/02.png",
+        "eb2/page-36/03.jpeg",
+        "eb2/page-36/04.jpeg",
+        "eb2/page-36/05.jpeg",
+        "eb2/page-36/06.jpeg",
+        "eb2/page-36/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dados-penitencia-x3-amart",
+      "name": "Dados Penitencia x3 Amart",
+      "catalog": "eb2",
+      "source_page": 36,
+      "skus": [
+        "10701"
+      ],
+      "target_storage_path": "products/eb2/dados-penitencia-x3-amart/01.webp",
+      "page_preview": "eb2/page-36.jpg",
+      "candidate_raw_images": [
+        "eb2/page-36/01.png",
+        "eb2/page-36/02.png",
+        "eb2/page-36/03.jpeg",
+        "eb2/page-36/04.jpeg",
+        "eb2/page-36/05.jpeg",
+        "eb2/page-36/06.jpeg",
+        "eb2/page-36/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dados-x2-amart-fluorescentes",
+      "name": "Dados x2 Amart Fluorescentes",
+      "catalog": "eb2",
+      "source_page": 36,
+      "skus": [
+        "10699"
+      ],
+      "target_storage_path": "products/eb2/dados-x2-amart-fluorescentes/01.webp",
+      "page_preview": "eb2/page-36.jpg",
+      "candidate_raw_images": [
+        "eb2/page-36/01.png",
+        "eb2/page-36/02.png",
+        "eb2/page-36/03.jpeg",
+        "eb2/page-36/04.jpeg",
+        "eb2/page-36/05.jpeg",
+        "eb2/page-36/06.jpeg",
+        "eb2/page-36/07.jpeg"
+      ]
+    },
+    {
+      "product_slug": "juego-kamasutra",
+      "name": "Juego Kamasutra",
+      "catalog": "eb2",
+      "source_page": 37,
+      "skus": [
+        "11422"
+      ],
+      "target_storage_path": "products/eb2/juego-kamasutra/01.webp",
+      "page_preview": "eb2/page-37.jpg",
+      "candidate_raw_images": [
+        "eb2/page-37/01.png",
+        "eb2/page-37/02.jpeg",
+        "eb2/page-37/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "juego-cincuenta-sombras-de-grey",
+      "name": "Juego Cincuenta Sombras de Grey",
+      "catalog": "eb2",
+      "source_page": 37,
+      "skus": [
+        "11036"
+      ],
+      "target_storage_path": "products/eb2/juego-cincuenta-sombras-de-grey/01.webp",
+      "page_preview": "eb2/page-37.jpg",
+      "candidate_raw_images": [
+        "eb2/page-37/01.png",
+        "eb2/page-37/02.jpeg",
+        "eb2/page-37/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-vibrador-testiculos",
+      "name": "Anillo Vibrador Testículos",
+      "catalog": "eb2",
+      "source_page": 38,
+      "skus": [
+        "10526"
+      ],
+      "target_storage_path": "products/eb2/anillo-vibrador-testiculos/01.webp",
+      "page_preview": "eb2/page-38.jpg",
+      "candidate_raw_images": [
+        "eb2/page-38/01.jpx",
+        "eb2/page-38/02.jpeg",
+        "eb2/page-38/03.jpeg",
+        "eb2/page-38/04.jpeg",
+        "eb2/page-38/05.jpx"
+      ]
+    },
+    {
+      "product_slug": "anillo-vibrador-zeus",
+      "name": "Anillo Vibrador Zeus",
+      "catalog": "eb2",
+      "source_page": 38,
+      "skus": [
+        "10702"
+      ],
+      "target_storage_path": "products/eb2/anillo-vibrador-zeus/01.webp",
+      "page_preview": "eb2/page-38.jpg",
+      "candidate_raw_images": [
+        "eb2/page-38/01.jpx",
+        "eb2/page-38/02.jpeg",
+        "eb2/page-38/03.jpeg",
+        "eb2/page-38/04.jpeg",
+        "eb2/page-38/05.jpx"
+      ]
+    },
+    {
+      "product_slug": "anillo-para-el-pene-delfin",
+      "name": "Anillo para el Pene Delfín",
+      "catalog": "eb2",
+      "source_page": 38,
+      "skus": [
+        "11031"
+      ],
+      "target_storage_path": "products/eb2/anillo-para-el-pene-delfin/01.webp",
+      "page_preview": "eb2/page-38.jpg",
+      "candidate_raw_images": [
+        "eb2/page-38/01.jpx",
+        "eb2/page-38/02.jpeg",
+        "eb2/page-38/03.jpeg",
+        "eb2/page-38/04.jpeg",
+        "eb2/page-38/05.jpx"
+      ]
+    },
+    {
+      "product_slug": "anillo-vibrador-ciro",
+      "name": "Anillo Vibrador Ciro",
+      "catalog": "eb2",
+      "source_page": 39,
+      "skus": [
+        "11018"
+      ],
+      "target_storage_path": "products/eb2/anillo-vibrador-ciro/01.webp",
+      "page_preview": "eb2/page-39.jpg",
+      "candidate_raw_images": [
+        "eb2/page-39/01.png",
+        "eb2/page-39/02.jpeg",
+        "eb2/page-39/03.jpx",
+        "eb2/page-39/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "anillo-vibrador-y-consolador-frodo",
+      "name": "Anillo Vibrador y Consolador Frodo",
+      "catalog": "eb2",
+      "source_page": 39,
+      "skus": [
+        "11006"
+      ],
+      "target_storage_path": "products/eb2/anillo-vibrador-y-consolador-frodo/01.webp",
+      "page_preview": "eb2/page-39.jpg",
+      "candidate_raw_images": [
+        "eb2/page-39/01.png",
+        "eb2/page-39/02.jpeg",
+        "eb2/page-39/03.jpx",
+        "eb2/page-39/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-funday",
+      "name": "Vibrador Funday",
+      "catalog": "eb2",
+      "source_page": 40,
+      "skus": [
+        "10957"
+      ],
+      "target_storage_path": "products/eb2/vibrador-funday/01.webp",
+      "page_preview": "eb2/page-40.jpg",
+      "candidate_raw_images": [
+        "eb2/page-40/03.jpeg",
+        "eb2/page-40/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-pandora",
+      "name": "Vibrador Pandora",
+      "catalog": "eb2",
+      "source_page": 40,
+      "skus": [
+        "10328"
+      ],
+      "target_storage_path": "products/eb2/vibrador-pandora/01.webp",
+      "page_preview": "eb2/page-40.jpg",
+      "candidate_raw_images": [
+        "eb2/page-40/03.jpeg",
+        "eb2/page-40/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-masturbador-masculino",
+      "name": "Huevo Masturbador Masculino",
+      "catalog": "eb2",
+      "source_page": 41,
+      "skus": [
+        "10329"
+      ],
+      "target_storage_path": "products/eb2/huevo-masturbador-masculino/01.webp",
+      "page_preview": "eb2/page-41.jpg",
+      "candidate_raw_images": [
+        "eb2/page-41/01.jpx",
+        "eb2/page-41/02.jpeg",
+        "eb2/page-41/04.jpeg",
+        "eb2/page-41/05.jpeg",
+        "eb2/page-41/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vagina-linterna-7-funciones",
+      "name": "Vagina Linterna 7 Funciones",
+      "catalog": "eb2",
+      "source_page": 41,
+      "skus": [
+        "11086"
+      ],
+      "target_storage_path": "products/eb2/vagina-linterna-7-funciones/01.webp",
+      "page_preview": "eb2/page-41.jpg",
+      "candidate_raw_images": [
+        "eb2/page-41/01.jpx",
+        "eb2/page-41/02.jpeg",
+        "eb2/page-41/04.jpeg",
+        "eb2/page-41/05.jpeg",
+        "eb2/page-41/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "funda-para-el-pene",
+      "name": "Funda para el Pene",
+      "catalog": "eb2",
+      "source_page": 42,
+      "skus": [
+        "10707",
+        "10706",
+        "10705",
+        "11103"
+      ],
+      "target_storage_path": "products/eb2/funda-para-el-pene/01.webp",
+      "page_preview": "eb2/page-42.jpg",
+      "candidate_raw_images": [
+        "eb2/page-42/01.png",
+        "eb2/page-42/02.jpeg",
+        "eb2/page-42/03.jpeg",
+        "eb2/page-42/04.jpeg",
+        "eb2/page-42/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-mini-gladme",
+      "name": "Huevo Mini Gladme",
+      "catalog": "eb2",
+      "source_page": 43,
+      "skus": [
+        "10485"
+      ],
+      "target_storage_path": "products/eb2/huevo-mini-gladme/01.webp",
+      "page_preview": "eb2/page-43.jpg",
+      "candidate_raw_images": [
+        "eb2/page-43/01.jpx",
+        "eb2/page-43/02.jpx",
+        "eb2/page-43/03.jpeg",
+        "eb2/page-43/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bala-punto-g-gladme",
+      "name": "Bala Punto G Gladme",
+      "catalog": "eb2",
+      "source_page": 43,
+      "skus": [
+        "10484"
+      ],
+      "target_storage_path": "products/eb2/bala-punto-g-gladme/01.webp",
+      "page_preview": "eb2/page-43.jpg",
+      "candidate_raw_images": [
+        "eb2/page-43/01.jpx",
+        "eb2/page-43/02.jpx",
+        "eb2/page-43/03.jpeg",
+        "eb2/page-43/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-vibrador-annie",
+      "name": "Huevo Vibrador Annie",
+      "catalog": "eb2",
+      "source_page": 44,
+      "skus": [
+        "10703"
+      ],
+      "target_storage_path": "products/eb2/huevo-vibrador-annie/01.webp",
+      "page_preview": "eb2/page-44.jpg",
+      "candidate_raw_images": [
+        "eb2/page-44/01.png",
+        "eb2/page-44/02.jpeg",
+        "eb2/page-44/04.jpeg",
+        "eb2/page-44/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-inalambrico-murney",
+      "name": "Huevo Inalámbrico Murney",
+      "catalog": "eb2",
+      "source_page": 44,
+      "skus": [
+        "11550"
+      ],
+      "target_storage_path": "products/eb2/huevo-inalambrico-murney/01.webp",
+      "page_preview": "eb2/page-44.jpg",
+      "candidate_raw_images": [
+        "eb2/page-44/01.png",
+        "eb2/page-44/02.jpeg",
+        "eb2/page-44/04.jpeg",
+        "eb2/page-44/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-vibrador-gemini",
+      "name": "Huevo Vibrador Gemini",
+      "catalog": "eb2",
+      "source_page": 44,
+      "skus": [
+        "10704"
+      ],
+      "target_storage_path": "products/eb2/huevo-vibrador-gemini/01.webp",
+      "page_preview": "eb2/page-44.jpg",
+      "candidate_raw_images": [
+        "eb2/page-44/01.png",
+        "eb2/page-44/02.jpeg",
+        "eb2/page-44/04.jpeg",
+        "eb2/page-44/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-inalambrico-lilo-que-se-calienta",
+      "name": "Huevo Inalámbrico Lilo que se Calienta",
+      "catalog": "eb2",
+      "source_page": 45,
+      "skus": [
+        "11632"
+      ],
+      "target_storage_path": "products/eb2/huevo-inalambrico-lilo-que-se-calienta/01.webp",
+      "page_preview": "eb2/page-45.jpg",
+      "candidate_raw_images": [
+        "eb2/page-45/03.jpeg",
+        "eb2/page-45/04.jpeg",
+        "eb2/page-45/05.jpeg",
+        "eb2/page-45/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-gladme-de-baterias-sencillo",
+      "name": "Huevo Gladme de Baterías Sencillo",
+      "catalog": "eb2",
+      "source_page": 45,
+      "skus": [
+        "11630"
+      ],
+      "target_storage_path": "products/eb2/huevo-gladme-de-baterias-sencillo/01.webp",
+      "page_preview": "eb2/page-45.jpg",
+      "candidate_raw_images": [
+        "eb2/page-45/03.jpeg",
+        "eb2/page-45/04.jpeg",
+        "eb2/page-45/05.jpeg",
+        "eb2/page-45/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-inalambrico-born-to-feeling-fct-785",
+      "name": "Huevo Inalámbrico Born to Feeling FCT-785",
+      "catalog": "eb2",
+      "source_page": 45,
+      "skus": [
+        "11633"
+      ],
+      "target_storage_path": "products/eb2/huevo-inalambrico-born-to-feeling-fct-785/01.webp",
+      "page_preview": "eb2/page-45.jpg",
+      "candidate_raw_images": [
+        "eb2/page-45/03.jpeg",
+        "eb2/page-45/04.jpeg",
+        "eb2/page-45/05.jpeg",
+        "eb2/page-45/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "mini-masajeador-aselia-fct-765",
+      "name": "Mini Masajeador Aselia FCT-765",
+      "catalog": "eb2",
+      "source_page": 46,
+      "skus": [
+        "11635"
+      ],
+      "target_storage_path": "products/eb2/mini-masajeador-aselia-fct-765/01.webp",
+      "page_preview": "eb2/page-46.jpg",
+      "candidate_raw_images": [
+        "eb2/page-46/01.png",
+        "eb2/page-46/02.png",
+        "eb2/page-46/03.jpeg",
+        "eb2/page-46/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-cerdito-recargable",
+      "name": "Vibrador Cerdito Recargable",
+      "catalog": "eb2",
+      "source_page": 46,
+      "skus": [
+        "11634"
+      ],
+      "target_storage_path": "products/eb2/vibrador-cerdito-recargable/01.webp",
+      "page_preview": "eb2/page-46.jpg",
+      "candidate_raw_images": [
+        "eb2/page-46/01.png",
+        "eb2/page-46/02.png",
+        "eb2/page-46/03.jpeg",
+        "eb2/page-46/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-hitachi-jay",
+      "name": "Vibrador Hitachi Jay",
+      "catalog": "eb2",
+      "source_page": 47,
+      "skus": [
+        "10712"
+      ],
+      "target_storage_path": "products/eb2/vibrador-hitachi-jay/01.webp",
+      "page_preview": "eb2/page-47.jpg",
+      "candidate_raw_images": [
+        "eb2/page-47/01.png",
+        "eb2/page-47/02.jpx",
+        "eb2/page-47/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "huevo-vibrador-con-app-fct-814",
+      "name": "Huevo Vibrador con App FCT-814",
+      "catalog": "eb2",
+      "source_page": 48,
+      "skus": [
+        "11666"
+      ],
+      "target_storage_path": "products/eb2/huevo-vibrador-con-app-fct-814/01.webp",
+      "page_preview": "eb2/page-48.jpg",
+      "candidate_raw_images": [
+        "eb2/page-48/01.png",
+        "eb2/page-48/02.jpx",
+        "eb2/page-48/03.jpx",
+        "eb2/page-48/04.jpeg",
+        "eb2/page-48/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-lotus-rose-majestic",
+      "name": "Vibrador Lotus Rose Majestic",
+      "catalog": "eb2",
+      "source_page": 49,
+      "skus": [
+        "11631"
+      ],
+      "target_storage_path": "products/eb2/vibrador-lotus-rose-majestic/01.webp",
+      "page_preview": "eb2/page-49.jpg",
+      "candidate_raw_images": [
+        "eb2/page-49/01.jpx",
+        "eb2/page-49/03.jpeg",
+        "eb2/page-49/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-masajeador-mini-sex-toy-fct-536",
+      "name": "Vibrador Masajeador Mini Sex Toy FCT-536",
+      "catalog": "eb2",
+      "source_page": 50,
+      "skus": [
+        "11636"
+      ],
+      "target_storage_path": "products/eb2/vibrador-masajeador-mini-sex-toy-fct-536/01.webp",
+      "page_preview": "eb2/page-50.jpg",
+      "candidate_raw_images": [
+        "eb2/page-50/01.png",
+        "eb2/page-50/02.jpeg",
+        "eb2/page-50/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-masajeador-we-love-doble-funcion-fct-827",
+      "name": "Vibrador Masajeador We-Love Doble Función FCT-827",
+      "catalog": "eb2",
+      "source_page": 50,
+      "skus": [
+        "11637"
+      ],
+      "target_storage_path": "products/eb2/vibrador-masajeador-we-love-doble-funcion-fct-827/01.webp",
+      "page_preview": "eb2/page-50.jpg",
+      "candidate_raw_images": [
+        "eb2/page-50/01.png",
+        "eb2/page-50/02.jpeg",
+        "eb2/page-50/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bala-vibradora-diamond-princess",
+      "name": "Bala Vibradora Diamond Princess",
+      "catalog": "eb2",
+      "source_page": 51,
+      "skus": [
+        "11407"
+      ],
+      "target_storage_path": "products/eb2/bala-vibradora-diamond-princess/01.webp",
+      "page_preview": "eb2/page-51.jpg",
+      "candidate_raw_images": [
+        "eb2/page-51/02.png",
+        "eb2/page-51/04.jpeg",
+        "eb2/page-51/05.jpeg",
+        "eb2/page-51/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "masajeador-ares",
+      "name": "Masajeador Ares",
+      "catalog": "eb2",
+      "source_page": 51,
+      "skus": [
+        "11408"
+      ],
+      "target_storage_path": "products/eb2/masajeador-ares/01.webp",
+      "page_preview": "eb2/page-51.jpg",
+      "candidate_raw_images": [
+        "eb2/page-51/02.png",
+        "eb2/page-51/04.jpeg",
+        "eb2/page-51/05.jpeg",
+        "eb2/page-51/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bala-vibradora-larga-cromada",
+      "name": "Bala Vibradora Larga Cromada",
+      "catalog": "eb2",
+      "source_page": 51,
+      "skus": [
+        "11409"
+      ],
+      "target_storage_path": "products/eb2/bala-vibradora-larga-cromada/01.webp",
+      "page_preview": "eb2/page-51.jpg",
+      "candidate_raw_images": [
+        "eb2/page-51/02.png",
+        "eb2/page-51/04.jpeg",
+        "eb2/page-51/05.jpeg",
+        "eb2/page-51/06.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bolas-estimulantes-kegel-balls",
+      "name": "Bolas Estimulantes Kegel Balls",
+      "catalog": "eb2",
+      "source_page": 52,
+      "skus": [
+        "11412"
+      ],
+      "target_storage_path": "products/eb2/bolas-estimulantes-kegel-balls/01.webp",
+      "page_preview": "eb2/page-52.jpg",
+      "candidate_raw_images": [
+        "eb2/page-52/01.jpx",
+        "eb2/page-52/02.png",
+        "eb2/page-52/03.jpeg",
+        "eb2/page-52/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "bolas-duotone-en-silicona",
+      "name": "Bolas Duotone en Silicona",
+      "catalog": "eb2",
+      "source_page": 52,
+      "skus": [
+        "10112"
+      ],
+      "target_storage_path": "products/eb2/bolas-duotone-en-silicona/01.webp",
+      "page_preview": "eb2/page-52.jpg",
+      "candidate_raw_images": [
+        "eb2/page-52/01.jpx",
+        "eb2/page-52/02.png",
+        "eb2/page-52/03.jpeg",
+        "eb2/page-52/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-top-real-light",
+      "name": "Vibrador Top Real Light",
+      "catalog": "eb2",
+      "source_page": 53,
+      "skus": [
+        "10750"
+      ],
+      "target_storage_path": "products/eb2/vibrador-top-real-light/01.webp",
+      "page_preview": "eb2/page-53.jpg",
+      "candidate_raw_images": [
+        "eb2/page-53/01.jpx",
+        "eb2/page-53/02.jpeg",
+        "eb2/page-53/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-kanon",
+      "name": "Vibrador Kanon",
+      "catalog": "eb2",
+      "source_page": 53,
+      "skus": [
+        "11021"
+      ],
+      "target_storage_path": "products/eb2/vibrador-kanon/01.webp",
+      "page_preview": "eb2/page-53.jpg",
+      "candidate_raw_images": [
+        "eb2/page-53/01.jpx",
+        "eb2/page-53/02.jpeg",
+        "eb2/page-53/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "dildo-vertebrado-con-chupa-realista-8-1",
+      "name": "Dildo Vertebrado con Chupa Realista 8.1",
+      "catalog": "eb2",
+      "source_page": 54,
+      "skus": [
+        "11639"
+      ],
+      "target_storage_path": "products/eb2/dildo-vertebrado-con-chupa-realista-8-1/01.webp",
+      "page_preview": "eb2/page-54.jpg",
+      "candidate_raw_images": [
+        "eb2/page-54/01.png",
+        "eb2/page-54/02.png",
+        "eb2/page-54/05.jpeg",
+        "eb2/page-54/06.jpeg",
+        "eb2/page-54/07.jpeg",
+        "eb2/page-54/08.jpeg",
+        "eb2/page-54/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-realista-vertebrado-pellizcable-con-chupa-9-4-fct-883",
+      "name": "Vibrador Realista Vertebrado Pellizcable con Chupa 9.4 FCT-883",
+      "catalog": "eb2",
+      "source_page": 54,
+      "skus": [
+        "11640"
+      ],
+      "target_storage_path": "products/eb2/vibrador-realista-vertebrado-pellizcable-con-chupa-9-4-fct-883/01.webp",
+      "page_preview": "eb2/page-54.jpg",
+      "candidate_raw_images": [
+        "eb2/page-54/01.png",
+        "eb2/page-54/02.png",
+        "eb2/page-54/05.jpeg",
+        "eb2/page-54/06.jpeg",
+        "eb2/page-54/07.jpeg",
+        "eb2/page-54/08.jpeg",
+        "eb2/page-54/09.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-snake",
+      "name": "Vibrador Snake",
+      "catalog": "eb2",
+      "source_page": 55,
+      "skus": [
+        "11414"
+      ],
+      "target_storage_path": "products/eb2/vibrador-snake/01.webp",
+      "page_preview": "eb2/page-55.jpg",
+      "candidate_raw_images": [
+        "eb2/page-55/01.jpx",
+        "eb2/page-55/02.jpeg",
+        "eb2/page-55/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-recargable-estimulador-clitorial-y-punto-g-fct-736",
+      "name": "Vibrador Recargable Estimulador Clitorial & Punto G FCT-736",
+      "catalog": "eb2",
+      "source_page": 55,
+      "skus": [
+        "11629"
+      ],
+      "target_storage_path": "products/eb2/vibrador-recargable-estimulador-clitorial-y-punto-g-fct-736/01.webp",
+      "page_preview": "eb2/page-55.jpg",
+      "candidate_raw_images": [
+        "eb2/page-55/01.jpx",
+        "eb2/page-55/02.jpeg",
+        "eb2/page-55/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "masturbador-smith",
+      "name": "Masturbador Smith",
+      "catalog": "eb2",
+      "source_page": 56,
+      "skus": [
+        "11418"
+      ],
+      "target_storage_path": "products/eb2/masturbador-smith/01.webp",
+      "page_preview": "eb2/page-56.jpg",
+      "candidate_raw_images": [
+        "eb2/page-56/01.jpx",
+        "eb2/page-56/02.jpx",
+        "eb2/page-56/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "masturbador-ever",
+      "name": "Masturbador Ever",
+      "catalog": "eb2",
+      "source_page": 57,
+      "skus": [
+        "11416"
+      ],
+      "target_storage_path": "products/eb2/masturbador-ever/01.webp",
+      "page_preview": "eb2/page-57.jpg",
+      "candidate_raw_images": [
+        "eb2/page-57/01.jpx",
+        "eb2/page-57/02.jpeg",
+        "eb2/page-57/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "masturbador-alvin",
+      "name": "Masturbador Alvin",
+      "catalog": "eb2",
+      "source_page": 57,
+      "skus": [
+        "11417"
+      ],
+      "target_storage_path": "products/eb2/masturbador-alvin/01.webp",
+      "page_preview": "eb2/page-57.jpg",
+      "candidate_raw_images": [
+        "eb2/page-57/01.jpx",
+        "eb2/page-57/02.jpeg",
+        "eb2/page-57/03.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-anibal-con-chupa",
+      "name": "Vibrador Anibal con Chupa",
+      "catalog": "eb2",
+      "source_page": 58,
+      "skus": [
+        "11424",
+        "11423"
+      ],
+      "target_storage_path": "products/eb2/vibrador-anibal-con-chupa/01.webp",
+      "page_preview": "eb2/page-58.jpg",
+      "candidate_raw_images": [
+        "eb2/page-58/01.jpx",
+        "eb2/page-58/07.jpeg",
+        "eb2/page-58/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "plug-anal-pimpo-bolas-chinas",
+      "name": "Plug Anal Pimpo Bolas Chinas",
+      "catalog": "eb2",
+      "source_page": 59,
+      "skus": [
+        "10716"
+      ],
+      "target_storage_path": "products/eb2/plug-anal-pimpo-bolas-chinas/01.webp",
+      "page_preview": "eb2/page-59.jpg",
+      "candidate_raw_images": [
+        "eb2/page-59/03.jpx",
+        "eb2/page-59/04.jpeg",
+        "eb2/page-59/05.jpeg",
+        "eb2/page-59/06.jpeg",
+        "eb2/page-59/07.jpeg",
+        "eb2/page-59/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "kit-anal-dreams",
+      "name": "Kit Anal Dreams",
+      "catalog": "eb2",
+      "source_page": 59,
+      "skus": [
+        "11430"
+      ],
+      "target_storage_path": "products/eb2/kit-anal-dreams/01.webp",
+      "page_preview": "eb2/page-59.jpg",
+      "candidate_raw_images": [
+        "eb2/page-59/03.jpx",
+        "eb2/page-59/04.jpeg",
+        "eb2/page-59/05.jpeg",
+        "eb2/page-59/06.jpeg",
+        "eb2/page-59/07.jpeg",
+        "eb2/page-59/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "arnes-female-doble-penetracion",
+      "name": "Arnés Female Doble Penetración",
+      "catalog": "eb2",
+      "source_page": 60,
+      "skus": [
+        "11085-PIEL",
+        "11085-LILA"
+      ],
+      "target_storage_path": "products/eb2/arnes-female-doble-penetracion/01.webp",
+      "page_preview": "eb2/page-60.jpg",
+      "candidate_raw_images": [
+        "eb2/page-60/02.jpx",
+        "eb2/page-60/03.jpeg",
+        "eb2/page-60/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "plug-cola-cedric",
+      "name": "Plug Cola Cedric",
+      "catalog": "eb2",
+      "source_page": 61,
+      "skus": [
+        "11427"
+      ],
+      "target_storage_path": "products/eb2/plug-cola-cedric/01.webp",
+      "page_preview": "eb2/page-61.jpg",
+      "candidate_raw_images": [
+        "eb2/page-61/01.jpx",
+        "eb2/page-61/02.jpeg",
+        "eb2/page-61/03.jpeg",
+        "eb2/page-61/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "plug-pompon-colita-de-conejo",
+      "name": "Plug Pompón Colita de Conejo",
+      "catalog": "eb2",
+      "source_page": 61,
+      "skus": [
+        "11428"
+      ],
+      "target_storage_path": "products/eb2/plug-pompon-colita-de-conejo/01.webp",
+      "page_preview": "eb2/page-61.jpg",
+      "candidate_raw_images": [
+        "eb2/page-61/01.jpx",
+        "eb2/page-61/02.jpeg",
+        "eb2/page-61/03.jpeg",
+        "eb2/page-61/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "kit-plug-cola-de-zorro-y-orejas",
+      "name": "Kit Plug Cola de Zorro y Orejas",
+      "catalog": "eb2",
+      "source_page": 61,
+      "skus": [
+        "11429"
+      ],
+      "target_storage_path": "products/eb2/kit-plug-cola-de-zorro-y-orejas/01.webp",
+      "page_preview": "eb2/page-61.jpg",
+      "candidate_raw_images": [
+        "eb2/page-61/01.jpx",
+        "eb2/page-61/02.jpeg",
+        "eb2/page-61/03.jpeg",
+        "eb2/page-61/04.jpeg"
+      ]
+    },
+    {
+      "product_slug": "vibrador-bala-interactiva-con-app-phoenix-neo-2",
+      "name": "Vibrador Bala Interactiva con App Phoenix Neo 2",
+      "catalog": "eb2",
+      "source_page": 64,
+      "skus": [
+        "11022"
+      ],
+      "target_storage_path": "products/eb2/vibrador-bala-interactiva-con-app-phoenix-neo-2/01.webp",
+      "page_preview": "eb2/page-64.jpg",
+      "candidate_raw_images": [
+        "eb2/page-64/01.png",
+        "eb2/page-64/02.png",
+        "eb2/page-64/05.jpeg",
+        "eb2/page-64/06.jpeg",
+        "eb2/page-64/07.jpeg",
+        "eb2/page-64/08.jpeg"
+      ]
+    },
+    {
+      "product_slug": "sujetador-fetish",
+      "name": "Sujetador Fetish",
+      "catalog": "eb2",
+      "source_page": 62,
+      "skus": [
+        "11433"
+      ],
+      "target_storage_path": "products/eb2/sujetador-fetish/01.webp",
+      "page_preview": "eb2/page-62.jpg",
+      "candidate_raw_images": [
+        "eb2/page-62/01.png",
+        "eb2/page-62/02.jpeg"
+      ]
+    },
+    {
+      "product_slug": "esposas-fern-negro",
+      "name": "Esposas Fern Negro",
+      "catalog": "eb2",
+      "source_page": 63,
+      "skus": [
+        "11437"
+      ],
+      "target_storage_path": "products/eb2/esposas-fern-negro/01.webp",
+      "page_preview": "eb2/page-63.jpg",
+      "candidate_raw_images": [
+        "eb2/page-63/01.png",
+        "eb2/page-63/02.jpeg",
+        "eb2/page-63/03.jpeg",
+        "eb2/page-63/04.jpeg",
+        "eb2/page-63/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "esposas-sado-peluche",
+      "name": "Esposas Sado Peluche",
+      "catalog": "eb2",
+      "source_page": 63,
+      "skus": [
+        "11436"
+      ],
+      "target_storage_path": "products/eb2/esposas-sado-peluche/01.webp",
+      "page_preview": "eb2/page-63.jpg",
+      "candidate_raw_images": [
+        "eb2/page-63/01.png",
+        "eb2/page-63/02.jpeg",
+        "eb2/page-63/03.jpeg",
+        "eb2/page-63/04.jpeg",
+        "eb2/page-63/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "paleta-sado",
+      "name": "Paleta Sado",
+      "catalog": "eb2",
+      "source_page": 63,
+      "skus": [
+        "11438",
+        "11439"
+      ],
+      "target_storage_path": "products/eb2/paleta-sado/01.webp",
+      "page_preview": "eb2/page-63.jpg",
+      "candidate_raw_images": [
+        "eb2/page-63/01.png",
+        "eb2/page-63/02.jpeg",
+        "eb2/page-63/03.jpeg",
+        "eb2/page-63/04.jpeg",
+        "eb2/page-63/05.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-eva",
+      "name": "Malla Eva",
+      "catalog": "mallas",
+      "source_page": 3,
+      "skus": [
+        "11713"
+      ],
+      "target_storage_path": "products/mallas/malla-eva/01.webp",
+      "page_preview": "mallas/page-03.jpg",
+      "candidate_raw_images": [
+        "mallas/page-03/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-naia",
+      "name": "Malla Naia",
+      "catalog": "mallas",
+      "source_page": 3,
+      "skus": [
+        "11714"
+      ],
+      "target_storage_path": "products/mallas/malla-naia/01.webp",
+      "page_preview": "mallas/page-03.jpg",
+      "candidate_raw_images": [
+        "mallas/page-03/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-lady",
+      "name": "Malla Lady",
+      "catalog": "mallas",
+      "source_page": 4,
+      "skus": [
+        "11715"
+      ],
+      "target_storage_path": "products/mallas/malla-lady/01.webp",
+      "page_preview": "mallas/page-04.jpg",
+      "candidate_raw_images": [
+        "mallas/page-04/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-tayra",
+      "name": "Malla Tayra",
+      "catalog": "mallas",
+      "source_page": 4,
+      "skus": [
+        "11716"
+      ],
+      "target_storage_path": "products/mallas/malla-tayra/01.webp",
+      "page_preview": "mallas/page-04.jpg",
+      "candidate_raw_images": [
+        "mallas/page-04/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-tessa",
+      "name": "Malla Tessa",
+      "catalog": "mallas",
+      "source_page": 6,
+      "skus": [
+        "11719",
+        "11717",
+        "11718"
+      ],
+      "target_storage_path": "products/mallas/malla-tessa/01.webp",
+      "page_preview": "mallas/page-06.jpg",
+      "candidate_raw_images": [
+        "mallas/page-06/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-yunara",
+      "name": "Malla Yunara",
+      "catalog": "mallas",
+      "source_page": 6,
+      "skus": [
+        "11720"
+      ],
+      "target_storage_path": "products/mallas/malla-yunara/01.webp",
+      "page_preview": "mallas/page-06.jpg",
+      "candidate_raw_images": [
+        "mallas/page-06/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-nalira",
+      "name": "Malla Nalira",
+      "catalog": "mallas",
+      "source_page": 8,
+      "skus": [
+        "11721"
+      ],
+      "target_storage_path": "products/mallas/malla-nalira/01.webp",
+      "page_preview": "mallas/page-08.jpg",
+      "candidate_raw_images": [
+        "mallas/page-08/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-velina",
+      "name": "Malla Velina",
+      "catalog": "mallas",
+      "source_page": 8,
+      "skus": [
+        "11722"
+      ],
+      "target_storage_path": "products/mallas/malla-velina/01.webp",
+      "page_preview": "mallas/page-08.jpg",
+      "candidate_raw_images": [
+        "mallas/page-08/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-zahira",
+      "name": "Malla Zahira",
+      "catalog": "mallas",
+      "source_page": 9,
+      "skus": [
+        "11723"
+      ],
+      "target_storage_path": "products/mallas/malla-zahira/01.webp",
+      "page_preview": "mallas/page-09.jpg",
+      "candidate_raw_images": [
+        "mallas/page-09/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-jadel",
+      "name": "Malla Jadel",
+      "catalog": "mallas",
+      "source_page": 9,
+      "skus": [
+        "11724",
+        "11725",
+        "11726"
+      ],
+      "target_storage_path": "products/mallas/malla-jadel/01.webp",
+      "page_preview": "mallas/page-09.jpg",
+      "candidate_raw_images": [
+        "mallas/page-09/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-musa-catsuit-con-liguero",
+      "name": "Malla Musa (Catsuit con Liguero)",
+      "catalog": "mallas",
+      "source_page": 12,
+      "skus": [
+        "11727"
+      ],
+      "target_storage_path": "products/mallas/malla-musa-catsuit-con-liguero/01.webp",
+      "page_preview": "mallas/page-12.jpg",
+      "candidate_raw_images": [
+        "mallas/page-12/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-swin",
+      "name": "Malla Swin",
+      "catalog": "mallas",
+      "source_page": 13,
+      "skus": [
+        "11728"
+      ],
+      "target_storage_path": "products/mallas/malla-swin/01.webp",
+      "page_preview": "mallas/page-13.jpg",
+      "candidate_raw_images": [
+        "mallas/page-13/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-musa-tiras-frontales",
+      "name": "Malla Musa (Tiras Frontales)",
+      "catalog": "mallas",
+      "source_page": 13,
+      "skus": [
+        "11729"
+      ],
+      "target_storage_path": "products/mallas/malla-musa-tiras-frontales/01.webp",
+      "page_preview": "mallas/page-13.jpg",
+      "candidate_raw_images": [
+        "mallas/page-13/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-coquette",
+      "name": "Malla Coquette",
+      "catalog": "mallas",
+      "source_page": 14,
+      "skus": [
+        "11730"
+      ],
+      "target_storage_path": "products/mallas/malla-coquette/01.webp",
+      "page_preview": "mallas/page-14.jpg",
+      "candidate_raw_images": [
+        "mallas/page-14/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-ivony",
+      "name": "Malla Ivony",
+      "catalog": "mallas",
+      "source_page": 14,
+      "skus": [
+        "11731"
+      ],
+      "target_storage_path": "products/mallas/malla-ivony/01.webp",
+      "page_preview": "mallas/page-14.jpg",
+      "candidate_raw_images": [
+        "mallas/page-14/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-tina",
+      "name": "Malla Tina",
+      "catalog": "mallas",
+      "source_page": 16,
+      "skus": [
+        "11732",
+        "11733",
+        "11734"
+      ],
+      "target_storage_path": "products/mallas/malla-tina/01.webp",
+      "page_preview": "mallas/page-16.jpg",
+      "candidate_raw_images": [
+        "mallas/page-16/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-dance-short",
+      "name": "Malla Dance (Short)",
+      "catalog": "mallas",
+      "source_page": 19,
+      "skus": [
+        "11735"
+      ],
+      "target_storage_path": "products/mallas/malla-dance-short/01.webp",
+      "page_preview": "mallas/page-19.jpg",
+      "candidate_raw_images": [
+        "mallas/page-19/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "malla-twerla-set-top-mas-short",
+      "name": "Malla Twerla (Set Top + Short)",
+      "catalog": "mallas",
+      "source_page": 19,
+      "skus": [
+        "11736"
+      ],
+      "target_storage_path": "products/mallas/malla-twerla-set-top-mas-short/01.webp",
+      "page_preview": "mallas/page-19.jpg",
+      "candidate_raw_images": [
+        "mallas/page-19/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-lunel",
+      "name": "Media Lunel",
+      "catalog": "mallas",
+      "source_page": 21,
+      "skus": [
+        "11737"
+      ],
+      "target_storage_path": "products/mallas/media-lunel/01.webp",
+      "page_preview": "mallas/page-21.jpg",
+      "candidate_raw_images": [
+        "mallas/page-21/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-marlen",
+      "name": "Media Marlen",
+      "catalog": "mallas",
+      "source_page": 21,
+      "skus": [
+        "11738"
+      ],
+      "target_storage_path": "products/mallas/media-marlen/01.webp",
+      "page_preview": "mallas/page-21.jpg",
+      "candidate_raw_images": [
+        "mallas/page-21/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-nia",
+      "name": "Media Nia",
+      "catalog": "mallas",
+      "source_page": 22,
+      "skus": [
+        "11739"
+      ],
+      "target_storage_path": "products/mallas/media-nia/01.webp",
+      "page_preview": "mallas/page-22.jpg",
+      "candidate_raw_images": [
+        "mallas/page-22/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-thaly",
+      "name": "Media Thaly",
+      "catalog": "mallas",
+      "source_page": 22,
+      "skus": [
+        "11740"
+      ],
+      "target_storage_path": "products/mallas/media-thaly/01.webp",
+      "page_preview": "mallas/page-22.jpg",
+      "candidate_raw_images": [
+        "mallas/page-22/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-maelle",
+      "name": "Media Maelle",
+      "catalog": "mallas",
+      "source_page": 23,
+      "skus": [
+        "11741"
+      ],
+      "target_storage_path": "products/mallas/media-maelle/01.webp",
+      "page_preview": "mallas/page-23.jpg",
+      "candidate_raw_images": [
+        "mallas/page-23/01.jpeg"
+      ]
+    },
+    {
+      "product_slug": "media-melan",
+      "name": "Media Melan",
+      "catalog": "mallas",
+      "source_page": 23,
+      "skus": [
+        "11742"
+      ],
+      "target_storage_path": "products/mallas/media-melan/01.webp",
+      "page_preview": "mallas/page-23.jpg",
+      "candidate_raw_images": [
+        "mallas/page-23/01.jpeg"
+      ]
+    }
+  ]
+}

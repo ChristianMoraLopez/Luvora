@@ -1,0 +1,305 @@
+{
+  "currency": "COP",
+  "price": {
+    "min": 3999,
+    "max": 494999,
+    "bands": [
+      {
+        "label": "Hasta $15.000",
+        "min": 0,
+        "max": 15000
+      },
+      {
+        "label": "$15.000 – $30.000",
+        "min": 15000,
+        "max": 30000
+      },
+      {
+        "label": "$30.000 – $60.000",
+        "min": 30000,
+        "max": 60000
+      },
+      {
+        "label": "$60.000 – $120.000",
+        "min": 60000,
+        "max": 120000
+      },
+      {
+        "label": "Más de $120.000",
+        "min": 120000,
+        "max": 1000000000
+      }
+    ],
+    "ui": "range_slider + bands"
+  },
+  "categories": [
+    {
+      "slug": "lubricantes-y-geles",
+      "name": "Lubricantes y Geles",
+      "subcategories": [
+        "saborizados-y-comestibles",
+        "efecto-calor",
+        "efecto-frio",
+        "electrizantes-vibradores-liquidos",
+        "anales",
+        "estrechantes",
+        "multiorgasmicos",
+        "retardantes",
+        "naturales-y-neutros",
+        "especiales"
+      ]
+    },
+    {
+      "slug": "cosmetica-intima-y-sensual",
+      "name": "Cosmética Íntima y Sensual",
+      "subcategories": [
+        "feromonas",
+        "splash-corporales",
+        "aceites-de-masaje",
+        "velas-de-masaje",
+        "cuidado-intimo",
+        "cremas-y-exfoliantes"
+      ]
+    },
+    {
+      "slug": "juguetes",
+      "name": "Juguetes",
+      "subcategories": [
+        "vibradores",
+        "succionadores",
+        "balas-vibradoras",
+        "huevos-vibradores",
+        "anillos-para-pene",
+        "consoladores-y-dildos",
+        "masturbadores-masculinos",
+        "fundas-para-pene",
+        "plugs-y-juguetes-anales",
+        "bolas-chinas-y-kegel",
+        "bombas",
+        "arneses",
+        "higiene-duchas-y-enemas"
+      ]
+    },
+    {
+      "slug": "bienestar-y-salud-sexual",
+      "name": "Bienestar y Salud Sexual",
+      "subcategories": [
+        "potenciadores-y-suplementos",
+        "perlas-y-esferas",
+        "cuidado-especial"
+      ]
+    },
+    {
+      "slug": "lenceria-y-mallas",
+      "name": "Lencería y Mallas",
+      "subcategories": [
+        "mallas-cortas",
+        "mallas-enteras",
+        "mallas-dos-piezas",
+        "medias",
+        "pezoneras"
+      ]
+    },
+    {
+      "slug": "bdsm-y-fetish",
+      "name": "BDSM y Fetish",
+      "subcategories": [
+        "esposas",
+        "latigos-y-paletas",
+        "mordazas",
+        "antifaces-y-tapaojos",
+        "kits-fetish",
+        "rol-y-cosplay"
+      ]
+    },
+    {
+      "slug": "juegos-y-regalos",
+      "name": "Juegos y Regalos",
+      "subcategories": [
+        "juegos-de-mesa-y-cartas",
+        "dados",
+        "kits-y-combos"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "value": "Entre Besos",
+      "count": 189
+    },
+    {
+      "value": "Sen",
+      "count": 16
+    },
+    {
+      "value": "Erotic Scence",
+      "count": 6
+    },
+    {
+      "value": "Pocket Pleasure",
+      "count": 4
+    },
+    {
+      "value": "Magnetic",
+      "count": 3
+    },
+    {
+      "value": "Elixir",
+      "count": 3
+    },
+    {
+      "value": "Satisfyer",
+      "count": 3
+    },
+    {
+      "value": "Gladme",
+      "count": 3
+    },
+    {
+      "value": "Feroz",
+      "count": 2
+    },
+    {
+      "value": "Erotika",
+      "count": 2
+    },
+    {
+      "value": "HemoLub",
+      "count": 1
+    },
+    {
+      "value": "Bassika",
+      "count": 1
+    },
+    {
+      "value": "Lilo",
+      "count": 1
+    },
+    {
+      "value": "Svakom",
+      "count": 1
+    }
+  ],
+  "badges": [
+    {
+      "value": "nuevo",
+      "count": 25,
+      "label": "Nuevo"
+    },
+    {
+      "value": "premium",
+      "count": 6,
+      "label": "Premium"
+    },
+    {
+      "value": "regalo_ideal",
+      "count": 1,
+      "label": "Regalo ideal"
+    }
+  ],
+  "effects": [
+    {
+      "value": "efecto-calor",
+      "count": 6
+    },
+    {
+      "value": "efecto-frio",
+      "count": 5
+    },
+    {
+      "value": "electrizante",
+      "count": 8
+    },
+    {
+      "value": "multiorgasmo",
+      "count": 10
+    },
+    {
+      "value": "estrechante",
+      "count": 7
+    },
+    {
+      "value": "retardante",
+      "count": 7
+    },
+    {
+      "value": "anal",
+      "count": 10
+    },
+    {
+      "value": "feromonas",
+      "count": 16
+    },
+    {
+      "value": "natural",
+      "count": 3
+    },
+    {
+      "value": "comestible",
+      "count": 5
+    },
+    {
+      "value": "recargable",
+      "count": 4
+    },
+    {
+      "value": "usb",
+      "count": 10
+    },
+    {
+      "value": "app",
+      "count": 4
+    }
+  ],
+  "variant_axes": [
+    {
+      "value": "sabor",
+      "label": "Sabor"
+    },
+    {
+      "value": "aroma",
+      "label": "Aroma / Fragancia"
+    },
+    {
+      "value": "color",
+      "label": "Color"
+    },
+    {
+      "value": "tamano",
+      "label": "Tamaño"
+    },
+    {
+      "value": "modelo",
+      "label": "Modelo"
+    },
+    {
+      "value": "efecto",
+      "label": "Efecto"
+    }
+  ],
+  "sort_options": [
+    {
+      "value": "relevance",
+      "label": "Relevancia"
+    },
+    {
+      "value": "price_asc",
+      "label": "Precio: menor a mayor"
+    },
+    {
+      "value": "price_desc",
+      "label": "Precio: mayor a menor"
+    },
+    {
+      "value": "newest",
+      "label": "Novedades"
+    }
+  ],
+  "search": {
+    "rpc": "search_products",
+    "full_text": true,
+    "language": "spanish",
+    "accent_insensitive": true,
+    "fuzzy_trigram": true
+  }
+}

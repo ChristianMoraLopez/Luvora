@@ -1,0 +1,358 @@
+{
+  "count": 7,
+  "categories": [
+    {
+      "id": "323a1ae4-b223-5e14-82ac-d35f560edd1b",
+      "key": "lubricantes",
+      "name": "Lubricantes y Geles",
+      "slug": "lubricantes-y-geles",
+      "icon": "droplet",
+      "description": "Lubricantes íntimos a base de agua: saborizados, con efecto calor/frío, electrizantes, anales, estrechantes, multiorgásmicos, retardantes y neutros.",
+      "position": 1,
+      "subcategories": [
+        {
+          "id": "93fe72d5-c58c-5c80-88aa-14b948f9ce41",
+          "name": "Saborizados y comestibles",
+          "slug": "saborizados-y-comestibles",
+          "position": 1
+        },
+        {
+          "id": "dd961710-ebe3-5bdb-8dd9-0b8e01bea94b",
+          "name": "Efecto calor",
+          "slug": "efecto-calor",
+          "position": 2
+        },
+        {
+          "id": "75a58768-0ec4-59df-840b-036a45739f03",
+          "name": "Efecto frío",
+          "slug": "efecto-frio",
+          "position": 3
+        },
+        {
+          "id": "55e3d11f-2c0e-5079-8b12-0f08abdeaeb0",
+          "name": "Electrizantes / Vibradores líquidos",
+          "slug": "electrizantes-vibradores-liquidos",
+          "position": 4
+        },
+        {
+          "id": "d9509f5b-8035-562a-a94f-cb1253cafa5d",
+          "name": "Anales",
+          "slug": "anales",
+          "position": 5
+        },
+        {
+          "id": "59614ffc-f318-5063-9948-5f53d0b22a9e",
+          "name": "Estrechantes",
+          "slug": "estrechantes",
+          "position": 6
+        },
+        {
+          "id": "dcee2ce5-4968-5d32-b0a6-5f3269640eab",
+          "name": "Multiorgásmicos",
+          "slug": "multiorgasmicos",
+          "position": 7
+        },
+        {
+          "id": "5ba8a858-2af4-5fc0-ab1d-fe8fb89807f1",
+          "name": "Retardantes",
+          "slug": "retardantes",
+          "position": 8
+        },
+        {
+          "id": "1f983969-59b1-54e7-b523-e9f40292c77d",
+          "name": "Naturales y neutros",
+          "slug": "naturales-y-neutros",
+          "position": 9
+        },
+        {
+          "id": "ab430fc0-cd79-5de4-8224-f09b3db43e52",
+          "name": "Especiales",
+          "slug": "especiales",
+          "position": 10
+        }
+      ]
+    },
+    {
+      "id": "eaab7012-5e1f-59f6-afaa-ce8a896264eb",
+      "key": "cosmetica",
+      "name": "Cosmética Íntima y Sensual",
+      "slug": "cosmetica-intima-y-sensual",
+      "icon": "sparkles",
+      "description": "Feromonas, splash corporales, aceites y velas de masaje, y cuidado íntimo.",
+      "position": 2,
+      "subcategories": [
+        {
+          "id": "a12418f0-010b-56b9-b43d-fd467824bce0",
+          "name": "Feromonas",
+          "slug": "feromonas",
+          "position": 1
+        },
+        {
+          "id": "c21f8a54-8cd5-5579-9493-c5b057197d05",
+          "name": "Splash corporales",
+          "slug": "splash-corporales",
+          "position": 2
+        },
+        {
+          "id": "c35a2403-a02b-517a-b567-f41045214fe2",
+          "name": "Aceites de masaje",
+          "slug": "aceites-de-masaje",
+          "position": 3
+        },
+        {
+          "id": "8bb9ed29-3c16-5ba3-984d-aef65918dd83",
+          "name": "Velas de masaje",
+          "slug": "velas-de-masaje",
+          "position": 4
+        },
+        {
+          "id": "ffae4d80-42fb-55fc-a63c-a97bef8dcabd",
+          "name": "Cuidado íntimo",
+          "slug": "cuidado-intimo",
+          "position": 5
+        },
+        {
+          "id": "6ecf7512-ce64-564e-ab42-27cfdce5492b",
+          "name": "Cremas y exfoliantes",
+          "slug": "cremas-y-exfoliantes",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "id": "08be609a-7e69-5b5a-bacd-a2f3a19be80d",
+      "key": "juguetes",
+      "name": "Juguetes",
+      "slug": "juguetes",
+      "icon": "toy",
+      "description": "Vibradores, succionadores, balas, huevos, anillos, consoladores, masturbadores, fundas, plugs y más.",
+      "position": 3,
+      "subcategories": [
+        {
+          "id": "981a8529-68a7-5123-8b32-2144ee5ad922",
+          "name": "Vibradores",
+          "slug": "vibradores",
+          "position": 1
+        },
+        {
+          "id": "60b00c6a-1bdf-5824-b952-b7f2b9e9404f",
+          "name": "Succionadores",
+          "slug": "succionadores",
+          "position": 2
+        },
+        {
+          "id": "d6d67a27-89bc-5dd3-9972-81efb72a130b",
+          "name": "Balas vibradoras",
+          "slug": "balas-vibradoras",
+          "position": 3
+        },
+        {
+          "id": "7b1abffd-6fa0-5301-9ede-db3eab39f726",
+          "name": "Huevos vibradores",
+          "slug": "huevos-vibradores",
+          "position": 4
+        },
+        {
+          "id": "0cd577ce-ca5e-5836-840c-30410ce430c1",
+          "name": "Anillos para pene",
+          "slug": "anillos-para-pene",
+          "position": 5
+        },
+        {
+          "id": "7573705d-0bcf-5491-970f-07e267a6b174",
+          "name": "Consoladores y dildos",
+          "slug": "consoladores-y-dildos",
+          "position": 6
+        },
+        {
+          "id": "6604c914-43f1-5c9f-b117-31384958b2db",
+          "name": "Masturbadores masculinos",
+          "slug": "masturbadores-masculinos",
+          "position": 7
+        },
+        {
+          "id": "d883cf3a-4108-5b9f-a230-5b8ee6f2f4de",
+          "name": "Fundas para pene",
+          "slug": "fundas-para-pene",
+          "position": 8
+        },
+        {
+          "id": "8f9ce84e-da0e-591e-a4b0-6fd9338afe5a",
+          "name": "Plugs y juguetes anales",
+          "slug": "plugs-y-juguetes-anales",
+          "position": 9
+        },
+        {
+          "id": "31538dfe-1d72-59e5-ad11-77abd05c85bd",
+          "name": "Bolas chinas y Kegel",
+          "slug": "bolas-chinas-y-kegel",
+          "position": 10
+        },
+        {
+          "id": "dea7a85a-62d7-507e-bad0-f83e4c4f2f95",
+          "name": "Bombas",
+          "slug": "bombas",
+          "position": 11
+        },
+        {
+          "id": "8eb74f94-c6e3-5840-a960-d6d1068dbbb9",
+          "name": "Arneses",
+          "slug": "arneses",
+          "position": 12
+        },
+        {
+          "id": "84fb3f41-f91c-59f1-a38f-e19957a6ce94",
+          "name": "Higiene (duchas y enemas)",
+          "slug": "higiene-duchas-y-enemas",
+          "position": 13
+        }
+      ]
+    },
+    {
+      "id": "9a8a27be-2961-53ea-8ace-88b2617e342b",
+      "key": "bienestar",
+      "name": "Bienestar y Salud Sexual",
+      "slug": "bienestar-y-salud-sexual",
+      "icon": "heart-pulse",
+      "description": "Potenciadores y suplementos, perlas y esferas, y cuidado íntimo especial.",
+      "position": 4,
+      "subcategories": [
+        {
+          "id": "5ef3e5b3-af50-54b8-b48e-b4c9c890634f",
+          "name": "Potenciadores y suplementos",
+          "slug": "potenciadores-y-suplementos",
+          "position": 1
+        },
+        {
+          "id": "85854db2-b78b-56e2-9d42-1d435a707df2",
+          "name": "Perlas y esferas",
+          "slug": "perlas-y-esferas",
+          "position": 2
+        },
+        {
+          "id": "093a2d89-c0be-5da2-b6c1-14b7facbd733",
+          "name": "Cuidado especial",
+          "slug": "cuidado-especial",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": "70711d6d-a3e4-56ce-a5ca-5d0e160ddf1b",
+      "key": "lenceria",
+      "name": "Lencería y Mallas",
+      "slug": "lenceria-y-mallas",
+      "icon": "dress",
+      "description": "Colección de mallas: bodysuits cortos, bodystockings enteros, sets de dos piezas, medias y pezoneras.",
+      "position": 5,
+      "subcategories": [
+        {
+          "id": "22924d21-5b1a-5350-8e9a-c81eb118f8b3",
+          "name": "Mallas cortas",
+          "slug": "mallas-cortas",
+          "position": 1
+        },
+        {
+          "id": "ef875da5-154a-556e-ae3e-fab6bfdef13b",
+          "name": "Mallas enteras",
+          "slug": "mallas-enteras",
+          "position": 2
+        },
+        {
+          "id": "73f73057-0802-5f53-be68-4f84be6b2014",
+          "name": "Mallas dos piezas",
+          "slug": "mallas-dos-piezas",
+          "position": 3
+        },
+        {
+          "id": "fc63662d-e704-5665-b62c-885b81267a5e",
+          "name": "Medias",
+          "slug": "medias",
+          "position": 4
+        },
+        {
+          "id": "0116fb80-ffd2-595f-b79c-959ca11dcd92",
+          "name": "Pezoneras",
+          "slug": "pezoneras",
+          "position": 5
+        }
+      ]
+    },
+    {
+      "id": "2dbe1a32-3fbc-5f02-a743-0c1728046d0d",
+      "key": "bdsm",
+      "name": "BDSM y Fetish",
+      "slug": "bdsm-y-fetish",
+      "icon": "handcuffs",
+      "description": "Esposas, látigos y paletas, mordazas, antifaces, kits fetish y accesorios de rol.",
+      "position": 6,
+      "subcategories": [
+        {
+          "id": "a0ac36dc-5914-5f3a-8324-e1ca34ccc66e",
+          "name": "Esposas",
+          "slug": "esposas",
+          "position": 1
+        },
+        {
+          "id": "6166b4fe-f06c-5b9a-bf14-8f03921f2ee4",
+          "name": "Látigos y paletas",
+          "slug": "latigos-y-paletas",
+          "position": 2
+        },
+        {
+          "id": "bb382bd1-8f14-547f-8451-2c7e63a9cc01",
+          "name": "Mordazas",
+          "slug": "mordazas",
+          "position": 3
+        },
+        {
+          "id": "3235b437-264a-5dde-a565-be5bf829b68c",
+          "name": "Antifaces y tapaojos",
+          "slug": "antifaces-y-tapaojos",
+          "position": 4
+        },
+        {
+          "id": "a3bc7b91-309a-5fa0-b770-9c349380e20b",
+          "name": "Kits fetish",
+          "slug": "kits-fetish",
+          "position": 5
+        },
+        {
+          "id": "1e41be47-7081-530f-b7a9-6af4fa8d947f",
+          "name": "Rol y cosplay",
+          "slug": "rol-y-cosplay",
+          "position": 6
+        }
+      ]
+    },
+    {
+      "id": "0f0af5de-ccd8-5d2a-8e98-5210dc8bae11",
+      "key": "juegos",
+      "name": "Juegos y Regalos",
+      "slug": "juegos-y-regalos",
+      "icon": "gift",
+      "description": "Juegos de mesa y cartas para pareja, dados eróticos, kits y combos de regalo.",
+      "position": 7,
+      "subcategories": [
+        {
+          "id": "45299031-4fc5-588c-bb44-e154f9490cbd",
+          "name": "Juegos de mesa y cartas",
+          "slug": "juegos-de-mesa-y-cartas",
+          "position": 1
+        },
+        {
+          "id": "f010e255-f124-5195-88c7-ed29136bfc87",
+          "name": "Dados",
+          "slug": "dados",
+          "position": 2
+        },
+        {
+          "id": "86e1ae27-7ea5-5fcc-8cf2-b6f5a4462d2f",
+          "name": "Kits y combos",
+          "slug": "kits-y-combos",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

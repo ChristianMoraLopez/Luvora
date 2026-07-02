@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"Logo Icon.zip\")",
+      "Bash(unzip -l \"Adult retail website design.zip\")"
+    ]
+  }
+}
