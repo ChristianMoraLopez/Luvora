@@ -5,7 +5,7 @@
     "currency": "COP",
     "product_count": 235,
     "sku_count": 299,
-    "tag_count": 360,
+    "tag_count": 356,
     "note": "Prices in COP (integer). Images are target storage paths to be populated."
   },
   "products": [
@@ -38,7 +38,7 @@
         "corporal",
         "cosmetica-intima-y-sensual",
         "feromonas",
-        "frutos rojos",
+        "frutos-rojos",
         "magnetic"
       ],
       "variants": [
@@ -156,12 +156,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "agua de rosas",
-        "aloe vera",
+        "acido-hialuronico",
+        "agua-de-rosas",
+        "aloe-vera",
         "cosmetica-intima-y-sensual",
         "feromonas",
-        "magnetic",
-        "ácido hialurónico"
+        "magnetic"
       ],
       "variants": [
         {
@@ -223,7 +223,7 @@
         "aceite",
         "aceites-de-masaje",
         "cosmetica-intima-y-sensual",
-        "juego previo",
+        "juego-previo",
         "masaje",
         "premium"
       ],
@@ -297,7 +297,7 @@
         "aromaterapia",
         "cosmetica-intima-y-sensual",
         "feromonas",
-        "sensación sedosa"
+        "sensacion-sedosa"
       ],
       "variants": [
         {
@@ -357,7 +357,7 @@
         "aceites-de-masaje",
         "cosmetica-intima-y-sensual",
         "masaje",
-        "trifásico"
+        "trifasico"
       ],
       "variants": [
         {
@@ -414,7 +414,7 @@
       },
       "tags": [
         "cosmetica-intima-y-sensual",
-        "crema de manos",
+        "crema-de-manos",
         "cremas-y-exfoliantes",
         "rosa"
       ],
@@ -474,7 +474,7 @@
       "tags": [
         "ambiente",
         "cosmetica-intima-y-sensual",
-        "ingredientes naturales",
+        "ingredientes-naturales",
         "masaje",
         "vela",
         "velas-de-masaje"
@@ -547,10 +547,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "atracción",
+        "atraccion",
         "cosmetica-intima-y-sensual",
         "feromonas",
-        "loción"
+        "locion"
       ],
       "variants": [
         {
@@ -805,7 +805,7 @@
       "tags": [
         "cosmetica-intima-y-sensual",
         "feromonas",
-        "frutal floral",
+        "frutal-floral",
         "splash-corporales"
       ],
       "variants": [
@@ -949,7 +949,7 @@
       },
       "tags": [
         "cosmetica-intima-y-sensual",
-        "crema de manos",
+        "crema-de-manos",
         "cremas-y-exfoliantes",
         "uva"
       ],
@@ -1082,13 +1082,13 @@
         "is_18_plus": true
       },
       "tags": [
-        "aloe vera",
+        "acido-hialuronico",
+        "aloe-vera",
         "especiales",
         "hidratante",
         "lubricantes-y-geles",
         "neutro",
-        "nuevo",
-        "ácido hialurónico"
+        "nuevo"
       ],
       "variants": [
         {
@@ -1329,7 +1329,7 @@
       },
       "tags": [
         "dados",
-        "juego previo",
+        "juego-previo",
         "lubricantes-y-geles",
         "pocket-pleasure",
         "saborizado",
@@ -1650,9 +1650,9 @@
       "tags": [
         "electrizante",
         "electrizantes-vibradores-liquidos",
-        "frío",
+        "frio",
         "lubricantes-y-geles",
-        "vibrador líquido",
+        "vibrador-liquido",
         "yerbabuena"
       ],
       "variants": [
@@ -1712,7 +1712,7 @@
         "bienestar-y-salud-sexual",
         "calmante",
         "cuidado-especial",
-        "extractos naturales",
+        "extractos-naturales",
         "hemolub",
         "hemorroides"
       ],
@@ -1770,7 +1770,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "aloe vera",
+        "aloe-vera",
         "estrechante",
         "estrechantes",
         "lubricantes-y-geles"
@@ -1829,8 +1829,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "L-arginina",
-        "afrodisíaco",
+        "afrodisiaco",
+        "l-arginina",
         "lubricantes-y-geles",
         "multiorgasmicos",
         "multiorgasmo"
@@ -1891,12 +1891,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "clítoris",
+        "clitoris",
         "electrizantes-vibradores-liquidos",
         "intenso",
         "lubricantes-y-geles",
         "nuevo",
-        "vibrador líquido"
+        "vibrador-liquido"
       ],
       "variants": [
         {
@@ -1952,11 +1952,11 @@
         "is_18_plus": true
       },
       "tags": [
-        "clítoris",
+        "clitoris",
         "electrizantes-vibradores-liquidos",
         "lubricantes-y-geles",
         "pezones",
-        "vibrador líquido"
+        "vibrador-liquido"
       ],
       "variants": [
         {
@@ -2012,10 +2012,9 @@
         "is_18_plus": true
       },
       "tags": [
-        "efecto frío",
         "efecto-frio",
         "lubricantes-y-geles",
-        "sexo oral"
+        "sexo-oral"
       ],
       "variants": [
         {
@@ -2071,10 +2070,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "aloe vera",
+        "aloe-vera",
         "calor",
         "especiales",
-        "frío",
+        "frio",
         "lubricantes-y-geles",
         "multiefecto"
       ],
@@ -2131,10 +2130,10 @@
       "tags": [
         "elixir",
         "lubricantes-y-geles",
-        "sabor sorpresa",
+        "sabor-sorpresa",
         "saborizado",
         "saborizados-y-comestibles",
-        "sexo oral"
+        "sexo-oral"
       ],
       "variants": [
         {
@@ -2197,7 +2196,7 @@
         "lubricantes-y-geles",
         "saborizado",
         "saborizados-y-comestibles",
-        "sexo oral"
+        "sexo-oral"
       ],
       "variants": [
         {
@@ -2279,9 +2278,8 @@
       },
       "tags": [
         "comestible",
-        "efecto calor",
         "efecto-calor",
-        "juego previo",
+        "juego-previo",
         "lubricantes-y-geles",
         "saborizado"
       ],
@@ -2372,11 +2370,11 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
+        "base-agua",
         "lubricantes-y-geles",
         "naturales-y-neutros",
         "neutro",
-        "pH balanceado"
+        "ph-balanceado"
       ],
       "variants": [
         {
@@ -2611,7 +2609,6 @@
       },
       "tags": [
         "comestible",
-        "efecto calor",
         "efecto-calor",
         "erotic-scence",
         "lubricantes-y-geles",
@@ -2718,7 +2715,6 @@
         "is_18_plus": true
       },
       "tags": [
-        "erotic scence",
         "erotic-scence",
         "especiales",
         "lubricantes-y-geles",
@@ -2872,7 +2868,7 @@
       "tags": [
         "anal",
         "anales",
-        "base agua",
+        "base-agua",
         "erotic-scence",
         "gel",
         "lubricantes-y-geles"
@@ -2931,7 +2927,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
+        "base-agua",
         "erotic-scence",
         "gel",
         "lubricantes-y-geles",
@@ -3112,7 +3108,6 @@
         "is_18_plus": true
       },
       "tags": [
-        "efecto frío",
         "efecto-frio",
         "gel",
         "lubricantes-y-geles",
@@ -3172,8 +3167,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
-        "efecto calor",
+        "base-agua",
         "efecto-calor",
         "gel",
         "lubricantes-y-geles"
@@ -3232,11 +3226,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "clítoris",
-        "efecto frío",
+        "clitoris",
         "efecto-frio",
         "lubricantes-y-geles",
-        "multiorgásmico"
+        "multiorgasmico"
       ],
       "variants": [
         {
@@ -3289,9 +3282,9 @@
         "is_18_plus": true
       },
       "tags": [
-        "afrodisíaco",
+        "afrodisiaco",
         "bienestar-y-salud-sexual",
-        "libido femenino",
+        "libido-femenino",
         "potenciadores-y-suplementos",
         "suplemento"
       ],
@@ -3459,8 +3452,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "L-arginina",
         "bienestar-y-salud-sexual",
+        "l-arginina",
         "potenciadores-y-suplementos",
         "suplemento",
         "vitaminas"
@@ -3517,7 +3510,7 @@
       },
       "tags": [
         "bienestar-y-salud-sexual",
-        "erección",
+        "ereccion",
         "hombre",
         "potenciadores-y-suplementos",
         "suplemento"
@@ -3574,7 +3567,7 @@
       },
       "tags": [
         "bienestar-y-salud-sexual",
-        "energía",
+        "energia",
         "potenciadores-y-suplementos",
         "suplemento"
       ],
@@ -3629,7 +3622,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "40 tarjetas",
+        "40-tarjetas",
         "amigos",
         "juego",
         "juegos-de-mesa-y-cartas",
@@ -3807,7 +3800,7 @@
         "juegos-de-mesa-y-cartas",
         "juegos-y-regalos",
         "kamasutra",
-        "lésbico"
+        "lesbico"
       ],
       "variants": [
         {
@@ -4221,8 +4214,8 @@
         "esposas",
         "kit",
         "kits-fetish",
-        "látigo",
-        "regalo_ideal"
+        "latigo",
+        "regalo-ideal"
       ],
       "variants": [
         {
@@ -4275,7 +4268,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "ball gag",
+        "ball-gag",
         "bdsm",
         "bdsm-y-fetish",
         "inmovilizador",
@@ -4332,7 +4325,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "ball gag",
+        "ball-gag",
         "bdsm-y-fetish",
         "kit",
         "mordazas",
@@ -4390,9 +4383,9 @@
       },
       "tags": [
         "bdsm-y-fetish",
-        "cuero sintético",
-        "latigos-y-paletas",
-        "látigo"
+        "cuero-sintetico",
+        "latigo",
+        "latigos-y-paletas"
       ],
       "variants": [
         {
@@ -4445,10 +4438,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "animal print",
+        "animal-print",
         "bdsm-y-fetish",
-        "latigos-y-paletas",
-        "látigo"
+        "latigo",
+        "latigos-y-paletas"
       ],
       "variants": [
         {
@@ -4503,9 +4496,9 @@
       "tags": [
         "bomba",
         "bombas",
-        "erección",
+        "ereccion",
         "juguetes",
-        "vacío"
+        "vacio"
       ],
       "variants": [
         {
@@ -4558,8 +4551,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "90 ml",
-        "ducha anal",
+        "90-ml",
+        "ducha-anal",
         "higiene",
         "higiene-duchas-y-enemas",
         "juguetes",
@@ -4733,7 +4726,7 @@
       "tags": [
         "juguetes",
         "mediano",
-        "metálico",
+        "metalico",
         "plug",
         "plugs-y-juguetes-anales"
       ],
@@ -4791,7 +4784,7 @@
         "anillo",
         "anillos-para-pene",
         "juguetes",
-        "próstata",
+        "prostata",
         "silicona"
       ],
       "variants": [
@@ -4848,7 +4841,7 @@
         "anillo",
         "anillos-para-pene",
         "juguetes",
-        "pack x3",
+        "pack-x3",
         "silicona"
       ],
       "variants": [
@@ -4904,7 +4897,7 @@
       "tags": [
         "anillo",
         "anillos-para-pene",
-        "clítoris",
+        "clitoris",
         "juguetes",
         "vibrador"
       ],
@@ -4961,7 +4954,7 @@
       "tags": [
         "anillo",
         "anillos-para-pene",
-        "bala vibradora",
+        "bala-vibradora",
         "juguetes"
       ],
       "variants": [
@@ -5020,7 +5013,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "6 modos",
+        "6-modos",
         "bala",
         "balas-vibradoras",
         "juguetes",
@@ -5080,7 +5073,7 @@
       },
       "tags": [
         "juguetes",
-        "múltiples velocidades",
+        "multiples-velocidades",
         "silicona",
         "vibrador",
         "vibradores"
@@ -5139,11 +5132,11 @@
         "is_18_plus": true
       },
       "tags": [
-        "TPR",
         "consolador",
         "consoladores-y-dildos",
         "juguetes",
         "realista",
+        "tpr",
         "ventosa"
       ],
       "variants": [
@@ -5197,7 +5190,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "clítoris",
+        "clitoris",
         "conejo",
         "juguetes",
         "silicona",
@@ -5258,10 +5251,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "discreto",
         "juguetes",
-        "silicona médica",
+        "silicona-medica",
         "succionador",
         "succionadores",
         "usb"
@@ -5318,10 +5311,10 @@
       },
       "tags": [
         "bala",
-        "carga magnética",
-        "clítoris",
+        "carga-magnetica",
+        "clitoris",
         "juguetes",
-        "onda de presión",
+        "onda-de-presion",
         "succionadores"
       ],
       "variants": [
@@ -5375,8 +5368,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 funciones",
-        "control inalámbrico",
+        "10-funciones",
+        "control-inalambrico",
         "huevo",
         "huevos-vibradores",
         "juguetes",
@@ -5435,9 +5428,9 @@
       "tags": [
         "juguetes",
         "recargable",
-        "resistente al agua",
+        "resistente-al-agua",
         "silencioso",
-        "vibrador doble",
+        "vibrador-doble",
         "vibradores"
       ],
       "variants": [
@@ -5491,8 +5484,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "doble estimulación",
-        "ergonómico",
+        "doble-estimulacion",
+        "ergonomico",
         "juguetes",
         "succionador",
         "succionadores",
@@ -5551,8 +5544,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "air pulse",
-        "app gratis",
+        "air-pulse",
+        "app-gratis",
         "impermeable",
         "juguetes",
         "premium",
@@ -5613,12 +5606,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "air pulse",
+        "air-pulse",
         "app",
         "juguetes",
         "premium",
         "satisfyer",
-        "silicona médica",
+        "silicona-medica",
         "succionador",
         "succionadores"
       ],
@@ -5675,12 +5668,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "air pulse",
+        "air-pulse",
         "app",
         "juguetes",
         "premium",
         "satisfyer",
-        "silicona médica",
+        "silicona-medica",
         "succionador",
         "succionadores"
       ],
@@ -5848,7 +5841,7 @@
       "tags": [
         "cosmetica-intima-y-sensual",
         "frutal",
-        "inspiración BBW",
+        "inspiracion-bbw",
         "splash",
         "splash-corporales"
       ],
@@ -5922,7 +5915,7 @@
       },
       "tags": [
         "cosmetica-intima-y-sensual",
-        "floral frutal",
+        "floral-frutal",
         "splash",
         "splash-corporales"
       ],
@@ -5996,8 +5989,8 @@
       },
       "tags": [
         "cosmetica-intima-y-sensual",
-        "floral frutal",
-        "inspiración BBW",
+        "floral-frutal",
+        "inspiracion-bbw",
         "splash",
         "splash-corporales"
       ],
@@ -6250,7 +6243,7 @@
         "feromonas",
         "feroz",
         "nuevo",
-        "sin aroma"
+        "sin-aroma"
       ],
       "variants": [
         {
@@ -6306,7 +6299,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "brillo labial",
+        "brillo-labial",
         "cosmetica-intima-y-sensual",
         "feromonas"
       ],
@@ -6364,7 +6357,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "brillo labial",
+        "brillo-labial",
         "cosmetica-intima-y-sensual",
         "feromonas"
       ],
@@ -6426,10 +6419,9 @@
       },
       "tags": [
         "cosmetica-intima-y-sensual",
-        "cuidado íntimo",
         "cuidado-intimo",
-        "desodorante íntimo",
-        "pH"
+        "desodorante-intimo",
+        "ph"
       ],
       "variants": [
         {
@@ -6496,12 +6488,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "aloe vera",
+        "aloe-vera",
         "cosmetica-intima-y-sensual",
         "cuidado-intimo",
-        "jabón íntimo",
+        "jabon-intimo",
         "manzanilla",
-        "pH",
+        "ph",
         "sen"
       ],
       "variants": [
@@ -6560,7 +6552,7 @@
       "tags": [
         "cosmetica-intima-y-sensual",
         "cuidado-intimo",
-        "desodorante íntimo",
+        "desodorante-intimo",
         "feromonas",
         "feroz"
       ],
@@ -6619,7 +6611,6 @@
       "tags": [
         "aclarante",
         "cosmetica-intima-y-sensual",
-        "cuidado íntimo",
         "cuidado-intimo",
         "despigmentante",
         "nuevo"
@@ -6680,7 +6671,7 @@
       "tags": [
         "aceite",
         "aceites-de-masaje",
-        "cannabis sativa",
+        "cannabis-sativa",
         "cosmetica-intima-y-sensual",
         "erotika",
         "masaje",
@@ -6881,7 +6872,7 @@
         "aceite",
         "aceites-de-masaje",
         "cosmetica-intima-y-sensual",
-        "efecto calor",
+        "efecto-calor",
         "masaje"
       ],
       "variants": [
@@ -6953,10 +6944,10 @@
       },
       "tags": [
         "aroma",
-        "cápsula",
+        "capsula",
         "esfera",
         "especiales",
-        "hot ball",
+        "hot-ball",
         "lubricantes-y-geles"
       ],
       "variants": [
@@ -7058,10 +7049,10 @@
       },
       "tags": [
         "especiales",
-        "hot ball",
+        "hot-ball",
         "lubricantes-y-geles",
         "mix",
-        "pack x4"
+        "pack-x4"
       ],
       "variants": [
         {
@@ -7301,11 +7292,10 @@
       },
       "tags": [
         "bassika",
-        "efecto calor",
         "efecto-calor",
         "lubricantes-y-geles",
         "saborizado",
-        "sexo oral"
+        "sexo-oral"
       ],
       "variants": [
         {
@@ -7419,7 +7409,7 @@
         "anal",
         "anales",
         "aroma",
-        "base agua",
+        "base-agua",
         "gel",
         "lubricantes-y-geles"
       ],
@@ -7536,8 +7526,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "3 en 1",
-        "base agua",
+        "3-en-1",
+        "base-agua",
         "lubricantes-y-geles",
         "saborizado",
         "saborizados-y-comestibles"
@@ -7596,8 +7586,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
-        "efecto calor",
+        "base-agua",
         "efecto-calor",
         "fresa",
         "lubricantes-y-geles",
@@ -7657,8 +7646,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
-        "efecto frío",
+        "base-agua",
         "efecto-frio",
         "lubricantes-y-geles",
         "menta",
@@ -7720,7 +7708,7 @@
       "tags": [
         "anal",
         "anales",
-        "base agua",
+        "base-agua",
         "lubricantes-y-geles",
         "sachet",
         "sen"
@@ -8024,7 +8012,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "efecto calor",
+        "efecto-calor",
         "electrizante",
         "electrizantes-vibradores-liquidos",
         "lubricantes-y-geles",
@@ -8090,7 +8078,6 @@
         "is_18_plus": true
       },
       "tags": [
-        "efecto calor",
         "efecto-calor",
         "lubricantes-y-geles",
         "nuevo",
@@ -8235,7 +8222,7 @@
       "tags": [
         "anal",
         "anales",
-        "base agua",
+        "base-agua",
         "lubricantes-y-geles",
         "sen"
       ],
@@ -8352,9 +8339,9 @@
         "is_18_plus": true
       },
       "tags": [
-        "3 en 1",
+        "3-en-1",
         "lubricantes-y-geles",
-        "no graso",
+        "no-graso",
         "saborizado",
         "saborizados-y-comestibles"
       ],
@@ -8495,7 +8482,7 @@
       },
       "tags": [
         "calor",
-        "frío",
+        "frio",
         "lubricantes-y-geles",
         "multiorgasmicos",
         "multiorgasmo",
@@ -8687,7 +8674,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "crema de whisky",
+        "crema-de-whisky",
         "electrizante",
         "electrizantes-vibradores-liquidos",
         "lubricantes-y-geles"
@@ -8743,7 +8730,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "body paint",
+        "body-paint",
         "chocolate",
         "comestible",
         "lubricantes-y-geles",
@@ -8801,7 +8788,7 @@
       },
       "tags": [
         "comestible",
-        "crema besable",
+        "crema-besable",
         "lubricantes-y-geles",
         "saborizados-y-comestibles"
       ],
@@ -8923,10 +8910,10 @@
       "tags": [
         "desensibilizante",
         "especiales",
-        "garganta profunda",
+        "garganta-profunda",
         "lubricantes-y-geles",
         "nuevo",
-        "sexo oral"
+        "sexo-oral"
       ],
       "variants": [
         {
@@ -9046,7 +9033,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "edición especial",
+        "edicion-especial",
         "electrizante",
         "electrizantes-vibradores-liquidos",
         "lubricantes-y-geles",
@@ -9108,7 +9095,7 @@
       },
       "tags": [
         "500ml",
-        "base agua",
+        "base-agua",
         "familiar",
         "lubricantes-y-geles",
         "natural",
@@ -9168,7 +9155,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
+        "base-agua",
         "lubricantes-y-geles",
         "naturales-y-neutros",
         "neutro"
@@ -9228,9 +9215,9 @@
       },
       "tags": [
         "especiales",
-        "fantasía",
+        "fantasia",
         "lubricantes-y-geles",
-        "textura semen"
+        "textura-semen"
       ],
       "variants": [
         {
@@ -9287,10 +9274,10 @@
       },
       "tags": [
         "especiales",
-        "eyaculación femenina",
-        "fantasía",
+        "eyaculacion-femenina",
+        "fantasia",
         "lubricantes-y-geles",
-        "piel sensible"
+        "piel-sensible"
       ],
       "variants": [
         {
@@ -9351,7 +9338,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "base agua",
+        "base-agua",
         "elixir",
         "gel",
         "lubricantes-y-geles",
@@ -9492,7 +9479,6 @@
         "is_18_plus": true
       },
       "tags": [
-        "efecto frío",
         "efecto-frio",
         "lubricantes-y-geles",
         "masaje"
@@ -9551,7 +9537,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "aceite lubricante",
+        "aceite-lubricante",
         "bienestar-y-salud-sexual",
         "perlas",
         "perlas-y-esferas",
@@ -9729,7 +9715,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "3 en 1",
+        "3-en-1",
         "juego",
         "juegos-de-mesa-y-cartas",
         "juegos-y-regalos",
@@ -9793,7 +9779,7 @@
         "juegos-de-mesa-y-cartas",
         "juegos-y-regalos",
         "nuevo",
-        "parqués",
+        "parques",
         "picante"
       ],
       "variants": [
@@ -9850,7 +9836,7 @@
         "dados",
         "juego",
         "juegos-y-regalos",
-        "toma todo"
+        "toma-todo"
       ],
       "variants": [
         {
@@ -10125,7 +10111,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "fantasía",
+        "fantasia",
         "juego",
         "juegos-de-mesa-y-cartas",
         "juegos-y-regalos",
@@ -10240,7 +10226,7 @@
       "tags": [
         "anillo",
         "anillos-para-pene",
-        "bala removible",
+        "bala-removible",
         "juguetes",
         "vibrador"
       ],
@@ -10298,7 +10284,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 funciones",
+        "10-funciones",
         "anillo",
         "anillos-para-pene",
         "juguetes",
@@ -10362,7 +10348,7 @@
         "anillo",
         "anillos-para-pene",
         "juguetes",
-        "silicona flexible",
+        "silicona-flexible",
         "vibrador"
       ],
       "variants": [
@@ -10419,12 +10405,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "7 velocidades",
+        "7-velocidades",
         "anillo",
         "anillos-para-pene",
         "consolador",
         "juguetes",
-        "silicona médica"
+        "silicona-medica"
       ],
       "variants": [
         {
@@ -10477,7 +10463,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "2 en 1",
+        "2-en-1",
         "bala",
         "juguetes",
         "vibrador",
@@ -10535,7 +10521,7 @@
       },
       "tags": [
         "juguetes",
-        "velocidad graduable",
+        "velocidad-graduable",
         "vibrador",
         "vibradores"
       ],
@@ -10648,7 +10634,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "7 funciones",
+        "7-funciones",
         "juguetes",
         "masturbador",
         "masturbadores-masculinos"
@@ -10797,7 +10783,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "1 velocidad",
+        "1-velocidad",
         "gladme",
         "huevo",
         "huevos-vibradores",
@@ -10858,7 +10844,7 @@
         "balas-vibradoras",
         "gladme",
         "juguetes",
-        "punto g"
+        "punto-g"
       ],
       "variants": [
         {
@@ -10911,12 +10897,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
-        "control remoto",
+        "10-modos",
+        "control-remoto",
         "huevo",
         "huevos-vibradores",
         "juguetes",
-        "punto g"
+        "punto-g"
       ],
       "variants": [
         {
@@ -10972,11 +10958,11 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "huevo",
         "huevos-vibradores",
         "impermeable",
-        "inalámbrico",
+        "inalambrico",
         "juguetes"
       ],
       "variants": [
@@ -11030,8 +11016,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
-        "control remoto",
+        "10-modos",
+        "control-remoto",
         "huevo",
         "huevos-vibradores",
         "juguetes"
@@ -11089,13 +11075,13 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "huevo",
         "huevos-vibradores",
         "juguetes",
         "lilo",
         "nuevo",
-        "silicona biomédica",
+        "silicona-biomedica",
         "temperatura",
         "usb"
       ],
@@ -11152,7 +11138,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "cordón",
+        "cordon",
         "gladme",
         "grabados",
         "huevo",
@@ -11213,13 +11199,13 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "huevo",
         "huevos-vibradores",
-        "inalámbrico",
+        "inalambrico",
         "juguetes",
         "nuevo",
-        "silicona ABS",
+        "silicona-abs",
         "usb"
       ],
       "variants": [
@@ -11275,10 +11261,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "juguetes",
         "nuevo",
-        "punto g",
+        "punto-g",
         "recargable",
         "vibrador",
         "vibradores"
@@ -11336,7 +11322,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "6 modos",
+        "6-modos",
         "juguetes",
         "lengua",
         "nuevo",
@@ -11395,7 +11381,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "doble propósito",
+        "doble-proposito",
         "hitachi",
         "juguetes",
         "masajeador",
@@ -11457,8 +11443,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "9 patrones",
-        "a distancia",
+        "9-patrones",
+        "a-distancia",
         "app",
         "huevo",
         "huevos-vibradores",
@@ -11520,9 +11506,9 @@
         "is_18_plus": true
       },
       "tags": [
-        "2 motores",
-        "IPX7",
+        "2-motores",
         "bala",
+        "ipx7",
         "juguetes",
         "lengua",
         "nuevo",
@@ -11587,12 +11573,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "28 modos",
-        "hitachi mini",
+        "28-modos",
+        "hitachi-mini",
         "juguetes",
         "masajeador",
         "nuevo",
-        "resistente al agua",
+        "resistente-al-agua",
         "usb",
         "vibradores"
       ],
@@ -11649,12 +11635,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
+        "10-modos",
         "hitachi",
         "juguetes",
         "masajeador",
         "nuevo",
-        "silicona médica",
+        "silicona-medica",
         "usb",
         "vibradores"
       ],
@@ -11881,8 +11867,8 @@
         "bolas-chinas-y-kegel",
         "juguetes",
         "kegel",
-        "salud íntima",
-        "suelo pélvico"
+        "salud-intima",
+        "suelo-pelvico"
       ],
       "variants": [
         {
@@ -11935,7 +11921,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "bolas chinas",
+        "bolas-chinas",
         "bolas-chinas-y-kegel",
         "juguetes",
         "orgasmos",
@@ -12122,7 +12108,7 @@
         "juguetes",
         "nuevo",
         "realista",
-        "testículos",
+        "testiculos",
         "ventosa",
         "vertebrado"
       ],
@@ -12185,7 +12171,7 @@
         "consoladores-y-dildos",
         "juguetes",
         "nuevo",
-        "potencia gradual",
+        "potencia-gradual",
         "realista",
         "ventosa",
         "vertebrado",
@@ -12245,10 +12231,10 @@
         "is_18_plus": true
       },
       "tags": [
-        "doble estimulación",
+        "doble-estimulacion",
         "juguetes",
         "lengua",
-        "silicona biomédica",
+        "silicona-biomedica",
         "vibrador",
         "vibradores"
       ],
@@ -12305,12 +12291,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "10 modos",
-        "clítoris",
+        "10-modos",
+        "clitoris",
         "juguetes",
         "nuevo",
-        "punto g",
-        "silicona ABS",
+        "punto-g",
+        "silicona-abs",
         "usb",
         "vibrador",
         "vibradores"
@@ -12369,11 +12355,11 @@
         "is_18_plus": true
       },
       "tags": [
-        "TPE",
         "consolador",
         "consoladores-y-dildos",
         "juguetes",
-        "manos libres",
+        "manos-libres",
+        "tpe",
         "ventosa"
       ],
       "variants": [
@@ -12427,7 +12413,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "colores surtidos",
+        "colores-surtidos",
         "consoladores-y-dildos",
         "dildo",
         "juguetes"
@@ -12483,7 +12469,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "colores surtidos",
+        "colores-surtidos",
         "consoladores-y-dildos",
         "dildo",
         "juguetes"
@@ -12542,7 +12528,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "autoexploración",
+        "autoexploracion",
         "consoladores-y-dildos",
         "juguetes",
         "ventosa",
@@ -12613,12 +12599,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "TPE",
-        "bolas chinas",
+        "bolas-chinas",
         "juguetes",
         "plug",
         "plugs-y-juguetes-anales",
-        "principiantes"
+        "principiantes",
+        "tpe"
       ],
       "variants": [
         {
@@ -12671,12 +12657,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "TPE",
-        "colores surtidos",
+        "colores-surtidos",
         "juguetes",
-        "kit anal",
+        "kit-anal",
         "plugs-y-juguetes-anales",
-        "progresivo"
+        "progresivo",
+        "tpe"
       ],
       "variants": [
         {
@@ -12732,10 +12718,10 @@
         "is_18_plus": true
       },
       "tags": [
+        "arnes",
         "arneses",
-        "arnés",
-        "correas ajustables",
-        "doble penetración",
+        "correas-ajustables",
+        "doble-penetracion",
         "juguetes"
       ],
       "variants": [
@@ -12801,7 +12787,7 @@
       },
       "tags": [
         "cola",
-        "colores surtidos",
+        "colores-surtidos",
         "cosplay",
         "juguetes",
         "plug",
@@ -12859,8 +12845,8 @@
         "is_18_plus": true
       },
       "tags": [
-        "colita conejo",
-        "colores surtidos",
+        "colita-conejo",
+        "colores-surtidos",
         "juguetes",
         "plug",
         "plugs-y-juguetes-anales",
@@ -12917,7 +12903,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "cola de zorro",
+        "cola-de-zorro",
         "cosplay",
         "juguetes",
         "kit",
@@ -12979,12 +12965,12 @@
         "is_18_plus": true
       },
       "tags": [
-        "11 frecuencias",
+        "11-frecuencias",
         "app",
         "bala",
         "balas-vibradoras",
-        "carga magnética",
-        "control remoto",
+        "carga-magnetica",
+        "control-remoto",
         "juguetes",
         "nuevo",
         "premium",
@@ -13045,7 +13031,7 @@
         "bdsm-y-fetish",
         "fetish",
         "kits-fetish",
-        "sumisión"
+        "sumision"
       ],
       "variants": [
         {
@@ -13338,7 +13324,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "aberturas frontales",
+        "aberturas-frontales",
         "body",
         "lenceria-y-mallas",
         "malla",
@@ -13400,9 +13386,9 @@
         "lenceria-y-mallas",
         "malla",
         "mallas-cortas",
-        "mangas largas",
+        "mangas-largas",
         "negro",
-        "textura animal"
+        "textura-animal"
       ],
       "variants": [
         {
@@ -13456,11 +13442,11 @@
       },
       "tags": [
         "body",
-        "encaje geométrico",
+        "encaje-geometrico",
         "lenceria-y-mallas",
         "malla",
         "mallas-cortas",
-        "mangas largas",
+        "mangas-largas",
         "negro"
       ],
       "variants": [
@@ -13521,7 +13507,7 @@
         "lenceria-y-mallas",
         "malla",
         "mallas-cortas",
-        "mangas largas",
+        "mangas-largas",
         "red"
       ],
       "variants": [
@@ -13662,7 +13648,7 @@
         "malla",
         "mallas-cortas",
         "negro",
-        "textura animal",
+        "textura-animal",
         "vestido"
       ],
       "variants": [
@@ -13720,7 +13706,7 @@
         "malla",
         "mallas-cortas",
         "negro",
-        "red amplia",
+        "red-amplia",
         "vestido"
       ],
       "variants": [
@@ -13980,7 +13966,7 @@
         "lenceria-y-mallas",
         "mallas-enteras",
         "negro",
-        "red amplia"
+        "red-amplia"
       ],
       "variants": [
         {
@@ -14039,7 +14025,7 @@
         "malla",
         "mallas-enteras",
         "negro",
-        "tiras frontales"
+        "tiras-frontales"
       ],
       "variants": [
         {
@@ -14151,7 +14137,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "animal print",
+        "animal-print",
         "bodystocking",
         "lenceria-y-mallas",
         "malla",
@@ -14214,7 +14200,7 @@
       "tags": [
         "bodystocking",
         "catsuit",
-        "cortes laterales",
+        "cortes-laterales",
         "halter",
         "lenceria-y-mallas",
         "mallas-enteras"
@@ -14296,7 +14282,7 @@
         "malla",
         "mallas-dos-piezas",
         "negro",
-        "red amplia",
+        "red-amplia",
         "short"
       ],
       "variants": [
@@ -14354,7 +14340,7 @@
         "malla",
         "mallas-dos-piezas",
         "negro",
-        "red amplia",
+        "red-amplia",
         "set",
         "short",
         "top"
@@ -14469,7 +14455,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "cintura elástica",
+        "cintura-elastica",
         "lenceria-y-mallas",
         "media",
         "medias",
@@ -14529,7 +14515,7 @@
       "tags": [
         "fucsia",
         "lenceria-y-mallas",
-        "liguero integrado",
+        "liguero-integrado",
         "media",
         "medias",
         "red"
@@ -14585,7 +14571,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "cintura elástica",
+        "cintura-elastica",
         "corazones",
         "lenceria-y-mallas",
         "media",
@@ -14643,7 +14629,7 @@
         "is_18_plus": true
       },
       "tags": [
-        "lazo decorativo",
+        "lazo-decorativo",
         "lenceria-y-mallas",
         "media",
         "medias",
@@ -14703,7 +14689,7 @@
       "tags": [
         "enteriza",
         "halter",
-        "laterales abiertos",
+        "laterales-abiertos",
         "lenceria-y-mallas",
         "media",
         "medias",

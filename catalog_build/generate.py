@@ -72,19 +72,20 @@ def build_categories():
 # ---------------------------------------------------------------------------
 def auto_tags(p, cat_name, sub, variants):
     tags = set(p.get("tags", []))
-    tags.add(slugify(cat_name))
+    tags.add(cat_name)
     if sub:
-        tags.add(slugify(sub))
+        tags.add(sub)
     brand = p.get("brand", C.BRAND_DEFAULT)
     if brand and brand != C.BRAND_DEFAULT:
-        tags.add(slugify(brand))
+        tags.add(brand)
     for b in p.get("badges", []):
         tags.add(b)
     # variant option types become facet tags (e.g. sabor, color, aroma)
     for v in variants:
-        if v.get("type"):
+        if v.get("type") and v["type"] != "default":
             tags.add(v["type"])
-    return sorted(tags)
+    # normalize ALL tags to kebab-case slugs so facets and product_tags align
+    return sorted({slugify(t) for t in tags if t})
 
 
 def build_products(categories):

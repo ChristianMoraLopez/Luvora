@@ -55,16 +55,20 @@ export function Header({
             </motion.div>
 
             <Link href="/" aria-label="LUVORA — Inicio" className="inline-flex items-center">
-              {playing ? (
-                // Placeholder holds the space; hidden behind the intro overlay.
-                <span className="opacity-0" aria-hidden="true">
-                  <BrandLockup markSize={28} wordClassName="text-[23px]" />
-                </span>
-              ) : (
-                <motion.span layoutId="brand-lockup" className="inline-flex">
-                  <BrandLockup markSize={28} wordClassName="text-[23px]" />
-                </motion.span>
-              )}
+              {/*
+                The logo only claims `layoutId` once the intro is complete, so
+                Framer Motion morphs it IN from the overlay (forward only). Before
+                that it renders plain — visible for SSR/no-JS, hidden while the
+                overlay covers it. The `key` forces a clean remount at hand-off.
+              */}
+              <motion.span
+                key={introComplete ? "shared" : "plain"}
+                layoutId={introComplete ? "brand-lockup" : undefined}
+                className={cn("inline-flex", playing && "opacity-0")}
+                aria-hidden={playing || undefined}
+              >
+                <BrandLockup markSize={28} wordClassName="text-[23px]" />
+              </motion.span>
             </Link>
           </div>
 

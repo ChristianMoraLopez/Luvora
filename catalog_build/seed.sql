@@ -113,63 +113,57 @@ insert into subcategories (id, category_id, name, slug, position) values ('86e1a
   on conflict (id) do update set name=excluded.name, position=excluded.position;
 
 -- ============ tags ============
-insert into tags (id, slug, label) values ('d0858459-2e29-5f42-89b5-fcd070c671b4', '1 velocidad', '1 velocidad')
+insert into tags (id, slug, label) values ('d9c9c8fe-73c8-5b21-933a-c47285e5f8b2', '1-velocidad', '1 velocidad')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('a42d67ee-d50d-59d1-b189-87fdd31748b5', '10 funciones', '10 funciones')
+insert into tags (id, slug, label) values ('70f35cf9-36b2-5d59-bedf-e871505a1a68', '10-funciones', '10 funciones')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('fd2a738e-de52-5b5b-af78-821832074dc1', '10 modos', '10 modos')
+insert into tags (id, slug, label) values ('e5d1d05c-b8f3-5182-9ffb-080f775367f8', '10-modos', '10 modos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('7ebb0e97-1176-55be-9c5e-96c6106a6bd0', '11 frecuencias', '11 frecuencias')
+insert into tags (id, slug, label) values ('069855d8-4bed-5935-9615-7eb31de705d5', '11-frecuencias', '11 frecuencias')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('eb92f903-40a5-57b5-a4cd-31bc62d04de0', '2 en 1', '2 en 1')
+insert into tags (id, slug, label) values ('7645f011-ce52-54a6-aa5f-43d646efe5a9', '2-en-1', '2 en 1')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6b5ad029-5cba-5756-ab5b-e903eb584bf8', '2 motores', '2 motores')
+insert into tags (id, slug, label) values ('7e7869a9-d2c1-5e9e-8782-b5f4afc8494e', '2-motores', '2 motores')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6e75b484-018a-5587-aa5c-92192f4a9d3f', '28 modos', '28 modos')
+insert into tags (id, slug, label) values ('5089f54b-a26b-5cd4-b490-a41d716a856b', '28-modos', '28 modos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('da5bda49-f63f-569d-8d83-5a32855594c2', '3 en 1', '3 en 1')
+insert into tags (id, slug, label) values ('0b93f815-1698-50fb-9f54-57178f747637', '3-en-1', '3 en 1')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('1ad38c4c-32ae-54ee-8710-a298d4316cc4', '40 tarjetas', '40 tarjetas')
+insert into tags (id, slug, label) values ('657ea5ad-e832-5d5e-90ae-1efd5c675213', '40-tarjetas', '40 tarjetas')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6b6b3e0b-1a92-5db0-8165-ff681dc3ed7f', '500ml', '500ml')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('b9ae0878-11a9-5cf0-93e0-eb234253e858', '6 modos', '6 modos')
+insert into tags (id, slug, label) values ('2034fa31-531f-5e41-b8e9-fb7e7efd2833', '6-modos', '6 modos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('9ae30800-6832-5ca2-b526-7d00f382aaf5', '7 funciones', '7 funciones')
+insert into tags (id, slug, label) values ('697cced4-e2f7-529c-b984-0597b4d92636', '7-funciones', '7 funciones')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d4cc079b-af4a-5c1d-9886-1c9c88231a91', '7 velocidades', '7 velocidades')
+insert into tags (id, slug, label) values ('9ffac063-afda-5a9d-ac83-5f1d96555e0a', '7-velocidades', '7 velocidades')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('f1c351bf-2129-591e-87d7-9416c5fb1b74', '9 patrones', '9 patrones')
+insert into tags (id, slug, label) values ('6e2ff2af-5524-587e-a45d-c0305ec49b8d', '9-patrones', '9 patrones')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('380096a2-8823-5f3b-b544-0213799fc785', '90 ml', '90 ml')
+insert into tags (id, slug, label) values ('2593d02c-f12f-5d35-a675-f9cc6ef2012f', '90-ml', '90 ml')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('7699d0eb-c507-531e-a32c-3efba621afa9', 'IPX7', 'IPX7')
+insert into tags (id, slug, label) values ('eb9d4197-56cd-59df-8a68-99a93ec324da', 'a-distancia', 'a distancia')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('31c7b7d2-2088-5984-9b10-e5d87a61300d', 'L-arginina', 'L arginina')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4f42fe26-9aa7-527b-be7e-aa9b81a6032e', 'TPE', 'TPE')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('ec1c1896-01f3-5e85-ba76-9b4ff52bc4c9', 'TPR', 'TPR')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('04d53ec3-c1f5-547a-ac71-8e120bcb2c9e', 'a distancia', 'a distancia')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('ae44e81a-acdd-5ce7-91c7-7ab7648bb53b', 'aberturas frontales', 'aberturas frontales')
+insert into tags (id, slug, label) values ('3cf260eb-bfd2-531e-b410-5225416b7efc', 'aberturas-frontales', 'aberturas frontales')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('90b6396e-46a8-5ba4-9c14-9468bb611847', 'aceite', 'aceite')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('c543bd03-206d-5d65-9733-83cc22e800bb', 'aceite lubricante', 'aceite lubricante')
+insert into tags (id, slug, label) values ('84ba033b-dd91-57f3-b231-73053a1ad90f', 'aceite-lubricante', 'aceite lubricante')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d4edc461-8990-5df4-a9a9-2e3fc17389b7', 'aceites-de-masaje', 'aceites de masaje')
   on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('1f30df6d-04fc-5274-a1bd-9d0a7bed3e39', 'acido-hialuronico', 'acido hialuronico')
+  on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bc1acc21-0975-5cd3-a907-06d36c118e37', 'aclarante', 'aclarante')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('c09fac15-5cbf-5b73-8c37-b0b277599d17', 'afrodisíaco', 'afrodisíaco')
+insert into tags (id, slug, label) values ('9e8c6f84-197a-52ad-aa01-423a5c7d14e8', 'afrodisiaco', 'afrodisiaco')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('5d248bac-d098-5ac4-8313-c46b2466e61f', 'agua de rosas', 'agua de rosas')
+insert into tags (id, slug, label) values ('5f5e242b-4051-5bdf-88d9-94e97678b497', 'agua-de-rosas', 'agua de rosas')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('539f703e-a554-521a-b5b6-297f4bbae022', 'air pulse', 'air pulse')
+insert into tags (id, slug, label) values ('7bfe6179-b277-582a-8bb0-3fb551451e05', 'air-pulse', 'air pulse')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0ca11a72-d138-5437-81c6-e1443fdaac1b', 'aloe vera', 'aloe vera')
+insert into tags (id, slug, label) values ('88210c3c-414c-5db6-a5bd-48369d43178e', 'aloe-vera', 'aloe vera')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('12b8d813-bd67-513a-bb26-88fdaf642084', 'ambiente', 'ambiente')
   on conflict (slug) do nothing;
@@ -183,7 +177,7 @@ insert into tags (id, slug, label) values ('151b944b-8657-53d6-80a0-224cdda57d96
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b689f979-2a2f-5350-99ba-5b10d8b34c6a', 'anillos-para-pene', 'anillos para pene')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6c165dd6-239e-58a6-800b-7c80d075a135', 'animal print', 'animal print')
+insert into tags (id, slug, label) values ('35c88506-3ec8-59cf-8959-e5ae4d0268d9', 'animal-print', 'animal print')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('2dbb7cd7-efa7-5229-bc93-a1433e0330aa', 'antifaces-y-tapaojos', 'antifaces y tapaojos')
   on conflict (slug) do nothing;
@@ -191,31 +185,31 @@ insert into tags (id, slug, label) values ('4abbef62-8274-5238-a4c0-6be394d95b6f
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d786d382-bc7b-5e14-8169-c9c96df3df50', 'app', 'app')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('e9a0c83f-8be8-5d12-9d7a-1dcc60ccd15e', 'app gratis', 'app gratis')
+insert into tags (id, slug, label) values ('a0cb1c1a-3b40-52f6-b1a0-59be3d09dfc0', 'app-gratis', 'app gratis')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('85fc2dd3-7cd2-5a7c-98bb-4b0964753a37', 'arnes', 'arnes')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('720a91c8-0e67-5906-8e85-d7e3002d2056', 'arneses', 'arneses')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('bae247fd-ff53-50d9-9b08-ef4a349e16a9', 'arnés', 'arnés')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bee97169-5da6-52e1-b545-6c7d89b9b6aa', 'aroma', 'aroma')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('a7947f48-ba97-5b6b-8f34-59690db3f91c', 'aromaterapia', 'aromaterapia')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('148ea83b-1b3a-5baa-b4a3-a7e4b80bd313', 'atracción', 'atracción')
+insert into tags (id, slug, label) values ('69a8cebd-c640-5b3c-be80-8a03e06479bd', 'atraccion', 'atraccion')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('28a614b3-9c4b-5b2d-8ecb-59ab6f4a4040', 'autoexploración', 'autoexploración')
+insert into tags (id, slug, label) values ('306daf61-356f-5e66-9650-94b127759a51', 'autoexploracion', 'autoexploracion')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('af1d911a-3183-5968-83a1-18b59e84d30c', 'bala', 'bala')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('24bf541f-b410-5d7e-a996-9e3fbea919e1', 'bala removible', 'bala removible')
+insert into tags (id, slug, label) values ('a388a41e-b891-55a1-94a3-2201439777be', 'bala-removible', 'bala removible')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('fae7182b-a296-5dbe-b917-12f49b35dfd5', 'bala vibradora', 'bala vibradora')
+insert into tags (id, slug, label) values ('e466cff2-cd0b-51a0-961d-5d3c08904315', 'bala-vibradora', 'bala vibradora')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bcf46eac-cce5-5dfc-98e5-e47ef23e2316', 'balas-vibradoras', 'balas vibradoras')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('a951d353-67f7-5822-85c8-3a757d868894', 'ball gag', 'ball gag')
+insert into tags (id, slug, label) values ('96c8f8e4-308b-5508-889d-02e03542c31a', 'ball-gag', 'ball gag')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('5ede44c5-b3c2-51bc-ae43-98a39a1f23df', 'base agua', 'base agua')
+insert into tags (id, slug, label) values ('353a7036-aa78-5fa1-8d3b-b3776d71fa73', 'base-agua', 'base agua')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e5ffe191-1c2f-553d-b58c-0dc97c7796ec', 'bassika', 'bassika')
   on conflict (slug) do nothing;
@@ -227,11 +221,11 @@ insert into tags (id, slug, label) values ('3d29262c-4058-5b3b-a8cf-db2455391c6a
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('a809a32d-baf6-5a36-927d-96405679aceb', 'body', 'body')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('aacdbc32-308c-5fe8-84c5-45c1ec7256d6', 'body paint', 'body paint')
+insert into tags (id, slug, label) values ('4a593af2-e47d-561a-a228-f32cb270072b', 'body-paint', 'body paint')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('5721887b-6430-5567-b1ea-4e04377fa1a7', 'bodystocking', 'bodystocking')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4235ca0a-c688-5bb7-939a-3d85cee07259', 'bolas chinas', 'bolas chinas')
+insert into tags (id, slug, label) values ('18549bec-5f87-573d-8442-0d93725017f0', 'bolas-chinas', 'bolas chinas')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('1d90c602-22ae-59ab-9f85-f0e667921d49', 'bolas-chinas-y-kegel', 'bolas chinas y kegel')
   on conflict (slug) do nothing;
@@ -239,7 +233,7 @@ insert into tags (id, slug, label) values ('522074b4-6b40-5658-885f-9a8c5f973039
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('00e5bf8b-4dfa-5ae0-9510-5f9aa00ffcbb', 'bombas', 'bombas')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('284e60bb-360a-5080-b8a7-472b78ed860c', 'brillo labial', 'brillo labial')
+insert into tags (id, slug, label) values ('37907a1f-b2ff-5ecf-b04f-44689dd15e7b', 'brillo-labial', 'brillo labial')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b5034a7d-afe6-5ad1-b4c3-73b1b261fd39', 'brillos', 'brillos')
   on conflict (slug) do nothing;
@@ -249,9 +243,11 @@ insert into tags (id, slug, label) values ('06299f59-6bf3-5987-8617-4943e3621957
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('7d7089a9-f53c-523e-aa39-67b18a7fc9e8', 'cannabis', 'cannabis')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('49602bcb-82c1-5958-bfbc-d6c6b065aa13', 'cannabis sativa', 'cannabis sativa')
+insert into tags (id, slug, label) values ('411c1668-6879-558b-93e5-216082dd5035', 'cannabis-sativa', 'cannabis sativa')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('933b7816-6949-526a-8acd-7baca98c0ea3', 'carga magnética', 'carga magnética')
+insert into tags (id, slug, label) values ('1961afa3-5a5c-51ab-9d3c-182874a143a8', 'capsula', 'capsula')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('639d89db-b6a5-51a5-9793-f3949cdaa850', 'carga-magnetica', 'carga magnetica')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d2eac0ff-90fe-5db7-9f34-6940eb0f928f', 'cartas', 'cartas')
   on conflict (slug) do nothing;
@@ -259,19 +255,19 @@ insert into tags (id, slug, label) values ('45606c96-cf6e-5a21-8fdc-c0fe4e839337
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('446ab219-b136-569b-8aa1-e3fe16354bb6', 'chocolate', 'chocolate')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('b124820b-fbc4-587c-90e0-65238129bad4', 'cintura elástica', 'cintura elástica')
+insert into tags (id, slug, label) values ('2c118f4e-5e36-5ec0-950b-f0d1a3152d6d', 'cintura-elastica', 'cintura elastica')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('52162fdb-d015-5825-85a2-1d19860b2ddb', 'clítoris', 'clítoris')
+insert into tags (id, slug, label) values ('c58f7eff-f4be-521e-bfba-2ae8ad73e5c7', 'clitoris', 'clitoris')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c293a80a-d1ab-5d17-89bf-3316d8d05b38', 'coco', 'coco')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('1da3b7cc-13ae-54d5-89f5-52f497722361', 'cola', 'cola')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0da66172-662b-510e-b8ed-de6f15d735d9', 'cola de zorro', 'cola de zorro')
+insert into tags (id, slug, label) values ('6a35c230-a91b-5c7c-8725-de08cbfaa3f2', 'cola-de-zorro', 'cola de zorro')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0620d5b0-7a43-5847-af85-f015232df5cb', 'colita conejo', 'colita conejo')
+insert into tags (id, slug, label) values ('ac3a24fd-5890-59d5-ac2a-8b430050edd9', 'colita-conejo', 'colita conejo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('faf8c00a-7865-5c16-843d-72d07e181a61', 'colores surtidos', 'colores surtidos')
+insert into tags (id, slug, label) values ('44994392-50c4-5b0a-9d3c-39db77a3b54a', 'colores-surtidos', 'colores surtidos')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6fc50671-6512-56a5-8da4-276bf401d350', 'comestible', 'comestible')
   on conflict (slug) do nothing;
@@ -289,19 +285,19 @@ insert into tags (id, slug, label) values ('d29c05bb-e77e-5adb-af82-d84abc5991ac
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d94e46bf-ce9a-56e6-8f0b-d8d9699483e0', 'control', 'control')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('e52d3cc2-2d49-5b60-b56f-201e4986ea82', 'control inalámbrico', 'control inalámbrico')
+insert into tags (id, slug, label) values ('e86f9c39-0da6-5299-a296-b4c56a3891bb', 'control-inalambrico', 'control inalambrico')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('9dc42783-6bf3-5dbb-8c54-1da4e05f2e4d', 'control remoto', 'control remoto')
+insert into tags (id, slug, label) values ('0c1e253e-75a8-5966-bb22-241842860383', 'control-remoto', 'control remoto')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('861d669f-6d44-594c-b768-93f30664eb88', 'corazones', 'corazones')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('5435fbe9-5505-521d-a896-20e624029539', 'cordón', 'cordón')
+insert into tags (id, slug, label) values ('af3697e8-88e4-56ae-bed6-82a43605e210', 'cordon', 'cordon')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('372376f0-d476-59e8-a83c-0fca490f8a7a', 'corporal', 'corporal')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4549d30a-d8f9-5024-9f2e-b47d6130415b', 'correas ajustables', 'correas ajustables')
+insert into tags (id, slug, label) values ('186ebf29-385f-53fd-95ac-ab0f1a7a323e', 'correas-ajustables', 'correas ajustables')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6a202ac8-477b-5a4b-8810-9a762bf2dd20', 'cortes laterales', 'cortes laterales')
+insert into tags (id, slug, label) values ('6bef5663-a8a3-58ae-95d9-06afd4f55b3c', 'cortes-laterales', 'cortes laterales')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('dbac41c4-03bb-5292-a998-41797c8000d9', 'cosmetica-intima-y-sensual', 'cosmetica intima y sensual')
   on conflict (slug) do nothing;
@@ -309,31 +305,27 @@ insert into tags (id, slug, label) values ('c452cf35-9505-57c1-bf62-0a615bfe79c6
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('60fb592b-d304-5238-8c56-98ae00a8e2e2', 'crema', 'crema')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('cf7893fe-f2d8-5ff0-a256-0b49211b67cf', 'crema besable', 'crema besable')
+insert into tags (id, slug, label) values ('db881399-fb19-5e26-bb74-2ff23f981b2f', 'crema-besable', 'crema besable')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d8af1d5f-34ce-515e-9f61-9aebabf64b81', 'crema de manos', 'crema de manos')
+insert into tags (id, slug, label) values ('c982afa5-6948-5934-ad95-68f40fd958b2', 'crema-de-manos', 'crema de manos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('201dd1a7-9f76-553a-8de8-5bfc48155d3a', 'crema de whisky', 'crema de whisky')
+insert into tags (id, slug, label) values ('cdd63cf5-1578-5e9d-bd6f-46f4e8aa22fa', 'crema-de-whisky', 'crema de whisky')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('09e68308-85b8-5bc1-81f3-fc1da2c7edf1', 'cremas-y-exfoliantes', 'cremas y exfoliantes')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('7e11b770-cb5e-5a9b-9e7f-49ebcdc89bff', 'cromada', 'cromada')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('f081b161-4cb8-5f60-b504-807fe0b4a72e', 'cuero sintético', 'cuero sintético')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('3ccd0d63-1205-541a-ba2d-3322629613bf', 'cuidado íntimo', 'cuidado íntimo')
+insert into tags (id, slug, label) values ('243f6f3a-65be-5613-bd43-96adc0cabdaf', 'cuero-sintetico', 'cuero sintetico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e5240aa8-6302-5f05-87c5-1679dc2e79e2', 'cuidado-especial', 'cuidado especial')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('84f68714-045f-50ca-9b88-194f0d516f11', 'cuidado-intimo', 'cuidado intimo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('2d5a6b70-d6e2-5f9f-86ea-220b225d0494', 'cápsula', 'cápsula')
-  on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('159984d9-2193-5ffb-b091-e1321ca7d488', 'dados', 'dados')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('be630e55-27e0-5fd2-848f-0d3cc36233e3', 'desensibilizante', 'desensibilizante')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('3babbac1-2d74-5792-971b-0e9d58221b9b', 'desodorante íntimo', 'desodorante íntimo')
+insert into tags (id, slug, label) values ('cedccab3-add3-5316-8b0e-cfb597891fd3', 'desodorante-intimo', 'desodorante intimo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('beb812bb-01e3-5ca3-bc1e-21366e513afc', 'despigmentante', 'despigmentante')
   on conflict (slug) do nothing;
@@ -345,19 +337,15 @@ insert into tags (id, slug, label) values ('7a92b65c-1e77-5751-aa57-614a6cbbee3d
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d9ca9090-7529-5579-a849-90ad03a558c3', 'discreto', 'discreto')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('e1f71ab8-05ae-5d4c-afca-a4650bf2a700', 'doble estimulación', 'doble estimulación')
+insert into tags (id, slug, label) values ('a223dbe2-a624-5afd-a411-aa88f4e1f9f9', 'doble-estimulacion', 'doble estimulacion')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('585f41fd-12fb-5fd4-b0b4-142fd7ef0bf4', 'doble penetración', 'doble penetración')
+insert into tags (id, slug, label) values ('afc19aa3-16bb-549a-8260-d0d59efbdfa0', 'doble-penetracion', 'doble penetracion')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('7033c794-77a3-5b9b-8ed1-9d6b1eb278e8', 'doble propósito', 'doble propósito')
+insert into tags (id, slug, label) values ('05a28201-65e9-50d4-a4e2-e128d1aa66a3', 'doble-proposito', 'doble proposito')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('fc79a5d4-dac6-5a8b-b4e2-50e7d352beeb', 'ducha anal', 'ducha anal')
+insert into tags (id, slug, label) values ('9bda374b-45d8-55c8-80d9-239c81a9f19b', 'ducha-anal', 'ducha anal')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6c7cb4e2-fc8e-5501-957e-8a3a5d22b864', 'edición especial', 'edición especial')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('f5086b73-a7b5-507a-ade4-cd19cce5062d', 'efecto calor', 'efecto calor')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('fb9d7c3f-5f0d-5ffe-994a-577b1d310a95', 'efecto frío', 'efecto frío')
+insert into tags (id, slug, label) values ('16b9be2f-3e23-5d70-9198-2974c3f512a2', 'edicion-especial', 'edicion especial')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c18875e6-d06f-5aaf-aa08-19dc25c55937', 'efecto-calor', 'efecto calor')
   on conflict (slug) do nothing;
@@ -371,19 +359,17 @@ insert into tags (id, slug, label) values ('d5c6ce12-af6b-56a2-a985-578d7d603326
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('243a7d64-b702-59b5-bbb2-161b1f454864', 'encaje', 'encaje')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('84240caf-0dbf-5f3a-b8f1-176af2049974', 'encaje geométrico', 'encaje geométrico')
+insert into tags (id, slug, label) values ('24bddbd3-8226-571d-ae4b-405fee8ce1eb', 'encaje-geometrico', 'encaje geometrico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('1250fcb8-3d4f-527f-8fc2-ad9556e5b988', 'enema', 'enema')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('3f43117c-3662-50a4-82b3-350cbcc191c9', 'energía', 'energía')
+insert into tags (id, slug, label) values ('d29e5a57-6d0c-5c11-9f2c-d53de9f5541a', 'energia', 'energia')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('63290afc-56f6-505f-ae11-18c85762040a', 'enteriza', 'enteriza')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('b824db80-d81a-5d28-a460-fb98225d6551', 'erección', 'erección')
+insert into tags (id, slug, label) values ('67129976-26fd-5d50-9f3e-a7fd683c5f93', 'ereccion', 'ereccion')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('512811d4-aa51-5dc0-bdb4-25d8e9cffb4f', 'ergonómico', 'ergonómico')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('5b1944df-969a-5730-a419-ccdb5c520ed1', 'erotic scence', 'erotic scence')
+insert into tags (id, slug, label) values ('d8bfb917-a110-5743-8b90-50f9411ef761', 'ergonomico', 'ergonomico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b1038fa5-1aff-55dd-8a0a-52f7dcfe616c', 'erotic-scence', 'erotic scence')
   on conflict (slug) do nothing;
@@ -403,13 +389,13 @@ insert into tags (id, slug, label) values ('d2b1536d-fbaa-549b-b532-20ad69eb01db
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('dfad6a2a-bbdb-5ac7-91ab-1d0a16529a49', 'exfoliante', 'exfoliante')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4a93cc2d-e3ba-56cc-856f-e06ddcbd271d', 'extractos naturales', 'extractos naturales')
+insert into tags (id, slug, label) values ('593c4b67-8775-5f61-a080-d8cbdfd2b4da', 'extractos-naturales', 'extractos naturales')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('25d1b4a8-3c66-54d3-88d1-ab048624bb86', 'eyaculación femenina', 'eyaculación femenina')
+insert into tags (id, slug, label) values ('67ec1f55-65e5-56a9-90b0-ec6e2d555ce4', 'eyaculacion-femenina', 'eyaculacion femenina')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('11b562b7-6fe9-5f86-b3d1-3897990d2ad7', 'familiar', 'familiar')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('05d65302-beb4-5784-9eeb-c7fe9ac3689e', 'fantasía', 'fantasía')
+insert into tags (id, slug, label) values ('363af62a-ef0d-5e80-a1f8-fa05e2c19c39', 'fantasia', 'fantasia')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e5284f78-31cd-51d5-a691-a24a00076d9d', 'feromonas', 'feromonas')
   on conflict (slug) do nothing;
@@ -421,7 +407,7 @@ insert into tags (id, slug, label) values ('6018e56b-a23b-5cc8-9f8d-43fa0ae67e7f
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('9f403468-874f-57af-9599-bc7f92110f4f', 'floral', 'floral')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('96eb4695-9862-5323-ab38-8c94ed6471bf', 'floral frutal', 'floral frutal')
+insert into tags (id, slug, label) values ('eb909865-b943-5c55-be4f-9acf7b917542', 'floral-frutal', 'floral frutal')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c26998d6-94a3-5463-add5-8b78d56ead24', 'fluorescente', 'fluorescente')
   on conflict (slug) do nothing;
@@ -429,13 +415,13 @@ insert into tags (id, slug, label) values ('9221d25a-683c-59f5-aad7-a93ab5128e8e
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('5ce486b5-0ccb-5e22-b9f5-3ab8f49c2a67', 'fresa', 'fresa')
   on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('10cebe5f-5788-596d-b4a6-434541bf672f', 'frio', 'frio')
+  on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6196a66b-1fb9-5165-86ea-973ec0a787bd', 'frutal', 'frutal')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('c1b1c76f-eb34-5cb6-ae36-88c3555efb79', 'frutal floral', 'frutal floral')
+insert into tags (id, slug, label) values ('c00ad733-bebc-59b3-bf67-82c1e5d3d7f0', 'frutal-floral', 'frutal floral')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('998cc1fa-0ef3-598b-923f-1ee37651232b', 'frutos rojos', 'frutos rojos')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d07356ba-18c8-5325-8923-92a3e164ce6d', 'frío', 'frío')
+insert into tags (id, slug, label) values ('2d5ce3e4-192c-52a2-8c64-2ff47ae8722b', 'frutos-rojos', 'frutos rojos')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('d746d2cc-0a0d-5e30-9848-b43780ba6f28', 'fucsia', 'fucsia')
   on conflict (slug) do nothing;
@@ -443,7 +429,7 @@ insert into tags (id, slug, label) values ('3bc7f548-6437-5955-b932-9318498813f4
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('81b9098c-68eb-52db-832a-aab914491f5e', 'fundas-para-pene', 'fundas para pene')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('1f0c9344-e6a7-549a-9b5d-d561da8f2b7e', 'garganta profunda', 'garganta profunda')
+insert into tags (id, slug, label) values ('7a61991b-60d9-5e28-82ad-f6e60de0d9bb', 'garganta-profunda', 'garganta profunda')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('5e1c36ae-1e3e-5960-83dd-8433e68762da', 'gay', 'gay')
   on conflict (slug) do nothing;
@@ -467,11 +453,11 @@ insert into tags (id, slug, label) values ('0dcca471-9e5b-5869-8304-4d98c11ca21b
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('ca47fddf-6703-5157-988c-655d3b875c2a', 'hitachi', 'hitachi')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('afd426d7-32e3-5099-97fd-c4b57e4c404a', 'hitachi mini', 'hitachi mini')
+insert into tags (id, slug, label) values ('6cbd24ae-35e0-5fef-a635-47192a5e77d9', 'hitachi-mini', 'hitachi mini')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('59c60cac-80e1-5603-8ab9-57d6ecbc6d77', 'hombre', 'hombre')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('5fceeff9-184b-5ac5-9a49-84338abeb02a', 'hot ball', 'hot ball')
+insert into tags (id, slug, label) values ('9538f1a0-2afe-5762-87eb-62f3f3b423a6', 'hot-ball', 'hot ball')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('9e16a9b5-021b-55ee-a9da-a10740015908', 'huevo', 'huevo')
   on conflict (slug) do nothing;
@@ -479,23 +465,25 @@ insert into tags (id, slug, label) values ('e8f18915-215d-54c4-8064-66e2c5dac889
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('708432ac-1ae7-566f-a38d-3691c2ecd31b', 'impermeable', 'impermeable')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('01fb83c6-0d09-5155-b5e5-08b210ceebb0', 'inalámbrico', 'inalámbrico')
+insert into tags (id, slug, label) values ('76247775-dedf-5743-b49e-29289b235c6e', 'inalambrico', 'inalambrico')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('8e1e54cb-6f91-5834-9965-64b84d812b61', 'ingredientes naturales', 'ingredientes naturales')
+insert into tags (id, slug, label) values ('4139d4c7-23e8-5875-b8b6-5319d3cd51c3', 'ingredientes-naturales', 'ingredientes naturales')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('95f0f11f-c1bf-5b02-8a0c-260e2943019c', 'inmovilizador', 'inmovilizador')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('a8325ea7-ba14-53e1-85e4-f37eefdeb0d1', 'inspiración BBW', 'inspiración BBW')
+insert into tags (id, slug, label) values ('67fb897b-a1dd-5087-ba13-034d20599fe3', 'inspiracion-bbw', 'inspiracion bbw')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('8c93c2aa-6564-5c27-93ca-8045e633588d', 'intenso', 'intenso')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('f775f606-f09e-54b2-8d03-98f5f33c1323', 'jabón íntimo', 'jabón íntimo')
+insert into tags (id, slug, label) values ('7cdfa90a-fa04-5d49-845f-f05158437ee3', 'ipx7', 'ipx7')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('001311aa-f64c-5f49-864b-34960e97fa1f', 'jabon-intimo', 'jabon intimo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('dfb94eab-8f5d-5a88-af19-a1cea5ef5811', 'jenga', 'jenga')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('87414d72-645e-5398-94fa-1bf0e23fe639', 'juego', 'juego')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('f496fa3a-c629-535d-8fcc-3d44fdd381ad', 'juego previo', 'juego previo')
+insert into tags (id, slug, label) values ('0fe5001e-6aea-5da4-afd4-28ff6a5d0fe8', 'juego-previo', 'juego previo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff', 'juegos-de-mesa-y-cartas', 'juegos de mesa y cartas')
   on conflict (slug) do nothing;
@@ -509,15 +497,19 @@ insert into tags (id, slug, label) values ('c93a3abc-8c3d-5323-9d63-b323ce2e9b40
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('17163d94-70d7-54d2-9069-dfa7c1ef0bb8', 'kit', 'kit')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('ccfddb2d-136d-559c-8cef-0e935b0e483e', 'kit anal', 'kit anal')
+insert into tags (id, slug, label) values ('cb67a767-eb21-545c-9346-7f2492f4cd5d', 'kit-anal', 'kit anal')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('4fa9796f-8120-5cf3-b048-d1befecb0d33', 'kits-fetish', 'kits fetish')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('14801647-16d2-5dc4-8132-7fe24f82f022', 'laterales abiertos', 'laterales abiertos')
+insert into tags (id, slug, label) values ('9253f72b-b4b6-54b6-bc12-cb157e747a3b', 'l-arginina', 'l arginina')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('cb4ceabf-7a3a-5abd-965f-50940f2dd967', 'laterales-abiertos', 'laterales abiertos')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('ef6a9ab3-c9d5-5584-8f49-4fe2955b75d5', 'latigo', 'latigo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6eb8f71f-e5d9-54b9-b831-2d0da45a5ddb', 'latigos-y-paletas', 'latigos y paletas')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('e20e6ad8-a9f2-51bf-8b1e-ea4ef741faad', 'lazo decorativo', 'lazo decorativo')
+insert into tags (id, slug, label) values ('770e56a5-51bc-5220-a51c-d98c9782b88e', 'lazo-decorativo', 'lazo decorativo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('7b0087f2-4a4b-50bd-883b-6cdcf11f8509', 'lenceria-y-mallas', 'lenceria y mallas')
   on conflict (slug) do nothing;
@@ -525,23 +517,21 @@ insert into tags (id, slug, label) values ('d2140043-9971-54be-91be-7ca0b84f1f44
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b9b54152-6ca1-5349-94ed-11aa53904104', 'lentejuela', 'lentejuela')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4c165c9d-6932-5868-8fc4-e31ee8813e98', 'libido femenino', 'libido femenino')
+insert into tags (id, slug, label) values ('ecb86e1d-e3f3-5a8f-8cb6-5474942d0c26', 'lesbico', 'lesbico')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('1730c1c5-c10a-5ff0-9479-0318a821a299', 'libido-femenino', 'libido femenino')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c04cf8b8-eca5-5a9d-b8d5-022b094088b3', 'liguero', 'liguero')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d4b1d699-19af-5669-8c75-ae88449c7364', 'liguero integrado', 'liguero integrado')
+insert into tags (id, slug, label) values ('0cfa98b2-072d-5892-be2c-79150360d2f6', 'liguero-integrado', 'liguero integrado')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('59c29f5c-180d-5a8f-be52-eac3d73f615d', 'lilo', 'lilo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0ca76811-eac0-5373-ad92-db4dc61c7cc1', 'loción', 'loción')
+insert into tags (id, slug, label) values ('bb504153-d25b-5e90-a747-ef9173b44a2a', 'locion', 'locion')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('fc0199cc-90fb-5271-90f4-7b6120739e82', 'lubricantes-y-geles', 'lubricantes y geles')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('029242d6-4024-5a63-b2e3-4746d1218381', 'lychee', 'lychee')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('7dd6e92a-e51f-55a3-9b3a-34ef0a79cef3', 'látigo', 'látigo')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('067ecd07-803e-586c-905b-f40ff358b87f', 'lésbico', 'lésbico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('a85088c6-ea67-5766-ac5e-24b4e765c4a6', 'magnetic', 'magnetic')
   on conflict (slug) do nothing;
@@ -553,9 +543,9 @@ insert into tags (id, slug, label) values ('73c2f239-1347-55c2-a407-e5235cbc50db
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('5dd21eac-a730-5e93-93cf-f15858252a45', 'mallas-enteras', 'mallas enteras')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('47070d72-fecc-5e4e-8c3f-4fcc507b2433', 'mangas largas', 'mangas largas')
+insert into tags (id, slug, label) values ('9df8ee33-c3d6-5573-b4d4-5cd923e7e8a5', 'mangas-largas', 'mangas largas')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('84022795-621f-59e3-ab10-56ee019362b8', 'manos libres', 'manos libres')
+insert into tags (id, slug, label) values ('e5638efa-2aac-57da-b60a-ee6a6019f621', 'manos-libres', 'manos libres')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('92f21b69-7633-575a-9ab0-48bf3a158387', 'manzanilla', 'manzanilla')
   on conflict (slug) do nothing;
@@ -575,7 +565,7 @@ insert into tags (id, slug, label) values ('cc4ff378-985f-51ab-a04c-a84b670ce0ea
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('55ce0a6a-399f-5e50-8708-359f5d4e599f', 'menta', 'menta')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('90842525-fddc-51e3-a202-dddcc005aa99', 'metálico', 'metálico')
+insert into tags (id, slug, label) values ('74501147-7ed6-5423-91e6-153212f78118', 'metalico', 'metalico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('54f038d8-3a09-5408-b75a-4e2c8b762d8e', 'minivestido', 'minivestido')
   on conflict (slug) do nothing;
@@ -587,13 +577,13 @@ insert into tags (id, slug, label) values ('54f67256-0341-5fb6-971a-ccba2abc1524
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('f04d633e-4da5-5872-9af4-8b0888e7fe75', 'multiefecto', 'multiefecto')
   on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('6bccaee0-ef5e-5e12-a87a-5056791e601e', 'multiorgasmico', 'multiorgasmico')
+  on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb', 'multiorgasmicos', 'multiorgasmicos')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('0d891a0c-c8e4-5442-97d6-356d326074fb', 'multiorgasmo', 'multiorgasmo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('09b15682-d2f9-529b-bef7-c1cc8692099c', 'multiorgásmico', 'multiorgásmico')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('71bf5707-33de-5826-ad80-591495e3d71d', 'múltiples velocidades', 'múltiples velocidades')
+insert into tags (id, slug, label) values ('22b0d368-b84a-5d6d-b950-285c82437966', 'multiples-velocidades', 'multiples velocidades')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bad56649-0a24-51ed-a5d9-939d09ab7ed9', 'nalgadas', 'nalgadas')
   on conflict (slug) do nothing;
@@ -605,31 +595,27 @@ insert into tags (id, slug, label) values ('9a5bb959-486e-5f62-ae61-748ca26449bd
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6fdaa64c-fcff-57c9-8ca6-fa60c780ed4c', 'neutro', 'neutro')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('ec8eed39-17f5-5e5e-b9e4-157fc2738f6c', 'no graso', 'no graso')
+insert into tags (id, slug, label) values ('479f4c92-b6a3-59c3-ab45-a04e19f37e4b', 'no-graso', 'no graso')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('15f03732-c610-550c-8c08-f93ea715caf0', 'nuevo', 'nuevo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('6fb09a24-c68e-51e2-8884-73d4acb31a8e', 'off-shoulder', 'off shoulder')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0b55b127-b0cc-59d0-a459-cd6d843d23f2', 'onda de presión', 'onda de presión')
+insert into tags (id, slug, label) values ('744a5714-74e5-5103-86e9-98d7dfd3b2cb', 'onda-de-presion', 'onda de presion')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e70a406b-6d28-57c1-abfc-d4acc601cd54', 'orejas', 'orejas')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e78425f2-cddc-5b4a-8132-24677e4f62f5', 'orgasmos', 'orgasmos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('a07f6db1-e06b-57c4-a282-1c2f21be3d2e', 'pH', 'pH')
+insert into tags (id, slug, label) values ('89604984-644f-5d55-98c7-e6def39eada6', 'pack-x3', 'pack x3')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0a940937-c4ae-5e8c-80d9-fa91cf9227a2', 'pH balanceado', 'pH balanceado')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('2ec9bb4d-8e00-5105-b246-98a10ac340b9', 'pack x3', 'pack x3')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('615a1795-89d8-54ea-80cd-dc77175cf328', 'pack x4', 'pack x4')
+insert into tags (id, slug, label) values ('74700612-525d-5105-85d5-d31468326fe3', 'pack-x4', 'pack x4')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('7ed409a5-5bd4-5b6c-9d62-be3d4940ed53', 'paleta', 'paleta')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b3694651-05d2-5dbe-813e-9c6f48e7a1f9', 'pareja', 'pareja')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('e4467a73-2204-523b-a4f0-a894dd600753', 'parqués', 'parqués')
+insert into tags (id, slug, label) values ('635b674c-fa92-5f9f-8213-8caa44e06da2', 'parques', 'parques')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c911c9a8-92a9-59d6-8b62-fe3b8fe08b0c', 'peluche', 'peluche')
   on conflict (slug) do nothing;
@@ -645,9 +631,13 @@ insert into tags (id, slug, label) values ('1fa199a7-11ba-5712-ad6b-aa9986a2518f
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('356dd30b-7254-5b17-9ac7-99997e1f616d', 'pezones', 'pezones')
   on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('7acb2d60-3561-58de-a66a-3ee8580bbc10', 'ph', 'ph')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('e0a5fa76-51e8-5e69-adf1-301ed791066b', 'ph-balanceado', 'ph balanceado')
+  on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('80622baa-f92d-5af6-9edc-dc698af37115', 'picante', 'picante')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4dbeb756-0b76-52ca-ba3d-93bbe39a0ec5', 'piel sensible', 'piel sensible')
+insert into tags (id, slug, label) values ('4b68aa63-3d18-5959-84b9-610e9a4ef1ec', 'piel-sensible', 'piel sensible')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('cee4ce6f-0246-5f52-91b8-740524618929', 'plug', 'plug')
   on conflict (slug) do nothing;
@@ -655,7 +645,7 @@ insert into tags (id, slug, label) values ('505896b9-e5c6-580f-b6b5-0dcad248ec2c
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('4d999139-7f5e-5938-99d4-c1b42a65c9e5', 'pocket-pleasure', 'pocket pleasure')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4fc9b5df-bc4b-572f-a675-197eeafabd52', 'potencia gradual', 'potencia gradual')
+insert into tags (id, slug, label) values ('89a65cc4-b1f2-5c23-be3f-efcef785ac21', 'potencia-gradual', 'potencia gradual')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('04b0b653-d18d-5b77-916a-50484c247afe', 'potenciadores-y-suplementos', 'potenciadores y suplementos')
   on conflict (slug) do nothing;
@@ -665,9 +655,9 @@ insert into tags (id, slug, label) values ('7ec0e2cf-6d3e-5c61-b7e5-e8eeaa56e9e4
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bb468181-7604-5bda-91ff-d1e202fc5281', 'progresivo', 'progresivo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('60925481-75fd-50ee-a393-70b4e3c5b70d', 'próstata', 'próstata')
+insert into tags (id, slug, label) values ('60e9434e-f9e8-5813-b90e-b3f53cfac8da', 'prostata', 'prostata')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('1b2035f5-75fa-5391-afdc-927789885d99', 'punto g', 'punto g')
+insert into tags (id, slug, label) values ('410121c5-43fe-50d4-aac2-0104abd42092', 'punto-g', 'punto g')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('ec3db6ef-8333-5335-a0d0-8f3ba5e96e4a', 'realista', 'realista')
   on conflict (slug) do nothing;
@@ -675,13 +665,13 @@ insert into tags (id, slug, label) values ('9322a97a-0025-57ab-a6e7-c23b3cdd0089
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('43a7ea93-9426-5985-a6ce-bccaf9e7c38d', 'red', 'red')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('844894ca-6262-5f1e-bccb-1ca567ffa4be', 'red amplia', 'red amplia')
+insert into tags (id, slug, label) values ('4db3c0e6-9426-57e4-8088-ff183cc4816e', 'red-amplia', 'red amplia')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('438eb83b-8ba7-50b0-a62f-2bac05bfcad6', 'regalo_ideal', 'regalo_ideal')
+insert into tags (id, slug, label) values ('5072029c-91a2-5f00-b4e1-92ce7a81ad52', 'regalo-ideal', 'regalo ideal')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('8ca656e3-c66e-5b76-be7d-b472c33f0c1b', 'relajante', 'relajante')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d3548ed3-0099-52a7-b9aa-d6f0680faa4c', 'resistente al agua', 'resistente al agua')
+insert into tags (id, slug, label) values ('c28a9ae0-542b-51d8-b947-2f05d569168a', 'resistente-al-agua', 'resistente al agua')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('1b53b590-0e14-5e9c-b10c-00dcba3a664a', 'retardante', 'retardante')
   on conflict (slug) do nothing;
@@ -699,7 +689,7 @@ insert into tags (id, slug, label) values ('b9644851-1251-59de-bb01-87d4a6982b00
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('85f29948-e631-5eff-9eac-f81c8c7515e7', 'ruleta', 'ruleta')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('05ea60ab-eba0-5ef4-893d-e229063cdd5b', 'sabor sorpresa', 'sabor sorpresa')
+insert into tags (id, slug, label) values ('82ba73ec-673b-5fec-b4f9-d98e4be7181c', 'sabor-sorpresa', 'sabor sorpresa')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('2d27eb25-9548-5ca0-9c6e-0627c8ed7893', 'saborizado', 'saborizado')
   on conflict (slug) do nothing;
@@ -709,7 +699,7 @@ insert into tags (id, slug, label) values ('4d85051d-aea0-5863-8689-84315e502181
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('9fb0c103-336c-5af5-aaf9-aef2bd55ebae', 'sado', 'sado')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('69df5bd2-c186-5e7f-81db-61dc1898f313', 'salud íntima', 'salud íntima')
+insert into tags (id, slug, label) values ('27267ec3-39ac-5330-ae94-ac18b89d6cea', 'salud-intima', 'salud intima')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('f3f8d974-acb2-522a-b7a9-66a6ef16bb80', 'satisfyer', 'satisfyer')
   on conflict (slug) do nothing;
@@ -717,7 +707,7 @@ insert into tags (id, slug, label) values ('4527e5ff-6f53-5ff2-a9c1-a842fe7e2340
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('bcb7d746-7386-54ad-872e-2acfb9f03218', 'sen', 'sen')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4f54c821-3260-5f3e-871c-267f0113724e', 'sensación sedosa', 'sensación sedosa')
+insert into tags (id, slug, label) values ('95f0fbed-7741-5195-a1c0-105569412794', 'sensacion-sedosa', 'sensacion sedosa')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('47f25d91-2fbf-5ab2-a55c-34c52dbdf28e', 'sensibilidad', 'sensibilidad')
   on conflict (slug) do nothing;
@@ -729,7 +719,7 @@ insert into tags (id, slug, label) values ('4cbff5bc-6a45-50ad-9b41-41ff713baf3b
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('219cf262-308b-5c6f-9ca5-d049ecb92752', 'set', 'set')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('0f06fa10-005b-5e09-8025-606feb83bbcb', 'sexo oral', 'sexo oral')
+insert into tags (id, slug, label) values ('1b88b11f-986c-5932-b72c-a747941ae3c8', 'sexo-oral', 'sexo oral')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e9dc1fcb-9ad2-5dd4-98b3-febef663f293', 'short', 'short')
   on conflict (slug) do nothing;
@@ -739,15 +729,15 @@ insert into tags (id, slug, label) values ('d77de318-f35b-51fa-9de2-0dc2dd3bbff3
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('820eec1c-cb3f-53ac-b3d4-34c02d3c0f7c', 'silicona', 'silicona')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('3bf6101a-5291-55ef-9f6b-05a92f9ff295', 'silicona ABS', 'silicona ABS')
+insert into tags (id, slug, label) values ('60eaa3f6-7de5-571c-a037-e800140c1e3a', 'silicona-abs', 'silicona abs')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4cdde38c-5e17-56f0-a34c-3ca4403675e8', 'silicona biomédica', 'silicona biomédica')
+insert into tags (id, slug, label) values ('4d746826-cbf6-5d73-b9d8-f9f56b5b4181', 'silicona-biomedica', 'silicona biomedica')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('d659ee07-103f-574a-b114-0e9f59d63108', 'silicona flexible', 'silicona flexible')
+insert into tags (id, slug, label) values ('02fffae3-d489-5325-b9fc-015396c4781e', 'silicona-flexible', 'silicona flexible')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('be16c512-6abe-5539-8e47-dfa1b90c1854', 'silicona médica', 'silicona médica')
+insert into tags (id, slug, label) values ('3833de8f-cdf2-58ed-b1bb-f04942ddefe7', 'silicona-medica', 'silicona medica')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('4a3c5428-47c5-5b9e-9e1d-c1add84545e8', 'sin aroma', 'sin aroma')
+insert into tags (id, slug, label) values ('0663d086-0341-502e-ba8f-da401555de02', 'sin-aroma', 'sin aroma')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('e933f909-8a63-5257-98c3-b983e8fe5d59', 'splash', 'splash')
   on conflict (slug) do nothing;
@@ -761,9 +751,9 @@ insert into tags (id, slug, label) values ('de1567f6-e9b7-5c22-bcc6-0b4ec5f26755
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('2f00afd0-3fdf-52ef-9f86-76c082cc69b9', 'succionadores', 'succionadores')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('a1ec2e8a-b50b-50e6-b27a-e6a92fceb251', 'suelo pélvico', 'suelo pélvico')
+insert into tags (id, slug, label) values ('becac0d2-01eb-572b-961e-906fb17dd438', 'suelo-pelvico', 'suelo pelvico')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('dae21971-2e1b-57f2-a6b2-c95239b1627b', 'sumisión', 'sumisión')
+insert into tags (id, slug, label) values ('3c51fc2a-3c96-5e49-a94d-55a6792ee991', 'sumision', 'sumision')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a', 'suplemento', 'suplemento')
   on conflict (slug) do nothing;
@@ -775,21 +765,25 @@ insert into tags (id, slug, label) values ('5464f695-07aa-52f3-8c87-e76e090f1655
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('155d861c-75f1-524c-b912-d82f293c0724', 'terciopelo', 'terciopelo')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('55ed34bf-41e6-59d4-9543-1c60f657ce31', 'testículos', 'testículos')
+insert into tags (id, slug, label) values ('d72dddac-7463-502d-85e7-8f2e55ab5715', 'testiculos', 'testiculos')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('27876def-ef6f-5eda-a972-a92efb7f4fa5', 'textura animal', 'textura animal')
+insert into tags (id, slug, label) values ('8a742034-eae6-5de4-8827-44f42debbf24', 'textura-animal', 'textura animal')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('cb88658c-7bfb-5d98-978b-2254d70b7616', 'textura semen', 'textura semen')
+insert into tags (id, slug, label) values ('c805d839-9afa-5c86-810b-d45dd61a28fe', 'textura-semen', 'textura semen')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('ce651269-a48f-59ab-bd5a-92de719a5680', 'texturizada', 'texturizada')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('9ac7afd4-1b5a-5c4e-ae5a-a0040c828269', 'tiras frontales', 'tiras frontales')
+insert into tags (id, slug, label) values ('fcbce4d0-2fa9-59b9-b80d-918d0d031c05', 'tiras-frontales', 'tiras frontales')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('b37e5c7c-6dcc-5a4a-9cc4-28c636c11b5d', 'toma todo', 'toma todo')
+insert into tags (id, slug, label) values ('841bafcf-3042-5f4f-970d-91155d954876', 'toma-todo', 'toma todo')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('a820987c-2f13-54b5-ad74-b085d1343b30', 'top', 'top')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6a519f37-3d54-5cc7-b4a3-79e8b3715700', 'trifásico', 'trifásico')
+insert into tags (id, slug, label) values ('dd86a950-4dc0-5edf-b139-b7bab532dad0', 'tpe', 'tpe')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('1349b6b3-8bf7-565e-8549-c04d970d46a4', 'tpr', 'tpr')
+  on conflict (slug) do nothing;
+insert into tags (id, slug, label) values ('8386b171-f648-5612-a85b-9542b0471688', 'trifasico', 'trifasico')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('ce1a0219-3c6b-5cc3-9168-11be8bf1c1fd', 'tropical', 'tropical')
   on conflict (slug) do nothing;
@@ -799,7 +793,7 @@ insert into tags (id, slug, label) values ('5a9938ff-06b5-5de4-8f74-2df831ae7bee
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('732fadd0-4bc3-56d8-9d16-5aab1ee66c54', 'uva', 'uva')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('fa75fb4d-bdb5-5b07-8212-f53fb3661acc', 'vacío', 'vacío')
+insert into tags (id, slug, label) values ('74f7fe13-5ae1-5ac0-b949-1d754d724be3', 'vacio', 'vacio')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('4d036eae-c2e2-5018-b6a6-ce74f7f75f40', 'vainilla', 'vainilla')
   on conflict (slug) do nothing;
@@ -807,7 +801,7 @@ insert into tags (id, slug, label) values ('1faf7f89-640c-5fae-acb7-e665692ad1aa
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('b11972a4-a2b1-5c31-bfc4-1d57e544d387', 'velas-de-masaje', 'velas de masaje')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('6ca4aec6-8816-5cc4-8848-2a309b65e169', 'velocidad graduable', 'velocidad graduable')
+insert into tags (id, slug, label) values ('ba280170-a533-576f-8825-edaa129b38ce', 'velocidad-graduable', 'velocidad graduable')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('f3acb4d3-4124-5cb6-9df6-109a7343d6ba', 'venas', 'venas')
   on conflict (slug) do nothing;
@@ -819,9 +813,9 @@ insert into tags (id, slug, label) values ('3a1dd3ee-3c42-5a17-9450-8ad7bec3f149
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('ea325ec0-2e31-5e7e-a900-324d21830345', 'vibrador', 'vibrador')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('74a6a2df-5049-5fe5-942d-385dd5aa946f', 'vibrador doble', 'vibrador doble')
+insert into tags (id, slug, label) values ('46301fd1-5a51-5db1-b125-70de0e0555bc', 'vibrador-doble', 'vibrador doble')
   on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('9ee29693-57be-556f-aa36-2bb0fb43435c', 'vibrador líquido', 'vibrador líquido')
+insert into tags (id, slug, label) values ('6104cb0c-e438-591e-96b4-2a076275989b', 'vibrador-liquido', 'vibrador liquido')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('c1424999-932b-575d-a9e6-5e286f607c9b', 'vibradores', 'vibradores')
   on conflict (slug) do nothing;
@@ -830,8 +824,6 @@ insert into tags (id, slug, label) values ('a90d61ff-a4a0-5847-9e20-5d25197f63d2
 insert into tags (id, slug, label) values ('2eca4541-bca4-5cd0-9cab-9201333b6ed9', 'webcam', 'webcam')
   on conflict (slug) do nothing;
 insert into tags (id, slug, label) values ('140cc507-9b35-5c2b-8ed1-caa29f3448a2', 'yerbabuena', 'yerbabuena')
-  on conflict (slug) do nothing;
-insert into tags (id, slug, label) values ('1209b946-d979-5d82-aa4b-c7d6c01dbd93', 'ácido hialurónico', 'ácido hialurónico')
   on conflict (slug) do nothing;
 
 -- ============ products ============
@@ -3386,7 +3378,7 @@ insert into product_images (id, product_id, path, alt, position, is_primary, sou
 insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', '372376f0-d476-59e8-a83c-0fca490f8a7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', '998cc1fa-0ef3-598b-923f-1ee37651232b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', '2d5ce3e4-192c-52a2-8c64-2ff47ae8722b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e5182de0-5ad3-5891-a957-aa56ef5cc2bf', 'a85088c6-ea67-5766-ac5e-24b4e765c4a6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a4c09da4eaf7', 'b5034a7d-afe6-5ad1-b4c3-73b1b261fd39') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a4c09da4eaf7', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
@@ -3394,16 +3386,16 @@ insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a
 insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a4c09da4eaf7', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a4c09da4eaf7', '49aed167-1012-5777-b5e7-51a93817e658') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d292ed74-3155-5743-a49a-a4c09da4eaf7', 'a85088c6-ea67-5766-ac5e-24b4e765c4a6') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '5d248bac-d098-5ac4-8313-c46b2466e61f') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '0ca11a72-d138-5437-81c6-e1443fdaac1b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '1f30df6d-04fc-5274-a1bd-9d0a7bed3e39') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '5f5e242b-4051-5bdf-88d9-94e97678b497') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '88210c3c-414c-5db6-a5bd-48369d43178e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', 'a85088c6-ea67-5766-ac5e-24b4e765c4a6') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('669dde5c-8513-5fcf-b800-9eee61eef692', '1209b946-d979-5d82-aa4b-c7d6c01dbd93') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', '90b6396e-46a8-5ba4-9c14-9468bb611847') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', 'd4edc461-8990-5df4-a9a9-2e3fc17389b7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', 'f496fa3a-c629-535d-8fcc-3d44fdd381ad') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', '0fe5001e-6aea-5da4-afd4-28ff6a5d0fe8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8ccfa6a4-fa81-5250-9fd5-3a34f8622d96', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', '90b6396e-46a8-5ba4-9c14-9468bb611847') on conflict do nothing;
@@ -3411,26 +3403,26 @@ insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2
 insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', 'a7947f48-ba97-5b6b-8f34-59690db3f91c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', '4f54c821-3260-5f3e-871c-267f0113724e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6ddddcf8-d9ad-5a02-a822-2503b39fed09', '95f0fbed-7741-5195-a1c0-105569412794') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', '90b6396e-46a8-5ba4-9c14-9468bb611847') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', 'd4edc461-8990-5df4-a9a9-2e3fc17389b7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', '6a519f37-3d54-5cc7-b4a3-79e8b3715700') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e0b2145a-97ae-5ab6-a572-0c302ca76730', '8386b171-f648-5612-a85b-9542b0471688') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('18a1c01f-56d9-5a00-849e-813748829bcb', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('18a1c01f-56d9-5a00-849e-813748829bcb', 'd8af1d5f-34ce-515e-9f61-9aebabf64b81') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('18a1c01f-56d9-5a00-849e-813748829bcb', 'c982afa5-6948-5934-ad95-68f40fd958b2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('18a1c01f-56d9-5a00-849e-813748829bcb', '09e68308-85b8-5bc1-81f3-fc1da2c7edf1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('18a1c01f-56d9-5a00-849e-813748829bcb', 'b9644851-1251-59de-bb01-87d4a6982b00') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', '12b8d813-bd67-513a-bb26-88fdaf642084') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', '8e1e54cb-6f91-5834-9965-64b84d812b61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', '4139d4c7-23e8-5875-b8b6-5319d3cd51c3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', '1faf7f89-640c-5fae-acb7-e665692ad1aa') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bdc57745-a596-5d6a-9d32-f0b6ec88b82c', 'b11972a4-a2b1-5c31-bfc4-1d57e544d387') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', '148ea83b-1b3a-5baa-b4a3-a7e4b80bd313') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', '69a8cebd-c640-5b3c-be80-8a03e06479bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', '0ca76811-eac0-5373-ad92-db4dc61c7cc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('456903b2-1382-5028-b67c-cb043ed1c00f', 'bb504153-d25b-5e90-a747-ef9173b44a2a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8de7f193-b53f-50a0-8907-f283c5787eab', '372376f0-d476-59e8-a83c-0fca490f8a7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8de7f193-b53f-50a0-8907-f283c5787eab', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8de7f193-b53f-50a0-8907-f283c5787eab', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
@@ -3443,7 +3435,7 @@ insert into product_tags (product_id, tag_id) values ('22b8140d-4c0f-58b1-8590-e
 insert into product_tags (product_id, tag_id) values ('22b8140d-4c0f-58b1-8590-e318e1799835', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('65682cf6-9d83-565d-a555-36d335e89814', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('65682cf6-9d83-565d-a555-36d335e89814', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('65682cf6-9d83-565d-a555-36d335e89814', 'c1b1c76f-eb34-5cb6-ae36-88c3555efb79') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('65682cf6-9d83-565d-a555-36d335e89814', 'c00ad733-bebc-59b3-bf67-82c1e5d3d7f0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('65682cf6-9d83-565d-a555-36d335e89814', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('95d42982-2fa8-5625-a0d6-c1b0438436cd', 'c293a80a-d1ab-5d17-89bf-3316d8d05b38') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('95d42982-2fa8-5625-a0d6-c1b0438436cd', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
@@ -3451,20 +3443,20 @@ insert into product_tags (product_id, tag_id) values ('95d42982-2fa8-5625-a0d6-c
 insert into product_tags (product_id, tag_id) values ('95d42982-2fa8-5625-a0d6-c1b0438436cd', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('95d42982-2fa8-5625-a0d6-c1b0438436cd', '4d036eae-c2e2-5018-b6a6-ce74f7f75f40') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('adcc9813-fd3f-5c92-ad4a-0e5dfa7a4ab1', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('adcc9813-fd3f-5c92-ad4a-0e5dfa7a4ab1', 'd8af1d5f-34ce-515e-9f61-9aebabf64b81') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('adcc9813-fd3f-5c92-ad4a-0e5dfa7a4ab1', 'c982afa5-6948-5934-ad95-68f40fd958b2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('adcc9813-fd3f-5c92-ad4a-0e5dfa7a4ab1', '09e68308-85b8-5bc1-81f3-fc1da2c7edf1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('adcc9813-fd3f-5c92-ad4a-0e5dfa7a4ab1', '732fadd0-4bc3-56d8-9d16-5aab1ee66c54') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('25d93957-b337-5f3e-8d78-3d9538614090', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('25d93957-b337-5f3e-8d78-3d9538614090', '09e68308-85b8-5bc1-81f3-fc1da2c7edf1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('25d93957-b337-5f3e-8d78-3d9538614090', 'dfad6a2a-bbdb-5ac7-91ab-1d0a16529a49') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('25d93957-b337-5f3e-8d78-3d9538614090', '6196a66b-1fb9-5165-86ea-973ec0a787bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '0ca11a72-d138-5437-81c6-e1443fdaac1b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '1f30df6d-04fc-5274-a1bd-9d0a7bed3e39') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '88210c3c-414c-5db6-a5bd-48369d43178e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '49aed167-1012-5777-b5e7-51a93817e658') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '6fdaa64c-fcff-57c9-8ca6-fa60c780ed4c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fe5cb1ec-1bd5-545a-b08a-ff9bf3314318', '1209b946-d979-5d82-aa4b-c7d6c01dbd93') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f54f92d4-3bb2-5c5a-bf27-45af8865e705', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f54f92d4-3bb2-5c5a-bf27-45af8865e705', '4bd4295e-e8b3-55a0-b6b9-cfd943d8bd3e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f54f92d4-3bb2-5c5a-bf27-45af8865e705', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
@@ -3482,7 +3474,7 @@ insert into product_tags (product_id, tag_id) values ('7d2654e7-ea6f-5fc2-a9e7-5
 insert into product_tags (product_id, tag_id) values ('7d2654e7-ea6f-5fc2-a9e7-50add43de379', '01584827-3494-522b-bfe7-825fab7062d6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7d2654e7-ea6f-5fc2-a9e7-50add43de379', '4d85051d-aea0-5863-8689-84315e502181') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', '159984d9-2193-5ffb-b091-e1321ca7d488') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', 'f496fa3a-c629-535d-8fcc-3d44fdd381ad') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', '0fe5001e-6aea-5da4-afd4-28ff6a5d0fe8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', '4d999139-7f5e-5938-99d4-c1b42a65c9e5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('757f01a6-e78f-59b4-8ccc-58721a579d0e', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
@@ -3506,68 +3498,66 @@ insert into product_tags (product_id, tag_id) values ('54514035-218a-5870-a2b2-0
 insert into product_tags (product_id, tag_id) values ('54514035-218a-5870-a2b2-02e9f199ff06', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', 'b569a616-6350-5b76-8402-e5c778c4386c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', 'd07356ba-18c8-5325-8923-92a3e164ce6d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', '10cebe5f-5788-596d-b4a6-434541bf672f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', '9ee29693-57be-556f-aa36-2bb0fb43435c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', '6104cb0c-e438-591e-96b4-2a076275989b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a9849193-2432-5785-b6a2-fc8e7109dc7d', '140cc507-9b35-5c2b-8ed1-caa29f3448a2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', 'fab11636-e4a0-5fb1-9cfc-23685a0c3e97') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', 'e5240aa8-6302-5f05-87c5-1679dc2e79e2') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', '4a93cc2d-e3ba-56cc-856f-e06ddcbd271d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', '593c4b67-8775-5f61-a080-d8cbdfd2b4da') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', 'ab87dd22-6646-5520-9eca-32538aa8bfba') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a94f8b2-aa2d-5b62-99c3-99c3e22c2f9a', 'c8a8dad6-ea34-57a4-bf6b-872d8e211fb8') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a0087f23-1e38-56fe-8a55-bef0829a9660', '0ca11a72-d138-5437-81c6-e1443fdaac1b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a0087f23-1e38-56fe-8a55-bef0829a9660', '88210c3c-414c-5db6-a5bd-48369d43178e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a0087f23-1e38-56fe-8a55-bef0829a9660', '3d3b4dc8-6ff1-5be3-8e91-eaa93110c5c2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a0087f23-1e38-56fe-8a55-bef0829a9660', 'd2b1536d-fbaa-549b-b532-20ad69eb01db') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a0087f23-1e38-56fe-8a55-bef0829a9660', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', '31c7b7d2-2088-5984-9b10-e5d87a61300d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', 'c09fac15-5cbf-5b73-8c37-b0b277599d17') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', '9e8c6f84-197a-52ad-aa01-423a5c7d14e8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', '9253f72b-b4b6-54b6-bc12-cb157e747a3b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fa50401f-9be7-5caf-90d3-2cc212a8d2d5', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', '8c93c2aa-6564-5c27-93ca-8045e633588d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', '9ee29693-57be-556f-aa36-2bb0fb43435c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('20f595d3-0dbe-5d15-a840-c3547aaae988', '6104cb0c-e438-591e-96b4-2a076275989b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', '356dd30b-7254-5b17-9ac7-99997e1f616d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', '9ee29693-57be-556f-aa36-2bb0fb43435c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3eb8c40c-803e-574d-bfd3-11a7d40f0689', 'fb9d7c3f-5f0d-5ffe-994a-577b1d310a95') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a43c1d0b-9598-54f3-8af5-53e1b26be448', '6104cb0c-e438-591e-96b4-2a076275989b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3eb8c40c-803e-574d-bfd3-11a7d40f0689', 'a4d21462-db90-55d4-a376-10782882fb04') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3eb8c40c-803e-574d-bfd3-11a7d40f0689', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3eb8c40c-803e-574d-bfd3-11a7d40f0689', '0f06fa10-005b-5e09-8025-606feb83bbcb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', '0ca11a72-d138-5437-81c6-e1443fdaac1b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3eb8c40c-803e-574d-bfd3-11a7d40f0689', '1b88b11f-986c-5932-b72c-a747941ae3c8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', '88210c3c-414c-5db6-a5bd-48369d43178e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', '06299f59-6bf3-5987-8617-4943e3621957') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', 'd07356ba-18c8-5325-8923-92a3e164ce6d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', '10cebe5f-5788-596d-b4a6-434541bf672f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a7bec51c-33e8-5f51-a10f-b3789617e4f0', 'f04d633e-4da5-5872-9af4-8b0888e7fe75') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', 'd5c6ce12-af6b-56a2-a985-578d7d603326') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '05ea60ab-eba0-5ef4-893d-e229063cdd5b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '82ba73ec-673b-5fec-b4f9-d98e4be7181c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '0f06fa10-005b-5e09-8025-606feb83bbcb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ad408bdf-9352-500a-a7e4-b0f6d2c19927', '1b88b11f-986c-5932-b72c-a747941ae3c8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', 'd5c6ce12-af6b-56a2-a985-578d7d603326') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', '0f06fa10-005b-5e09-8025-606feb83bbcb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8434624d-d7b0-5634-9708-8990b4c3ebbd', '1b88b11f-986c-5932-b72c-a747941ae3c8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', '6fc50671-6512-56a5-8da4-276bf401d350') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', 'f496fa3a-c629-535d-8fcc-3d44fdd381ad') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', '0fe5001e-6aea-5da4-afd4-28ff6a5d0fe8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e7501282-4b96-5f21-bfe9-662bede7ceab', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', '9bc65c14-11ad-55fc-a823-05e6889c3214') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', '6fdaa64c-fcff-57c9-8ca6-fa60c780ed4c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', '0a940937-c4ae-5e8c-80d9-fa91cf9227a2') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0a4b9dec-68a3-5d8d-9604-9e31400ac2b1', 'e0a5fa76-51e8-5e69-adf1-301ed791066b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('afb15388-b1dc-5fa9-99a5-030430d473a9', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('afb15388-b1dc-5fa9-99a5-030430d473a9', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('afb15388-b1dc-5fa9-99a5-030430d473a9', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
@@ -3579,12 +3569,10 @@ insert into product_tags (product_id, tag_id) values ('88207462-3644-57c7-9a29-a
 insert into product_tags (product_id, tag_id) values ('88207462-3644-57c7-9a29-a73c0a121a63', '1b53b590-0e14-5e9c-b10c-00dcba3a664a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('88207462-3644-57c7-9a29-a73c0a121a63', '01584827-3494-522b-bfe7-825fab7062d6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', '6fc50671-6512-56a5-8da4-276bf401d350') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', 'b1038fa5-1aff-55dd-8a0a-52f7dcfe616c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dcf706-b861-5eb1-973a-27527486543e', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('09bf04fa-6553-5df9-8808-3c585c2aafe9', '5b1944df-969a-5730-a419-ccdb5c520ed1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('09bf04fa-6553-5df9-8808-3c585c2aafe9', 'b1038fa5-1aff-55dd-8a0a-52f7dcfe616c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('09bf04fa-6553-5df9-8808-3c585c2aafe9', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('09bf04fa-6553-5df9-8808-3c585c2aafe9', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
@@ -3595,11 +3583,11 @@ insert into product_tags (product_id, tag_id) values ('6544710b-9384-5568-8900-1
 insert into product_tags (product_id, tag_id) values ('6544710b-9384-5568-8900-17273aa356c8', '01584827-3494-522b-bfe7-825fab7062d6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', '4bd4295e-e8b3-55a0-b6b9-cfd943d8bd3e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', 'b1038fa5-1aff-55dd-8a0a-52f7dcfe616c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33126152-851e-5a1e-ab0d-5f37f6b126e2', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f69a215c-814c-53b5-a962-2d12c1fb5d00', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('f69a215c-814c-53b5-a962-2d12c1fb5d00', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f69a215c-814c-53b5-a962-2d12c1fb5d00', 'b1038fa5-1aff-55dd-8a0a-52f7dcfe616c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f69a215c-814c-53b5-a962-2d12c1fb5d00', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f69a215c-814c-53b5-a962-2d12c1fb5d00', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
@@ -3615,24 +3603,21 @@ insert into product_tags (product_id, tag_id) values ('8b95d6b6-2b45-5925-897a-6
 insert into product_tags (product_id, tag_id) values ('8b95d6b6-2b45-5925-897a-662e780df884', 'd2b1536d-fbaa-549b-b532-20ad69eb01db') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8b95d6b6-2b45-5925-897a-662e780df884', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8b95d6b6-2b45-5925-897a-662e780df884', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fee166a3-6e81-5790-927b-8f59f588f0a2', 'fb9d7c3f-5f0d-5ffe-994a-577b1d310a95') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fee166a3-6e81-5790-927b-8f59f588f0a2', 'a4d21462-db90-55d4-a376-10782882fb04') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fee166a3-6e81-5790-927b-8f59f588f0a2', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fee166a3-6e81-5790-927b-8f59f588f0a2', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fee166a3-6e81-5790-927b-8f59f588f0a2', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b52026d3-a600-5926-9299-46c6c6391051', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', 'fb9d7c3f-5f0d-5ffe-994a-577b1d310a95') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', 'a4d21462-db90-55d4-a376-10782882fb04') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', '09b15682-d2f9-529b-bef7-c1cc8692099c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', 'c09fac15-5cbf-5b73-8c37-b0b277599d17') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('61738b3c-2721-5f8f-91d8-aae0339b815a', '6bccaee0-ef5e-5e12-a87a-5056791e601e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '9e8c6f84-197a-52ad-aa01-423a5c7d14e8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '4c165c9d-6932-5868-8fc4-e31ee8813e98') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '1730c1c5-c10a-5ff0-9479-0318a821a299') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '04b0b653-d18d-5b77-916a-50484c247afe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3b8a9cc3-9b56-54c7-b989-07918847b04e', '7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('33dde7d0-eb99-5726-82f8-6a32139b71ac', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
@@ -3644,21 +3629,21 @@ insert into product_tags (product_id, tag_id) values ('491323b0-6923-5809-8f76-6
 insert into product_tags (product_id, tag_id) values ('491323b0-6923-5809-8f76-63dab9c022f4', '04b0b653-d18d-5b77-916a-50484c247afe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('491323b0-6923-5809-8f76-63dab9c022f4', '7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('491323b0-6923-5809-8f76-63dab9c022f4', 'f5d7f713-28fc-5389-844d-39a5e66fafce') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', '31c7b7d2-2088-5984-9b10-e5d87a61300d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', '9253f72b-b4b6-54b6-bc12-cb157e747a3b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', '04b0b653-d18d-5b77-916a-50484c247afe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', '7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('005e290d-dbf7-57e2-a12d-5b4d7c2c15dc', 'a90d61ff-a4a0-5847-9e20-5d25197f63d2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', 'b824db80-d81a-5d28-a460-fb98225d6551') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', '67129976-26fd-5d50-9f3e-a7fd683c5f93') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', '59c60cac-80e1-5603-8ab9-57d6ecbc6d77') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', '04b0b653-d18d-5b77-916a-50484c247afe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2e1be6c7-6c12-5748-b31d-db59b354de1c', '7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9df1a673-312f-5da3-b49d-ae1cea61fb39', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9df1a673-312f-5da3-b49d-ae1cea61fb39', '3f43117c-3662-50a4-82b3-350cbcc191c9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9df1a673-312f-5da3-b49d-ae1cea61fb39', 'd29e5a57-6d0c-5c11-9f2c-d53de9f5541a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9df1a673-312f-5da3-b49d-ae1cea61fb39', '04b0b653-d18d-5b77-916a-50484c247afe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9df1a673-312f-5da3-b49d-ae1cea61fb39', '7c8b87f4-98f4-5e58-8b9d-ed4d315a8c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e4cd4374-45cc-5a2f-8065-cc732a953b33', '1ad38c4c-32ae-54ee-8710-a298d4316cc4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e4cd4374-45cc-5a2f-8065-cc732a953b33', '657ea5ad-e832-5d5e-90ae-1efd5c675213') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e4cd4374-45cc-5a2f-8065-cc732a953b33', 'cf6fd86f-6135-5ac0-a4ea-8a35790428f9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e4cd4374-45cc-5a2f-8065-cc732a953b33', '87414d72-645e-5398-94fa-1bf0e23fe639') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e4cd4374-45cc-5a2f-8065-cc732a953b33', '3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff') on conflict do nothing;
@@ -3680,7 +3665,7 @@ insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3
 insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3d1bdf5c9a1e', '3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3d1bdf5c9a1e', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3d1bdf5c9a1e', '5d4422fa-c58c-5bac-9069-65e8b443c78a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3d1bdf5c9a1e', '067ecd07-803e-586c-905b-f40ff358b87f') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2f710ad6-b4f5-5817-a4fd-3d1bdf5c9a1e', 'ecb86e1d-e3f3-5a8f-8cb6-5474942d0c26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('82a53b2f-50b3-5308-9f56-5a050bc09eb1', 'd2eac0ff-90fe-5db7-9f34-6940eb0f928f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('82a53b2f-50b3-5308-9f56-5a050bc09eb1', '5e1c36ae-1e3e-5960-83dd-8433e68762da') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('82a53b2f-50b3-5308-9f56-5a050bc09eb1', '87414d72-645e-5398-94fa-1bf0e23fe639') on conflict do nothing;
@@ -3714,33 +3699,33 @@ insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8
 insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '98b2fa7a-8e1b-5e89-aba7-a666108581ed') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '17163d94-70d7-54d2-9069-dfa7c1ef0bb8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '4fa9796f-8120-5cf3-b048-d1befecb0d33') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '7dd6e92a-e51f-55a3-9b3a-34ef0a79cef3') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '438eb83b-8ba7-50b0-a62f-2bac05bfcad6') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', 'a951d353-67f7-5822-85c8-3a757d868894') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', 'ef6a9ab3-c9d5-5584-8f49-4fe2955b75d5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('734f5d68-8866-5287-a125-8caf462a7fc5', '5072029c-91a2-5f00-b4e1-92ce7a81ad52') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', '96c8f8e4-308b-5508-889d-02e03542c31a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', '01b717f0-c32e-5789-a414-2f0766c5a701') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', '95f0f11f-c1bf-5b02-8a0c-260e2943019c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e0dba9ad-0b92-5b3a-89b1-3e7710538bf0', '91b65f5f-4326-54d9-9134-e598fac7d575') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', 'a951d353-67f7-5822-85c8-3a757d868894') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', '96c8f8e4-308b-5508-889d-02e03542c31a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', '17163d94-70d7-54d2-9069-dfa7c1ef0bb8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', '91b65f5f-4326-54d9-9134-e598fac7d575') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('de8a895e-c200-5eff-80db-748d6f03113c', '8d813696-f4ff-5fd5-bcf2-76c0b07e06ec') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', 'f081b161-4cb8-5f60-b504-807fe0b4a72e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', '243f6f3a-65be-5613-bd43-96adc0cabdaf') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', 'ef6a9ab3-c9d5-5584-8f49-4fe2955b75d5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', '6eb8f71f-e5d9-54b9-b831-2d0da45a5ddb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('12e5127f-d890-5812-a19c-7bd237f9a086', '7dd6e92a-e51f-55a3-9b3a-34ef0a79cef3') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', '6c165dd6-239e-58a6-800b-7c80d075a135') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', '35c88506-3ec8-59cf-8959-e5ae4d0268d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', 'ef6a9ab3-c9d5-5584-8f49-4fe2955b75d5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', '6eb8f71f-e5d9-54b9-b831-2d0da45a5ddb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('40bbe0e7-f88b-51be-b135-bf91905a988c', '7dd6e92a-e51f-55a3-9b3a-34ef0a79cef3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', '522074b4-6b40-5658-885f-9a8c5f973039') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', '00e5bf8b-4dfa-5ae0-9510-5f9aa00ffcbb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', 'b824db80-d81a-5d28-a460-fb98225d6551') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', '67129976-26fd-5d50-9f3e-a7fd683c5f93') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', 'fa75fb4d-bdb5-5b07-8212-f53fb3661acc') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '380096a2-8823-5f3b-b544-0213799fc785') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', 'fc79a5d4-dac6-5a8b-b4e2-50e7d352beeb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('55008513-97f3-500a-a529-4d48dda7cd5e', '74f7fe13-5ae1-5ac0-b949-1d754d724be3') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '2593d02c-f12f-5d35-a675-f9cc6ef2012f') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '9bda374b-45d8-55c8-80d9-239c81a9f19b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '3a036637-be68-57b1-8189-795e5be86e21') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '0dcca471-9e5b-5869-8304-4d98c11ca21b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('db208eab-6ff3-5fef-9033-29f7fe6c259c', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
@@ -3755,29 +3740,29 @@ insert into product_tags (product_id, tag_id) values ('7234f17c-3f3c-59b3-8553-e
 insert into product_tags (product_id, tag_id) values ('7234f17c-3f3c-59b3-8553-e2b7f5803a6c', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', '77e6cf63-5873-5405-a9a0-3791b2c6544a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', '90842525-fddc-51e3-a202-dddcc005aa99') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', '74501147-7ed6-5423-91e6-153212f78118') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', 'cee4ce6f-0246-5f52-91b8-740524618929') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0b2678d4-6112-513c-8c10-96eaabc2601e', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', '60925481-75fd-50ee-a393-70b4e3c5b70d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', '60e9434e-f9e8-5813-b90e-b3f53cfac8da') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ea749100-46fc-52b5-9221-0e16941f753e', '820eec1c-cb3f-53ac-b3d4-34c02d3c0f7c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', '2ec9bb4d-8e00-5105-b246-98a10ac340b9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', '89604984-644f-5d55-98c7-e6def39eada6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58897fd0-a3ec-520e-be05-052119f23cc5', '820eec1c-cb3f-53ac-b3d4-34c02d3c0f7c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f9b7332-93b7-5280-8d87-af96ec22aa79', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e6857a28-ab30-5c78-851b-ea08c0f913a1', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e6857a28-ab30-5c78-851b-ea08c0f913a1', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e6857a28-ab30-5c78-851b-ea08c0f913a1', 'fae7182b-a296-5dbe-b917-12f49b35dfd5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e6857a28-ab30-5c78-851b-ea08c0f913a1', 'e466cff2-cd0b-51a0-961d-5d3c08904315') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e6857a28-ab30-5c78-851b-ea08c0f913a1', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', 'b9ae0878-11a9-5cf0-93e0-eb234253e858') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', '2034fa31-531f-5e41-b8e9-fb7e7efd2833') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', 'bcf46eac-cce5-5dfc-98e5-e47ef23e2316') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
@@ -3785,75 +3770,75 @@ insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-3
 insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', '9322a97a-0025-57ab-a6e7-c23b3cdd0089') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4bba9f30-a42d-5155-9a19-32d76a14fbbd', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', '71bf5707-33de-5826-ad80-591495e3d71d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', '22b0d368-b84a-5d6d-b950-285c82437966') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', '820eec1c-cb3f-53ac-b3d4-34c02d3c0f7c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('30a74b51-4be2-55f9-84a2-9a6167cd8a8f', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', 'ec1c1896-01f3-5e85-ba76-9b4ff52bc4c9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', 'd6052e68-5c29-517d-baac-ef98fd66536f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', 'ec3db6ef-8333-5335-a0d0-8f3ba5e96e4a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', '1349b6b3-8bf7-565e-8549-c04d970d46a4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('559870be-c755-5cf3-b3fc-2adfa48e751b', '3b547ff3-65ce-5d54-8f81-b5f5ecee2722') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', '09d2044e-8cde-5f42-a65a-46d1cba2b43f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', '820eec1c-cb3f-53ac-b3d4-34c02d3c0f7c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2089d85d-5acd-581b-9410-ff4c89be665d', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', 'd9ca9090-7529-5579-a849-90ad03a558c3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', 'be16c512-6abe-5539-8e47-dfa1b90c1854') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', '3833de8f-cdf2-58ed-b1bb-f04942ddefe7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('43240f3a-509f-5ab4-9f7b-e25e970340ec', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '933b7816-6949-526a-8acd-7baca98c0ea3') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '639d89db-b6a5-51a5-9793-f3949cdaa850') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '0b55b127-b0cc-59d0-a459-cd6d843d23f2') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '744a5714-74e5-5103-86e9-98d7dfd3b2cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7bf060b0-edb9-5052-bd57-fc738a073581', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', 'a42d67ee-d50d-59d1-b189-87fdd31748b5') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', 'e52d3cc2-2d49-5b60-b56f-201e4986ea82') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', '70f35cf9-36b2-5d59-bedf-e871505a1a68') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', 'e86f9c39-0da6-5299-a296-b4c56a3891bb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0762e00b-a59f-587f-9e81-09e0e1a378fe', '9322a97a-0025-57ab-a6e7-c23b3cdd0089') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', '9322a97a-0025-57ab-a6e7-c23b3cdd0089') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', 'd3548ed3-0099-52a7-b9aa-d6f0680faa4c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', 'c28a9ae0-542b-51d8-b947-2f05d569168a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', 'd77de318-f35b-51fa-9de2-0dc2dd3bbff3') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', '74a6a2df-5049-5fe5-942d-385dd5aa946f') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', '46301fd1-5a51-5db1-b125-70de0e0555bc') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c6a2af19-9919-54c3-8d86-fefe75b92f1e', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', 'e1f71ab8-05ae-5d4c-afca-a4650bf2a700') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', '512811d4-aa51-5dc0-bdb4-25d8e9cffb4f') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', 'a223dbe2-a624-5afd-a411-aa88f4e1f9f9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', 'd8bfb917-a110-5743-8b90-50f9411ef761') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('752e4258-2a34-5f06-8983-db4325879800', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', '539f703e-a554-521a-b5b6-297f4bbae022') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', 'e9a0c83f-8be8-5d12-9d7a-1dcc60ccd15e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', '7bfe6179-b277-582a-8bb0-3fb551451e05') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', 'a0cb1c1a-3b40-52f6-b1a0-59be3d09dfc0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', '708432ac-1ae7-566f-a38d-3691c2ecd31b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', 'f3f8d974-acb2-522a-b7a9-66a6ef16bb80') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c776290b-e67d-5044-b31d-4835eed9799f', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', '539f703e-a554-521a-b5b6-297f4bbae022') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', '7bfe6179-b277-582a-8bb0-3fb551451e05') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', 'd786d382-bc7b-5e14-8169-c9c96df3df50') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', 'f3f8d974-acb2-522a-b7a9-66a6ef16bb80') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', 'be16c512-6abe-5539-8e47-dfa1b90c1854') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', '3833de8f-cdf2-58ed-b1bb-f04942ddefe7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51db976c-5757-5ea9-b871-61b23fbea5f4', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', '539f703e-a554-521a-b5b6-297f4bbae022') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', '7bfe6179-b277-582a-8bb0-3fb551451e05') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', 'd786d382-bc7b-5e14-8169-c9c96df3df50') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', 'f3f8d974-acb2-522a-b7a9-66a6ef16bb80') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', 'be16c512-6abe-5539-8e47-dfa1b90c1854') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', '3833de8f-cdf2-58ed-b1bb-f04942ddefe7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aa342615-af3c-536c-9b86-cc1e5938fcac', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ca23740a-ce4b-5b2d-96e3-7dc45bac882a', '372376f0-d476-59e8-a83c-0fca490f8a7a') on conflict do nothing;
@@ -3863,16 +3848,16 @@ insert into product_tags (product_id, tag_id) values ('ca23740a-ce4b-5b2d-96e3-7
 insert into product_tags (product_id, tag_id) values ('ca23740a-ce4b-5b2d-96e3-7dc45bac882a', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', '6196a66b-1fb9-5165-86ea-973ec0a787bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', 'a8325ea7-ba14-53e1-85e4-f37eefdeb0d1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', '67fb897b-a1dd-5087-ba13-034d20599fe3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', 'e933f909-8a63-5257-98c3-b983e8fe5d59') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7036476c-3edd-5865-8087-2a2ef678c54d', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9be3f5f4-241f-5d47-92c4-438b3a1a1295', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9be3f5f4-241f-5d47-92c4-438b3a1a1295', '96eb4695-9862-5323-ab38-8c94ed6471bf') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9be3f5f4-241f-5d47-92c4-438b3a1a1295', 'eb909865-b943-5c55-be4f-9acf7b917542') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9be3f5f4-241f-5d47-92c4-438b3a1a1295', 'e933f909-8a63-5257-98c3-b983e8fe5d59') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9be3f5f4-241f-5d47-92c4-438b3a1a1295', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', '96eb4695-9862-5323-ab38-8c94ed6471bf') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', 'a8325ea7-ba14-53e1-85e4-f37eefdeb0d1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', 'eb909865-b943-5c55-be4f-9acf7b917542') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', '67fb897b-a1dd-5087-ba13-034d20599fe3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', 'e933f909-8a63-5257-98c3-b983e8fe5d59') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('faac4c1b-e2fe-59b2-ae3b-24a589ab54c3', 'e2e12cc2-a52c-5335-b3d7-8f5c860a1850') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ea617c87-540c-5c06-af19-a4662c71430e', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
@@ -3892,39 +3877,37 @@ insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5
 insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5bfe37e7cdbe', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5bfe37e7cdbe', '4800fa92-9c8c-596d-aee7-66804aca0e5c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5bfe37e7cdbe', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5bfe37e7cdbe', '4a3c5428-47c5-5b9e-9e1d-c1add84545e8') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2b207f91-8111-5324-b783-05afeb956f54', '284e60bb-360a-5080-b8a7-472b78ed860c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ca979295-2724-5200-97c6-5bfe37e7cdbe', '0663d086-0341-502e-ba8f-da401555de02') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2b207f91-8111-5324-b783-05afeb956f54', '37907a1f-b2ff-5ecf-b04f-44689dd15e7b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2b207f91-8111-5324-b783-05afeb956f54', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2b207f91-8111-5324-b783-05afeb956f54', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8546db01-e899-536b-b794-ffef3b75927e', '284e60bb-360a-5080-b8a7-472b78ed860c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8546db01-e899-536b-b794-ffef3b75927e', '37907a1f-b2ff-5ecf-b04f-44689dd15e7b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8546db01-e899-536b-b794-ffef3b75927e', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8546db01-e899-536b-b794-ffef3b75927e', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', '3ccd0d63-1205-541a-ba2d-3322629613bf') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', '84f68714-045f-50ca-9b88-194f0d516f11') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', '3babbac1-2d74-5792-971b-0e9d58221b9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', 'a07f6db1-e06b-57c4-a282-1c2f21be3d2e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '0ca11a72-d138-5437-81c6-e1443fdaac1b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', 'cedccab3-add3-5316-8b0e-cfb597891fd3') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b5c49501-dc28-5942-aea6-d859f2d08e92', '7acb2d60-3561-58de-a66a-3ee8580bbc10') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '88210c3c-414c-5db6-a5bd-48369d43178e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '84f68714-045f-50ca-9b88-194f0d516f11') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', 'f775f606-f09e-54b2-8d03-98f5f33c1323') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '001311aa-f64c-5f49-864b-34960e97fa1f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '92f21b69-7633-575a-9ab0-48bf3a158387') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', 'a07f6db1-e06b-57c4-a282-1c2f21be3d2e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', '7acb2d60-3561-58de-a66a-3ee8580bbc10') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('305fe3a4-0ace-5f36-afdb-8c184658128f', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', '84f68714-045f-50ca-9b88-194f0d516f11') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', '3babbac1-2d74-5792-971b-0e9d58221b9b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', 'cedccab3-add3-5316-8b0e-cfb597891fd3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', 'e5284f78-31cd-51d5-a691-a24a00076d9d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed0d4325-2937-5c2e-b5b7-372cf4896340', '4800fa92-9c8c-596d-aee7-66804aca0e5c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', 'bc1acc21-0975-5cd3-a907-06d36c118e37') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', '3ccd0d63-1205-541a-ba2d-3322629613bf') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', '84f68714-045f-50ca-9b88-194f0d516f11') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', 'beb812bb-01e3-5ca3-bc1e-21366e513afc') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3550a045-5309-5619-a5f1-8b1e25ef3198', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', '90b6396e-46a8-5ba4-9c14-9468bb611847') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', 'd4edc461-8990-5df4-a9a9-2e3fc17389b7') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', '49602bcb-82c1-5958-bfbc-d6c6b065aa13') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', '411c1668-6879-558b-93e5-216082dd5035') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', '18004fbd-cd45-5b27-a288-76b560df2b91') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('806c4923-f1b4-5ead-ac8c-0745043d2dfe', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
@@ -3943,19 +3926,19 @@ insert into product_tags (product_id, tag_id) values ('e1855eb2-27e6-5514-bc7b-9
 insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', '90b6396e-46a8-5ba4-9c14-9468bb611847') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', 'd4edc461-8990-5df4-a9a9-2e3fc17389b7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', 'dbac41c4-03bb-5292-a998-41797c8000d9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d53c49f1-a266-560f-909b-5d2a02e529f0', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', 'bee97169-5da6-52e1-b545-6c7d89b9b6aa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', '2d5a6b70-d6e2-5f9f-86ea-220b225d0494') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', '1961afa3-5a5c-51ab-9d3c-182874a143a8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', 'aa77e9b1-127c-50c8-a713-67397ca8b9f2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', '5fceeff9-184b-5ac5-9a49-84338abeb02a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', '9538f1a0-2afe-5762-87eb-62f3f3b423a6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2d4e097c-fe11-5861-b7f6-039af5e09626', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', '5fceeff9-184b-5ac5-9a49-84338abeb02a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', '9538f1a0-2afe-5762-87eb-62f3f3b423a6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', 'fbc3998d-b32f-5e5a-ae2f-e230f9baee94') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', '615a1795-89d8-54ea-80cd-dc77175cf328') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9b900c2c-1de7-5938-8a9e-8b19719cbe3d', '74700612-525d-5105-85d5-d31468326fe3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bf2548fb-b968-59bc-b312-3bac6d9ff3ed', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bf2548fb-b968-59bc-b312-3bac6d9ff3ed', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bf2548fb-b968-59bc-b312-3bac6d9ff3ed', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
@@ -3972,41 +3955,38 @@ insert into product_tags (product_id, tag_id) values ('c5c3d762-6cfa-50a2-b179-6
 insert into product_tags (product_id, tag_id) values ('c5c3d762-6cfa-50a2-b179-698046b328d6', '4d85051d-aea0-5863-8689-84315e502181') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c5c3d762-6cfa-50a2-b179-698046b328d6', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', 'e5ffe191-1c2f-553d-b58c-0dc97c7796ec') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', '0f06fa10-005b-5e09-8025-606feb83bbcb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('47d3d884-b720-5c64-b6aa-e00ab6662ee2', '1b88b11f-986c-5932-b72c-a747941ae3c8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', '4bd4295e-e8b3-55a0-b6b9-cfd943d8bd3e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', 'bee97169-5da6-52e1-b545-6c7d89b9b6aa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed6c07ff-1481-5ecd-857f-720dd017be54', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1af7bdee-59ac-5063-9137-1afe7871400b', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1af7bdee-59ac-5063-9137-1afe7871400b', '1b53b590-0e14-5e9c-b10c-00dcba3a664a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1af7bdee-59ac-5063-9137-1afe7871400b', '01584827-3494-522b-bfe7-825fab7062d6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1af7bdee-59ac-5063-9137-1afe7871400b', '459b8c49-0152-5873-a107-b270543ab452') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', 'da5bda49-f63f-569d-8d83-5a32855594c2') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', '0b93f815-1698-50fb-9f54-57178f747637') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('896d3ebf-26b1-508d-a921-8205d600ad14', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', '5ce486b5-0ccb-5e22-b9f5-3ab8f49c2a67') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('712f8a5c-dac3-5806-a34e-4e2306051d45', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', 'fb9d7c3f-5f0d-5ffe-994a-577b1d310a95') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', 'a4d21462-db90-55d4-a376-10782882fb04') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', '55ce0a6a-399f-5e50-8708-359f5d4e599f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3388742f-7cb0-5d11-b599-b439f7ee335a', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', '4bd4295e-e8b3-55a0-b6b9-cfd943d8bd3e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', '4d85051d-aea0-5863-8689-84315e502181') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('508add3d-bfd5-5087-8ca4-f3f8e936889e', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
@@ -4031,13 +4011,12 @@ insert into product_tags (product_id, tag_id) values ('cf2f660b-ca1b-5b4a-8ce4-5
 insert into product_tags (product_id, tag_id) values ('cf2f660b-ca1b-5b4a-8ce4-51a1802e2ecc', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cf2f660b-ca1b-5b4a-8ce4-51a1802e2ecc', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cf2f660b-ca1b-5b4a-8ce4-51a1802e2ecc', '4d85051d-aea0-5863-8689-84315e502181') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', 'b569a616-6350-5b76-8402-e5c778c4386c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', '029242d6-4024-5a63-b2e3-4746d1218381') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f1fac188-837a-58a6-87d7-0ec2b4e191bf', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f56eadab-cf86-50f2-ab94-bdd01df6aa65', 'f5086b73-a7b5-507a-ade4-cd19cce5062d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f56eadab-cf86-50f2-ab94-bdd01df6aa65', 'c18875e6-d06f-5aaf-aa08-19dc25c55937') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f56eadab-cf86-50f2-ab94-bdd01df6aa65', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f56eadab-cf86-50f2-ab94-bdd01df6aa65', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
@@ -4050,16 +4029,16 @@ insert into product_tags (product_id, tag_id) values ('04268c2f-f521-566f-8cd2-0
 insert into product_tags (product_id, tag_id) values ('04268c2f-f521-566f-8cd2-0f2f6923d292', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', '4bd4295e-e8b3-55a0-b6b9-cfd943d8bd3e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8883ffe5-9e82-5bea-a05e-baad8109acda', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b5c3e19-dca7-5dc4-8133-f21c70b07c7e', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b5c3e19-dca7-5dc4-8133-f21c70b07c7e', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b5c3e19-dca7-5dc4-8133-f21c70b07c7e', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b5c3e19-dca7-5dc4-8133-f21c70b07c7e', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', 'da5bda49-f63f-569d-8d83-5a32855594c2') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', '0b93f815-1698-50fb-9f54-57178f747637') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', 'ec8eed39-17f5-5e5e-b9e4-157fc2738f6c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', '479f4c92-b6a3-59c3-ab45-a04e19f37e4b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('e957d0cc-9baf-5d30-94c0-dfe6ff6b31f6', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('609cddf7-3aa8-58b8-ab20-b8492231c939', '6fc50671-6512-56a5-8da4-276bf401d350') on conflict do nothing;
@@ -4068,7 +4047,7 @@ insert into product_tags (product_id, tag_id) values ('609cddf7-3aa8-58b8-ab20-b
 insert into product_tags (product_id, tag_id) values ('609cddf7-3aa8-58b8-ab20-b8492231c939', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('609cddf7-3aa8-58b8-ab20-b8492231c939', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', '06299f59-6bf3-5987-8617-4943e3621957') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', 'd07356ba-18c8-5325-8923-92a3e164ce6d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', '10cebe5f-5788-596d-b4a6-434541bf672f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9723d158-7639-5769-a8b4-58e236555223', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
@@ -4081,17 +4060,17 @@ insert into product_tags (product_id, tag_id) values ('2079d5fb-34c2-5737-bc48-0
 insert into product_tags (product_id, tag_id) values ('2079d5fb-34c2-5737-bc48-02215fdf5027', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2079d5fb-34c2-5737-bc48-02215fdf5027', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2079d5fb-34c2-5737-bc48-02215fdf5027', '2d27eb25-9548-5ca0-9c6e-0627c8ed7893') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c7dbe18f-1bc9-5536-bf55-a9bcd320b0fe', '201dd1a7-9f76-553a-8de8-5bfc48155d3a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c7dbe18f-1bc9-5536-bf55-a9bcd320b0fe', 'cdd63cf5-1578-5e9d-bd6f-46f4e8aa22fa') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c7dbe18f-1bc9-5536-bf55-a9bcd320b0fe', 'b569a616-6350-5b76-8402-e5c778c4386c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c7dbe18f-1bc9-5536-bf55-a9bcd320b0fe', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c7dbe18f-1bc9-5536-bf55-a9bcd320b0fe', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', 'aacdbc32-308c-5fe8-84c5-45c1ec7256d6') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', '4a593af2-e47d-561a-a228-f32cb270072b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', '446ab219-b136-569b-8aa1-e3fe16354bb6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', '6fc50671-6512-56a5-8da4-276bf401d350') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b9b378e8-5329-5b92-ad50-c4b6108b8a6f', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c8de4428-02ba-58e7-a2d8-8712bd806d47', '6fc50671-6512-56a5-8da4-276bf401d350') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c8de4428-02ba-58e7-a2d8-8712bd806d47', 'cf7893fe-f2d8-5ff0-a256-0b49211b67cf') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c8de4428-02ba-58e7-a2d8-8712bd806d47', 'db881399-fb19-5e26-bb74-2ff23f981b2f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c8de4428-02ba-58e7-a2d8-8712bd806d47', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c8de4428-02ba-58e7-a2d8-8712bd806d47', '393899db-8818-5b58-8ec8-9898117efc68') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8e1b8ff5-f426-56d6-ab23-42572f980536', 'd94e46bf-ce9a-56e6-8f0b-d8d9699483e0') on conflict do nothing;
@@ -4101,41 +4080,41 @@ insert into product_tags (product_id, tag_id) values ('8e1b8ff5-f426-56d6-ab23-4
 insert into product_tags (product_id, tag_id) values ('8e1b8ff5-f426-56d6-ab23-42572f980536', 'bcb7d746-7386-54ad-872e-2acfb9f03218') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', 'be630e55-27e0-5fd2-848f-0d3cc36233e3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '1f0c9344-e6a7-549a-9b5d-d561da8f2b7e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '7a61991b-60d9-5e28-82ad-f6e60de0d9bb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '0f06fa10-005b-5e09-8025-606feb83bbcb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b1509001-6316-57f7-b15c-00dbea9e8353', '1b88b11f-986c-5932-b72c-a747941ae3c8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('28912cc6-612a-525d-8592-e2877c686ccb', 'b4ee512f-9de0-5451-a99e-83d00ee855e6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('28912cc6-612a-525d-8592-e2877c686ccb', 'b569a616-6350-5b76-8402-e5c778c4386c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('28912cc6-612a-525d-8592-e2877c686ccb', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('28912cc6-612a-525d-8592-e2877c686ccb', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('28912cc6-612a-525d-8592-e2877c686ccb', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', '6c7cb4e2-fc8e-5501-957e-8a3a5d22b864') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', '16b9be2f-3e23-5d70-9198-2974c3f512a2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', 'b569a616-6350-5b76-8402-e5c778c4386c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', 'cb954213-ac4c-5bea-b9a8-63946ebb8b74') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9f6def99-f244-564c-9381-5903108ed64e', '5464f695-07aa-52f3-8c87-e76e090f1655') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', '6b6b3e0b-1a92-5db0-8165-ff681dc3ed7f') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', '11b562b7-6fe9-5f86-b3d1-3897990d2ad7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', 'e2ac0ff7-255d-51bb-8594-49ea6cb1a0d8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d4f22262-cbd7-5f54-a8f7-dc3ab1039c0f', '9bc65c14-11ad-55fc-a823-05e6889c3214') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('bc46fd2b-fd93-5846-b2f0-76081d139a02', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('bc46fd2b-fd93-5846-b2f0-76081d139a02', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bc46fd2b-fd93-5846-b2f0-76081d139a02', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bc46fd2b-fd93-5846-b2f0-76081d139a02', '9bc65c14-11ad-55fc-a823-05e6889c3214') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bc46fd2b-fd93-5846-b2f0-76081d139a02', '6fdaa64c-fcff-57c9-8ca6-fa60c780ed4c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', '05d65302-beb4-5784-9eeb-c7fe9ac3689e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', '363af62a-ef0d-5e80-a1f8-fa05e2c19c39') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', 'cb88658c-7bfb-5d98-978b-2254d70b7616') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a46f637c-51a7-5222-82c2-92025a9ac210', 'c805d839-9afa-5c86-810b-d45dd61a28fe') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '3265dd28-75d6-5c12-b62f-8e5f1a8feefa') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '25d1b4a8-3c66-54d3-88d1-ab048624bb86') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '05d65302-beb4-5784-9eeb-c7fe9ac3689e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '67ec1f55-65e5-56a9-90b0-ec6e2d555ce4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '363af62a-ef0d-5e80-a1f8-fa05e2c19c39') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '4dbeb756-0b76-52ca-ba3d-93bbe39a0ec5') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-27c054cffbad', '5ede44c5-b3c2-51bc-ae43-98a39a1f23df') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('c1a99e10-d1b9-5d24-94b8-dcecbf8d3c13', '4b68aa63-3d18-5959-84b9-610e9a4ef1ec') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-27c054cffbad', '353a7036-aa78-5fa1-8d3b-b3776d71fa73') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-27c054cffbad', 'd5c6ce12-af6b-56a2-a985-578d7d603326') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-27c054cffbad', '3e691a94-984a-5c3c-976c-38bf1cc12d26') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-27c054cffbad', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
@@ -4144,11 +4123,10 @@ insert into product_tags (product_id, tag_id) values ('7d86c814-300c-52ea-a041-2
 insert into product_tags (product_id, tag_id) values ('bee033d5-b1bc-5f8c-aee4-9f56454e722d', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bee033d5-b1bc-5f8c-aee4-9f56454e722d', 'e2ac0ff7-255d-51bb-8594-49ea6cb1a0d8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('bee033d5-b1bc-5f8c-aee4-9f56454e722d', '9bc65c14-11ad-55fc-a823-05e6889c3214') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f07f3a4f-d3e7-5b44-a325-166e921711a9', 'fb9d7c3f-5f0d-5ffe-994a-577b1d310a95') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f07f3a4f-d3e7-5b44-a325-166e921711a9', 'a4d21462-db90-55d4-a376-10782882fb04') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f07f3a4f-d3e7-5b44-a325-166e921711a9', 'fc0199cc-90fb-5271-90f4-7b6120739e82') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f07f3a4f-d3e7-5b44-a325-166e921711a9', '2f16e75a-070f-5cb8-a3ed-6ca53ea6c202') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('10cf78c8-c21c-56ef-b683-0ef02fcfb721', 'c543bd03-206d-5d65-9733-83cc22e800bb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('10cf78c8-c21c-56ef-b683-0ef02fcfb721', '84ba033b-dd91-57f3-b231-73053a1ad90f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('10cf78c8-c21c-56ef-b683-0ef02fcfb721', '3d29262c-4058-5b3b-a8cf-db2455391c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('10cf78c8-c21c-56ef-b683-0ef02fcfb721', 'b4c714a0-d0f7-5634-83cd-55983bebf282') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('10cf78c8-c21c-56ef-b683-0ef02fcfb721', '009ec61b-366d-5ad7-b14c-615bf3ecefd1') on conflict do nothing;
@@ -4162,7 +4140,7 @@ insert into product_tags (product_id, tag_id) values ('8e1770f7-3c34-52da-ad6c-d
 insert into product_tags (product_id, tag_id) values ('8e1770f7-3c34-52da-ad6c-dbba2884c0b3', '115ef3cf-1eb8-58f1-be46-a1e8f7fac5cb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8e1770f7-3c34-52da-ad6c-dbba2884c0b3', '0d891a0c-c8e4-5442-97d6-356d326074fb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8e1770f7-3c34-52da-ad6c-dbba2884c0b3', '47f25d91-2fbf-5ab2-a55c-34c52dbdf28e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('94beafd4-773b-59b0-9898-dda75ad479d0', 'da5bda49-f63f-569d-8d83-5a32855594c2') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('94beafd4-773b-59b0-9898-dda75ad479d0', '0b93f815-1698-50fb-9f54-57178f747637') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('94beafd4-773b-59b0-9898-dda75ad479d0', '87414d72-645e-5398-94fa-1bf0e23fe639') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('94beafd4-773b-59b0-9898-dda75ad479d0', '3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('94beafd4-773b-59b0-9898-dda75ad479d0', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
@@ -4172,12 +4150,12 @@ insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-7
 insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', '3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', 'e4467a73-2204-523b-a4f0-a894dd600753') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', '635b674c-fa92-5f9f-8213-8caa44e06da2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3f422350-4e85-5825-87fc-75285027413b', '80622baa-f92d-5af6-9edc-dc698af37115') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a955a46b-a71a-5e46-9ffc-b03d34663b6c', '159984d9-2193-5ffb-b091-e1321ca7d488') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a955a46b-a71a-5e46-9ffc-b03d34663b6c', '87414d72-645e-5398-94fa-1bf0e23fe639') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a955a46b-a71a-5e46-9ffc-b03d34663b6c', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a955a46b-a71a-5e46-9ffc-b03d34663b6c', 'b37e5c7c-6dcc-5a4a-9cc4-28c636c11b5d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a955a46b-a71a-5e46-9ffc-b03d34663b6c', '841bafcf-3042-5f4f-970d-91155d954876') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d7bc0927-5b2b-5903-bfda-2d1113a75846', '159984d9-2193-5ffb-b091-e1321ca7d488') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d7bc0927-5b2b-5903-bfda-2d1113a75846', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d7bc0927-5b2b-5903-bfda-2d1113a75846', 'b3694651-05d2-5dbe-813e-9c6f48e7a1f9') on conflict do nothing;
@@ -4192,7 +4170,7 @@ insert into product_tags (product_id, tag_id) values ('46159fde-16e0-58d6-a47d-f
 insert into product_tags (product_id, tag_id) values ('46159fde-16e0-58d6-a47d-f83ce9ae3fe5', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('46159fde-16e0-58d6-a47d-f83ce9ae3fe5', '5d4422fa-c58c-5bac-9069-65e8b443c78a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('46159fde-16e0-58d6-a47d-f83ce9ae3fe5', 'b3694651-05d2-5dbe-813e-9c6f48e7a1f9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2310a833-0e31-5b8f-801d-09a2a2e40c12', '05d65302-beb4-5784-9eeb-c7fe9ac3689e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2310a833-0e31-5b8f-801d-09a2a2e40c12', '363af62a-ef0d-5e80-a1f8-fa05e2c19c39') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2310a833-0e31-5b8f-801d-09a2a2e40c12', '87414d72-645e-5398-94fa-1bf0e23fe639') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2310a833-0e31-5b8f-801d-09a2a2e40c12', '3a4dc15c-70f6-5e86-bb5a-d3789a0c78ff') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2310a833-0e31-5b8f-801d-09a2a2e40c12', 'a78cd085-6902-5f65-9bec-eeba23d2cf40') on conflict do nothing;
@@ -4203,10 +4181,10 @@ insert into product_tags (product_id, tag_id) values ('5eaec147-59ff-5b0f-b344-3
 insert into product_tags (product_id, tag_id) values ('5eaec147-59ff-5b0f-b344-36af118bbc9e', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', '24bf541f-b410-5d7e-a996-9e3fbea919e1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', 'a388a41e-b891-55a1-94a3-2201439777be') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fc025db7-f755-5944-afb9-c4fa174850d6', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e5d89e45b882', 'a42d67ee-d50d-59d1-b189-87fdd31748b5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e5d89e45b882', '70f35cf9-36b2-5d59-bedf-e871505a1a68') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e5d89e45b882', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e5d89e45b882', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e5d89e45b882', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
@@ -4215,21 +4193,21 @@ insert into product_tags (product_id, tag_id) values ('55efef77-c687-51d8-b367-e
 insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', 'd659ee07-103f-574a-b114-0e9f59d63108') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', '02fffae3-d489-5325-b9fc-015396c4781e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('58408ca4-09f3-58fe-932b-c5b8faba26d2', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', 'd4cc079b-af4a-5c1d-9886-1c9c88231a91') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', '9ffac063-afda-5a9d-ac83-5f1d96555e0a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', '151b944b-8657-53d6-80a0-224cdda57d96') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', 'b689f979-2a2f-5350-99ba-5b10d8b34c6a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', 'd6052e68-5c29-517d-baac-ef98fd66536f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', 'be16c512-6abe-5539-8e47-dfa1b90c1854') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', 'eb92f903-40a5-57b5-a4cd-31bc62d04de0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('1b7bbaad-2ef3-5fa1-80b8-098e28afe8a8', '3833de8f-cdf2-58ed-b1bb-f04942ddefe7') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', '7645f011-ce52-54a6-aa5f-43d646efe5a9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('5ccdd25e-5078-5b1f-bf41-04cd64ececfe', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6d5ea077-d57a-5eac-a73c-3f8825558ed0', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6d5ea077-d57a-5eac-a73c-3f8825558ed0', '6ca4aec6-8816-5cc4-8848-2a309b65e169') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6d5ea077-d57a-5eac-a73c-3f8825558ed0', 'ba280170-a533-576f-8825-edaa129b38ce') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6d5ea077-d57a-5eac-a73c-3f8825558ed0', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6d5ea077-d57a-5eac-a73c-3f8825558ed0', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('781a5b41-e287-5bb9-bfad-b7268a7c73d0', 'd9ca9090-7529-5579-a849-90ad03a558c3') on conflict do nothing;
@@ -4238,7 +4216,7 @@ insert into product_tags (product_id, tag_id) values ('781a5b41-e287-5bb9-bfad-b
 insert into product_tags (product_id, tag_id) values ('781a5b41-e287-5bb9-bfad-b7268a7c73d0', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('781a5b41-e287-5bb9-bfad-b7268a7c73d0', '77ead849-f709-5edf-9265-064c991e6758') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('781a5b41-e287-5bb9-bfad-b7268a7c73d0', 'fcf2102f-c542-5e37-95a8-36d9e5fddfe8') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('690991fb-ba02-5dc0-bf7c-e30118a8808d', '9ae30800-6832-5ca2-b526-7d00f382aaf5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('690991fb-ba02-5dc0-bf7c-e30118a8808d', '697cced4-e2f7-529c-b984-0597b4d92636') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('690991fb-ba02-5dc0-bf7c-e30118a8808d', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('690991fb-ba02-5dc0-bf7c-e30118a8808d', '77ead849-f709-5edf-9265-064c991e6758') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('690991fb-ba02-5dc0-bf7c-e30118a8808d', 'fcf2102f-c542-5e37-95a8-36d9e5fddfe8') on conflict do nothing;
@@ -4247,7 +4225,7 @@ insert into product_tags (product_id, tag_id) values ('c695e6f3-80bb-5ab5-93b8-0
 insert into product_tags (product_id, tag_id) values ('c695e6f3-80bb-5ab5-93b8-013a0ab87260', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c695e6f3-80bb-5ab5-93b8-013a0ab87260', '656ed6b2-a605-5e45-92de-6d42aa128c90') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('c695e6f3-80bb-5ab5-93b8-013a0ab87260', 'ce651269-a48f-59ab-bd5a-92de719a5680') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('aaa8c48f-a963-556c-b821-b06af86d1223', 'd0858459-2e29-5f42-89b5-fcd070c671b4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('aaa8c48f-a963-556c-b821-b06af86d1223', 'd9c9c8fe-73c8-5b21-933a-c47285e5f8b2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aaa8c48f-a963-556c-b821-b06af86d1223', '1de02616-bb7e-5e00-882a-71ddeddffef1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aaa8c48f-a963-556c-b821-b06af86d1223', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('aaa8c48f-a963-556c-b821-b06af86d1223', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
@@ -4256,78 +4234,78 @@ insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0
 insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0251ed167622', 'bcf46eac-cce5-5dfc-98e5-e47ef23e2316') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0251ed167622', '1de02616-bb7e-5e00-882a-71ddeddffef1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0251ed167622', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0251ed167622', '1b2035f5-75fa-5391-afdc-927789885d99') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '9dc42783-6bf3-5dbb-8c54-1da4e05f2e4d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('1e84b97b-368d-5841-9ac9-0251ed167622', '410121c5-43fe-50d4-aac2-0104abd42092') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '0c1e253e-75a8-5966-bb22-241842860383') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '1b2035f5-75fa-5391-afdc-927789885d99') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a69b1c7d-5b49-5089-93ad-d0b631704568', '410121c5-43fe-50d4-aac2-0104abd42092') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', '708432ac-1ae7-566f-a38d-3691c2ecd31b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', '01fb83c6-0d09-5155-b5e5-08b210ceebb0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', '76247775-dedf-5743-b49e-29289b235c6e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2cbb4a2-fcbc-5b12-8dc8-f2b7071223c7', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', '9dc42783-6bf3-5dbb-8c54-1da4e05f2e4d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', '0c1e253e-75a8-5966-bb22-241842860383') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('240abb8d-d871-56ee-aed1-79c31a016e1d', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '59c29f5c-180d-5a8f-be52-eac3d73f615d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '4cdde38c-5e17-56f0-a34c-3ca4403675e8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '4d746826-cbf6-5d73-b9d8-f9f56b5b4181') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', 'ca7529eb-309e-5d44-8559-8cc234c5560a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9c8954db-03f8-5758-bf8c-740ed62702ae', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', '5435fbe9-5505-521d-a896-20e624029539') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', 'af3697e8-88e4-56ae-bed6-82a43605e210') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', '1de02616-bb7e-5e00-882a-71ddeddffef1') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', 'e9392ae5-807b-5f77-a16a-b5357031e16f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7c178ff7-ac0d-5e9f-b077-f71996599742', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '01fb83c6-0d09-5155-b5e5-08b210ceebb0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '76247775-dedf-5743-b49e-29289b235c6e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '3bf6101a-5291-55ef-9f6b-05a92f9ff295') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '60eaa3f6-7de5-571c-a037-e800140c1e3a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('f6c8bc70-ce39-5c02-a263-6e4374aa8bcf', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', '1b2035f5-75fa-5391-afdc-927789885d99') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', '410121c5-43fe-50d4-aac2-0104abd42092') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', '9322a97a-0025-57ab-a6e7-c23b3cdd0089') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b215c01b-14d5-5e58-8948-4ba2086233c1', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', 'b9ae0878-11a9-5cf0-93e0-eb234253e858') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', '2034fa31-531f-5e41-b8e9-fb7e7efd2833') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', 'd2140043-9971-54be-91be-7ca0b84f1f44') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', 'de1567f6-e9b7-5c22-bcc6-0b4ec5f26755') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', '2f00afd0-3fdf-52ef-9f86-76c082cc69b9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('87b4a53a-5eb2-5323-b37b-c09f3bd5da63', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', '7033c794-77a3-5b9b-8ed1-9d6b1eb278e8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', '05a28201-65e9-50d4-a4e2-e128d1aa66a3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', 'ca47fddf-6703-5157-988c-655d3b875c2a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', '7d763ea5-de0d-5b15-9d8e-9554ad4f48bb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b8f71679-d84f-53e3-81f0-188bb6a16c6a', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', 'f1c351bf-2129-591e-87d7-9416c5fb1b74') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', '04d53ec3-c1f5-547a-ac71-8e120bcb2c9e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', '6e2ff2af-5524-587e-a45d-c0305ec49b8d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', 'eb9d4197-56cd-59df-8a68-99a93ec324da') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', 'd786d382-bc7b-5e14-8169-c9c96df3df50') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', '9e16a9b5-021b-55ee-a9da-a10740015908') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', 'e8f18915-215d-54c4-8064-66e2c5dac889') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3aaf28da-f8b7-5842-aa6d-fe83d0401b39', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '6b5ad029-5cba-5756-ab5b-e903eb584bf8') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '7699d0eb-c507-531e-a32c-3efba621afa9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '7e7869a9-d2c1-5e9e-8782-b5f4afc8494e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '7cdfa90a-fa04-5d49-845f-f05158437ee3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', 'd2140043-9971-54be-91be-7ca0b84f1f44') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
@@ -4335,20 +4313,20 @@ insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-9
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', 'b9644851-1251-59de-bb01-87d4a6982b00') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8fe0493c-0cd8-5868-a0fd-90fc1f55d4f8', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '6e75b484-018a-5587-aa5c-92192f4a9d3f') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', 'afd426d7-32e3-5099-97fd-c4b57e4c404a') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '5089f54b-a26b-5cd4-b490-a41d716a856b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '6cbd24ae-35e0-5fef-a635-47192a5e77d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '7d763ea5-de0d-5b15-9d8e-9554ad4f48bb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', 'd3548ed3-0099-52a7-b9aa-d6f0680faa4c') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', 'c28a9ae0-542b-51d8-b947-2f05d569168a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('333cb328-22c7-5d89-b2c8-02149693cbbc', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', 'ca47fddf-6703-5157-988c-655d3b875c2a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', '7d763ea5-de0d-5b15-9d8e-9554ad4f48bb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', 'be16c512-6abe-5539-8e47-dfa1b90c1854') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', '3833de8f-cdf2-58ed-b1bb-f04942ddefe7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2ef70836-bae5-5353-8a8c-4fb6262e6e3b', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('0d4c4f83-fe0c-58a5-8d93-e1a58d922c62', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
@@ -4367,9 +4345,9 @@ insert into product_tags (product_id, tag_id) values ('03f56457-6c8c-5f56-b5a7-4
 insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', '1d90c602-22ae-59ab-9f85-f0e667921d49') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', 'c93a3abc-8c3d-5323-9d63-b323ce2e9b40') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', '69df5bd2-c186-5e7f-81db-61dc1898f313') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', 'a1ec2e8a-b50b-50e6-b27a-e6a92fceb251') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('51e4cebe-1d6e-5b79-b0b1-0f6aebe93905', '4235ca0a-c688-5bb7-939a-3d85cee07259') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', '27267ec3-39ac-5330-ae94-ac18b89d6cea') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('04f7152d-f33a-5a28-a29b-78f153f71f5d', 'becac0d2-01eb-572b-961e-906fb17dd438') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('51e4cebe-1d6e-5b79-b0b1-0f6aebe93905', '18549bec-5f87-573d-8442-0d93725017f0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51e4cebe-1d6e-5b79-b0b1-0f6aebe93905', '1d90c602-22ae-59ab-9f85-f0e667921d49') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51e4cebe-1d6e-5b79-b0b1-0f6aebe93905', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('51e4cebe-1d6e-5b79-b0b1-0f6aebe93905', 'e78425f2-cddc-5b4a-8132-24677e4f62f5') on conflict do nothing;
@@ -4389,94 +4367,94 @@ insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-1
 insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', 'ec3db6ef-8333-5335-a0d0-8f3ba5e96e4a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', '55ed34bf-41e6-59d4-9543-1c60f657ce31') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', 'd72dddac-7463-502d-85e7-8f2e55ab5715') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', '3b547ff3-65ce-5d54-8f81-b5f5ecee2722') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6903ca9d-0148-5199-8baa-10af96699338', 'fea25767-0aa5-5041-a8f5-197f0ea1275f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', '4fc9b5df-bc4b-572f-a675-197eeafabd52') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', '89a65cc4-b1f2-5c23-be3f-efcef785ac21') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', 'ec3db6ef-8333-5335-a0d0-8f3ba5e96e4a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', '3b547ff3-65ce-5d54-8f81-b5f5ecee2722') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', 'fea25767-0aa5-5041-a8f5-197f0ea1275f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('3c5e5ce5-57e2-5a31-badd-e43dac7c20dd', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', 'e1f71ab8-05ae-5d4c-afca-a4650bf2a700') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', 'a223dbe2-a624-5afd-a411-aa88f4e1f9f9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', 'd2140043-9971-54be-91be-7ca0b84f1f44') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', '4cdde38c-5e17-56f0-a34c-3ca4403675e8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', '4d746826-cbf6-5d73-b9d8-f9f56b5b4181') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('931c8317-ec34-58e9-bcf5-76dada18bd27', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', 'fd2a738e-de52-5b5b-af78-821832074dc1') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '52162fdb-d015-5825-85a2-1d19860b2ddb') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', 'e5d1d05c-b8f3-5182-9ffb-080f775367f8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', 'c58f7eff-f4be-521e-bfba-2ae8ad73e5c7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '1b2035f5-75fa-5391-afdc-927789885d99') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '3bf6101a-5291-55ef-9f6b-05a92f9ff295') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '410121c5-43fe-50d4-aac2-0104abd42092') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '60eaa3f6-7de5-571c-a037-e800140c1e3a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', '5a9938ff-06b5-5de4-8f74-2df831ae7bee') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('533beecf-e86b-5677-a716-f25bfb86f814', 'c1424999-932b-575d-a9e6-5e286f607c9b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', '4f42fe26-9aa7-527b-be7e-aa9b81a6032e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', 'd6052e68-5c29-517d-baac-ef98fd66536f') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', '84022795-621f-59e3-ab10-56ee019362b8') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', 'e5638efa-2aac-57da-b60a-ee6a6019f621') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', 'dd86a950-4dc0-5edf-b139-b7bab532dad0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9dfa6d61-2539-5b86-960d-0f3689b6a24c', '3b547ff3-65ce-5d54-8f81-b5f5ecee2722') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('2c978186-af34-5d83-8b99-e56da341725c', 'faf8c00a-7865-5c16-843d-72d07e181a61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('2c978186-af34-5d83-8b99-e56da341725c', '44994392-50c4-5b0a-9d3c-39db77a3b54a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2c978186-af34-5d83-8b99-e56da341725c', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2c978186-af34-5d83-8b99-e56da341725c', '115c8777-0845-540c-b3e5-4bedaaed9420') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('2c978186-af34-5d83-8b99-e56da341725c', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('682674de-9cea-56cb-8766-41a30f3f7683', 'faf8c00a-7865-5c16-843d-72d07e181a61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('682674de-9cea-56cb-8766-41a30f3f7683', '44994392-50c4-5b0a-9d3c-39db77a3b54a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('682674de-9cea-56cb-8766-41a30f3f7683', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('682674de-9cea-56cb-8766-41a30f3f7683', '115c8777-0845-540c-b3e5-4bedaaed9420') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('682674de-9cea-56cb-8766-41a30f3f7683', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', '28a614b3-9c4b-5b2d-8ecb-59ab6f4a4040') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', '306daf61-356f-5e66-9650-94b127759a51') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', 'd29c05bb-e77e-5adb-af82-d84abc5991ac') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', '3b547ff3-65ce-5d54-8f81-b5f5ecee2722') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('98acac70-444b-5ff1-8dfb-741b806409ef', 'ea325ec0-2e31-5e7e-a900-324d21830345') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '4f42fe26-9aa7-527b-be7e-aa9b81a6032e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '4235ca0a-c688-5bb7-939a-3d85cee07259') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '18549bec-5f87-573d-8442-0d93725017f0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', 'cee4ce6f-0246-5f52-91b8-740524618929') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', '7ec0e2cf-6d3e-5c61-b7e5-e8eeaa56e9e4') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', '4f42fe26-9aa7-527b-be7e-aa9b81a6032e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', 'faf8c00a-7865-5c16-843d-72d07e181a61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d0c47489-7564-5ae2-8e65-d20c139892bc', 'dd86a950-4dc0-5edf-b139-b7bab532dad0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', '44994392-50c4-5b0a-9d3c-39db77a3b54a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', 'ccfddb2d-136d-559c-8cef-0e935b0e483e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', 'cb67a767-eb21-545c-9346-7f2492f4cd5d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', 'bb468181-7604-5bda-91ff-d1e202fc5281') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d2945133-a3d1-5f5f-9d56-25ba1724386e', 'dd86a950-4dc0-5edf-b139-b7bab532dad0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '85fc2dd3-7cd2-5a7c-98bb-4b0964753a37') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '720a91c8-0e67-5906-8e85-d7e3002d2056') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', 'bae247fd-ff53-50d9-9b08-ef4a349e16a9') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '4549d30a-d8f9-5024-9f2e-b47d6130415b') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '585f41fd-12fb-5fd4-b0b4-142fd7ef0bf4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '186ebf29-385f-53fd-95ac-ab0f1a7a323e') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', 'afc19aa3-16bb-549a-8260-d0d59efbdfa0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6734948a-54a7-59af-b8f3-0ba53d91c717', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', '1da3b7cc-13ae-54d5-89f5-52f497722361') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', 'faf8c00a-7865-5c16-843d-72d07e181a61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', '44994392-50c4-5b0a-9d3c-39db77a3b54a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', 'c452cf35-9505-57c1-bf62-0a615bfe79c6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', 'cee4ce6f-0246-5f52-91b8-740524618929') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6c80688e-cda6-508f-8c1d-743ac4dc955c', 'e02992fc-7de2-5cce-974a-56a2b9e8e3ec') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', '0620d5b0-7a43-5847-af85-f015232df5cb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', 'faf8c00a-7865-5c16-843d-72d07e181a61') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', 'ac3a24fd-5890-59d5-ac2a-8b430050edd9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', '44994392-50c4-5b0a-9d3c-39db77a3b54a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', 'cee4ce6f-0246-5f52-91b8-740524618929') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('add3c38d-5fb1-5413-9190-d58a5d3ff485', 'e02992fc-7de2-5cce-974a-56a2b9e8e3ec') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', '0da66172-662b-510e-b8ed-de6f15d735d9') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', '6a35c230-a91b-5c7c-8725-de08cbfaa3f2') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', 'c452cf35-9505-57c1-bf62-0a615bfe79c6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', '17163d94-70d7-54d2-9069-dfa7c1ef0bb8') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', 'e70a406b-6d28-57c1-abfc-d4acc601cd54') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', 'cee4ce6f-0246-5f52-91b8-740524618929') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('743e13b8-fb25-5095-bdeb-bc189f8f1900', '505896b9-e5c6-580f-b6b5-0dcad248ec2c') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '7ebb0e97-1176-55be-9c5e-96c6106a6bd0') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '069855d8-4bed-5935-9615-7eb31de705d5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', 'd786d382-bc7b-5e14-8169-c9c96df3df50') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', 'af1d911a-3183-5968-83a1-18b59e84d30c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', 'bcf46eac-cce5-5dfc-98e5-e47ef23e2316') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '933b7816-6949-526a-8acd-7baca98c0ea3') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '9dc42783-6bf3-5dbb-8c54-1da4e05f2e4d') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '639d89db-b6a5-51a5-9793-f3949cdaa850') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '0c1e253e-75a8-5966-bb22-241842860383') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '95ca318a-62a6-55e6-b225-d12b18485f7a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', '15f03732-c610-550c-8c08-f93ea715caf0') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9a9615f2ccf6', 'e4613c03-3524-5e9c-88d5-13f5c421e941') on conflict do nothing;
@@ -4485,7 +4463,7 @@ insert into product_tags (product_id, tag_id) values ('9da3fcce-1936-5ce9-8073-9
 insert into product_tags (product_id, tag_id) values ('706d8c47-175e-5e0f-aea5-02750ee2ee48', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('706d8c47-175e-5e0f-aea5-02750ee2ee48', '166d81bc-df3c-5bfa-8360-7c1afadbb77d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('706d8c47-175e-5e0f-aea5-02750ee2ee48', '4fa9796f-8120-5cf3-b048-d1befecb0d33') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('706d8c47-175e-5e0f-aea5-02750ee2ee48', 'dae21971-2e1b-57f2-a6b2-c95239b1627b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('706d8c47-175e-5e0f-aea5-02750ee2ee48', '3c51fc2a-3c96-5e49-a94d-55a6792ee991') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('02573ffe-6c58-595b-8f4a-7d63a302d170', '8ffff167-9e24-5e4a-aa49-23ab2894dfe4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('02573ffe-6c58-595b-8f4a-7d63a302d170', '98b2fa7a-8e1b-5e89-aba7-a666108581ed') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('02573ffe-6c58-595b-8f4a-7d63a302d170', '166d81bc-df3c-5bfa-8360-7c1afadbb77d') on conflict do nothing;
@@ -4504,7 +4482,7 @@ insert into product_tags (product_id, tag_id) values ('323f80a4-71b7-5d71-b452-c
 insert into product_tags (product_id, tag_id) values ('323f80a4-71b7-5d71-b452-c84f72f54803', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('323f80a4-71b7-5d71-b452-c84f72f54803', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('323f80a4-71b7-5d71-b452-c84f72f54803', '4527e5ff-6f53-5ff2-a9c1-a842fe7e2340') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('911fc41a-80f5-59cf-9e87-ff8313350397', 'ae44e81a-acdd-5ce7-91c7-7ab7648bb53b') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('911fc41a-80f5-59cf-9e87-ff8313350397', '3cf260eb-bfd2-531e-b410-5225416b7efc') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('911fc41a-80f5-59cf-9e87-ff8313350397', 'a809a32d-baf6-5a36-927d-96405679aceb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('911fc41a-80f5-59cf-9e87-ff8313350397', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('911fc41a-80f5-59cf-9e87-ff8313350397', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
@@ -4514,21 +4492,21 @@ insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-1
 insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '47070d72-fecc-5e4e-8c3f-4fcc507b2433') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '9df8ee33-c3d6-5573-b4d4-5cd923e7e8a5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '27876def-ef6f-5eda-a972-a92efb7f4fa5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('b68ab166-0d26-5c84-bb8f-19b8027d270d', '8a742034-eae6-5de4-8827-44f42debbf24') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', 'a809a32d-baf6-5a36-927d-96405679aceb') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '84240caf-0dbf-5f3a-b8f1-176af2049974') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '24bddbd3-8226-571d-ae4b-405fee8ce1eb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '47070d72-fecc-5e4e-8c3f-4fcc507b2433') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '9df8ee33-c3d6-5573-b4d4-5cd923e7e8a5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('288c137c-cb9f-5fbe-a238-eb8b3bb6afce', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', 'a809a32d-baf6-5a36-927d-96405679aceb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '47070d72-fecc-5e4e-8c3f-4fcc507b2433') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '9df8ee33-c3d6-5573-b4d4-5cd923e7e8a5') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fea8c10f-6006-5c6f-a91c-2e192532ee62', '43a7ea93-9426-5985-a6ce-bccaf9e7c38d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fbc1320d-65c8-56f1-bf7a-5091578224cf', 'a809a32d-baf6-5a36-927d-96405679aceb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('fbc1320d-65c8-56f1-bf7a-5091578224cf', '243a7d64-b702-59b5-bbb2-161b1f454864') on conflict do nothing;
@@ -4543,13 +4521,13 @@ insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4
 insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '27876def-ef6f-5eda-a972-a92efb7f4fa5') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '8a742034-eae6-5de4-8827-44f42debbf24') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('73bfa834-11fa-5cfc-bed5-4b032badcc32', '3a1dd3ee-3c42-5a17-9450-8ad7bec3f149') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '3f38cbd9-e661-5e65-949c-7ea879c38db4') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '844894ca-6262-5f1e-bccb-1ca567ffa4be') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '4db3c0e6-9426-57e4-8088-ff183cc4816e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('499570fc-0e89-516a-804e-30618de53938', '3a1dd3ee-3c42-5a17-9450-8ad7bec3f149') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8a089f37-8801-5434-a5ef-527ea2cb138d', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('8a089f37-8801-5434-a5ef-527ea2cb138d', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
@@ -4576,14 +4554,14 @@ insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-8
 insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-81f0f0e102f7', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-81f0f0e102f7', '5dd21eac-a730-5e93-93cf-f15858252a45') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-81f0f0e102f7', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-81f0f0e102f7', '844894ca-6262-5f1e-bccb-1ca567ffa4be') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('6dfd6784-03f9-56bd-afde-81f0f0e102f7', '4db3c0e6-9426-57e4-8088-ff183cc4816e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '5721887b-6430-5567-b1ea-4e04377fa1a7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', 'c04cf8b8-eca5-5a9d-b8d5-022b094088b3') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '5dd21eac-a730-5e93-93cf-f15858252a45') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', '9ac7afd4-1b5a-5c4e-ae5a-a0040c828269') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('ed776269-fff7-5839-a3d9-d003b5b0e6ee', 'fcbce4d0-2fa9-59b9-b80d-918d0d031c05') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', '5721887b-6430-5567-b1ea-4e04377fa1a7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', 'c04cf8b8-eca5-5a9d-b8d5-022b094088b3') on conflict do nothing;
@@ -4591,7 +4569,7 @@ insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-d
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', '5dd21eac-a730-5e93-93cf-f15858252a45') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('7a3ba41c-504d-538f-8966-de74ca3bc07b', '6fb09a24-c68e-51e2-8884-73d4acb31a8e') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '6c165dd6-239e-58a6-800b-7c80d075a135') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '35c88506-3ec8-59cf-8959-e5ae4d0268d9') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '5721887b-6430-5567-b1ea-4e04377fa1a7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
@@ -4599,7 +4577,7 @@ insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-7
 insert into product_tags (product_id, tag_id) values ('a1778cd2-f0e4-56a5-922a-737bd46f4fa3', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '5721887b-6430-5567-b1ea-4e04377fa1a7') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '45606c96-cf6e-5a21-8fdc-c0fe4e839337') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '6a202ac8-477b-5a4b-8810-9a762bf2dd20') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '6bef5663-a8a3-58ae-95d9-06afd4f55b3c') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '93015602-0e25-52dd-babd-9b256028a30d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('14431033-2390-5b07-86c3-a50af541d7fa', '5dd21eac-a730-5e93-93cf-f15858252a45') on conflict do nothing;
@@ -4607,13 +4585,13 @@ insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-1
 insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', '73c2f239-1347-55c2-a407-e5235cbc50db') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', '844894ca-6262-5f1e-bccb-1ca567ffa4be') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', '4db3c0e6-9426-57e4-8088-ff183cc4816e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('4b8f0c90-330b-5248-91e4-136b2f9c1a01', 'e9dc1fcb-9ad2-5dd4-98b3-febef663f293') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '82d8e6bf-54f1-5fa0-be3e-0a2ed0e35bcb') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '73c2f239-1347-55c2-a407-e5235cbc50db') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '844894ca-6262-5f1e-bccb-1ca567ffa4be') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '4db3c0e6-9426-57e4-8088-ff183cc4816e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', '219cf262-308b-5c6f-9ca5-d049ecb92752') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', 'e9dc1fcb-9ad2-5dd4-98b3-febef663f293') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('cba8e7b7-8730-5393-b6dd-86a6fac3ed94', 'a820987c-2f13-54b5-ad74-b085d1343b30') on conflict do nothing;
@@ -4624,7 +4602,7 @@ insert into product_tags (product_id, tag_id) values ('6d398c65-d2c4-561f-8a3b-3
 insert into product_tags (product_id, tag_id) values ('6d398c65-d2c4-561f-8a3b-3d97328e3e5f', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6d398c65-d2c4-561f-8a3b-3d97328e3e5f', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('6d398c65-d2c4-561f-8a3b-3d97328e3e5f', '43a7ea93-9426-5985-a6ce-bccaf9e7c38d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', 'b124820b-fbc4-587c-90e0-65238129bad4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', '2c118f4e-5e36-5ec0-950b-f0d1a3152d6d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', '9e325ad9-027a-5622-95ed-6de16c222063') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;
@@ -4632,17 +4610,17 @@ insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2
 insert into product_tags (product_id, tag_id) values ('63be1819-2cfb-5b19-90f1-2d6e275da8d2', '43a7ea93-9426-5985-a6ce-bccaf9e7c38d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', 'd746d2cc-0a0d-5e30-9848-b43780ba6f28') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', 'd4b1d699-19af-5669-8c75-ae88449c7364') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', '0cfa98b2-072d-5892-be2c-79150360d2f6') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', '9e325ad9-027a-5622-95ed-6de16c222063') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('990426b1-8808-5cee-b98b-d73a401b9d24', '43a7ea93-9426-5985-a6ce-bccaf9e7c38d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', 'b124820b-fbc4-587c-90e0-65238129bad4') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', '2c118f4e-5e36-5ec0-950b-f0d1a3152d6d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', '861d669f-6d44-594c-b768-93f30664eb88') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', '9e325ad9-027a-5622-95ed-6de16c222063') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('d3a1e1cc-5f4c-5df7-9d97-fc406dfef960', '9a5bb959-486e-5f62-ae61-748ca26449bd') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', 'e20e6ad8-a9f2-51bf-8b1e-ea4ef741faad') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', '770e56a5-51bc-5220-a51c-d98c9782b88e') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', '9e325ad9-027a-5622-95ed-6de16c222063') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;
@@ -4650,7 +4628,7 @@ insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3
 insert into product_tags (product_id, tag_id) values ('45e6ee94-391e-5b89-807b-3f9746fab5e8', '43a7ea93-9426-5985-a6ce-bccaf9e7c38d') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', '63290afc-56f6-505f-ae11-18c85762040a') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', '93015602-0e25-52dd-babd-9b256028a30d') on conflict do nothing;
-insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', '14801647-16d2-5dc4-8132-7fe24f82f022') on conflict do nothing;
+insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', 'cb4ceabf-7a3a-5abd-965f-50940f2dd967') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', '7b0087f2-4a4b-50bd-883b-6cdcf11f8509') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', '9e325ad9-027a-5622-95ed-6de16c222063') on conflict do nothing;
 insert into product_tags (product_id, tag_id) values ('36a97054-9544-573f-a118-2e7a74a687d9', 'cc4ff378-985f-51ab-a04c-a84b670ce0ea') on conflict do nothing;

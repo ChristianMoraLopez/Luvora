@@ -200,7 +200,7 @@
   "effects": [
     {
       "value": "efecto-calor",
-      "count": 6
+      "count": 8
     },
     {
       "value": "efecto-frio",
@@ -235,6 +235,10 @@
       "count": 3
     },
     {
+      "value": "base-agua",
+      "count": 13
+    },
+    {
       "value": "comestible",
       "count": 5
     },
@@ -249,6 +253,10 @@
     {
       "value": "app",
       "count": 4
+    },
+    {
+      "value": "silicona-medica",
+      "count": 5
     }
   ],
   "variant_axes": [
