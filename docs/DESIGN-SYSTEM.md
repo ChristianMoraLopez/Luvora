@@ -72,7 +72,7 @@ Rasgos editoriales: `tracking-wordmark` (0.3em) para «LUVORA», `tracking-nav` 
 Curva house: `--ease-luxe` = `cubic-bezier(0.22, 1, 0.36, 1)` (desacelera hacia el reposo; nunca abrupto). Duraciones en `tokens.ts` (`fast .25` / `base .45` / `slow .7` / `intro .9`).
 
 - **Entradas:** `Reveal` / `fadeUp` — fade + subida al entrar en viewport (`once`).
-- **Intro de marca:** timeline con `useAnimate` (corazón → latido ×2 → punto dorado → wordmark → pausa) y **shared layout** (`layoutId="brand-lockup"`) para el viaje al header. El lockup conserva la proporción exacta del header (marca : palabra : gap) para que el morph sea una escala uniforme, sin saltos.
+- **Intro de marca:** reproduce el logotipo animado propio de la marca en **Lottie** (`public/lottie/luvora-wordmark.json`, creado en Jitter — se le quitó la marca de agua y se ajustó el fondo a ivory). El JSON se carga en runtime (fuera del bundle inicial); al terminar —o con clic para saltar— se hace *cross-fade* al sitio (`AnimatePresence`). Se muestra una vez por sesión.
 - **Reduced motion:** `prefers-reduced-motion` desactiva animaciones (CSS global + `useReducedMotion` en JS). La intro se omite y el contenido aparece de inmediato.
 
 Rendimiento: se animan solo `transform` y `opacity` (compositor GPU) → objetivo 60fps.

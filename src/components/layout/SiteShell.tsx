@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { LayoutGroup, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "framer-motion";
 import { easing } from "@/config/tokens";
 import { useIntroStore } from "@/store/intro";
 import { PromoBar } from "./PromoBar";
@@ -61,7 +61,9 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
       <Footer />
 
-      {playing && <IntroAnimation onComplete={finish} reduced={!!prefersReduced} />}
+      <AnimatePresence>
+        {playing && <IntroAnimation key="intro" onComplete={finish} reduced={!!prefersReduced} />}
+      </AnimatePresence>
       <CartDrawer />
     </LayoutGroup>
   );

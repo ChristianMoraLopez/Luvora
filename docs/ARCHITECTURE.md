@@ -20,15 +20,17 @@
 
 Los stores son la fuente de verdad del cliente; al integrar auth, el carrito/wishlist pueden **sincronizarse** con Supabase por usuario (merge al iniciar sesión).
 
-## 3. Intro + shared layout
+## 3. Intro de marca (Lottie)
 
-`SiteShell` (cliente) envuelve todo en `<LayoutGroup>` y orquesta la intro:
+`SiteShell` (cliente) orquesta la intro:
 
 1. En primer render (SSR/no-JS) la página se ve completa → SEO y resiliencia.
-2. Tras `mount`, si no se ha reproducido y no hay `reduced-motion`, se monta `IntroAnimation` (overlay ivory, `layoutId="brand-lockup"`).
-3. Al terminar el timeline, `SiteShell` desmonta el overlay y el **header** monta el mismo `layoutId` → Framer Motion realiza el morph (escala + viaje) hacia el header, y el contenido hace fade-in.
+2. Tras `mount`, si no se ha reproducido y no hay `reduced-motion`, se monta `IntroAnimation`: un overlay ivory que reproduce el logotipo animado de la marca en **Lottie** (`public/lottie/luvora-wordmark.json`). El JSON se hace `fetch` en runtime para no cargar el bundle inicial.
+3. Al terminar la animación —o con clic/tap para saltar— `onComplete` marca la sesión y `SiteShell` hace **cross-fade** (`AnimatePresence` sobre el overlay + fade-in del contenido) hacia el sitio.
 
-Detalle clave: el overlay **no** tiene animación de salida; se desmonta al instante para que el único movimiento sea el morph compartido. El fondo es ivory en ambos lados → transición sin costuras.
+El fondo del Lottie se ajustó a ivory (igual que el sitio) para que la transición sea sin costuras. `LayoutGroup` sigue disponible para animaciones de layout compartidas; el header ya no depende de la intro para su logo.
+
+> El Lottie fue creado en **Jitter**; se le retiró la marca de agua (capa/precomp de la esquina inferior derecha) y se recoloreó el fondo. El origen sin modificar queda en `Scene-1.json` (raíz).
 
 ## 4. Supabase — estrategia de integración
 
