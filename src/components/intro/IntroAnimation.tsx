@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimate } from "framer-motion";
 import { easing } from "@/config/tokens";
+import { HeartArt } from "@/components/brand/Logo";
 
 /**
  * LUVORA brand intro — scripted timeline.
@@ -24,10 +25,7 @@ import { easing } from "@/config/tokens";
 const MARK = 96; // px — hero mark size (header mark is 28 → uniform 0.29× morph)
 const WORD_PX = 79; // 96 × (23/28) keeps header proportions
 const GAP = 41; // 12 × (96/28)
-const DOT = Math.round(MARK * 0.12);
-
-const HEART_PATH =
-  "M12 21 C 5 14.5, 3.2 9.5, 6.6 7 C 9.2 5.2, 11.4 6.7, 12 8.6 C 12.6 6.7, 14.8 5.2, 17.4 7 C 20.8 9.5, 19 14.5, 12 21 Z";
+const DOT = Math.round(MARK * 0.13);
 
 const delay = (s: number) => new Promise((r) => setTimeout(r, s * 1000));
 
@@ -39,7 +37,7 @@ export function IntroAnimation({
   reduced?: boolean;
 }) {
   const [scope, animate] = useAnimate();
-  const heartRef = useRef<SVGSVGElement>(null);
+  const heartRef = useRef<HTMLSpanElement>(null);
   const dotRef = useRef<HTMLSpanElement>(null);
   const wordRef = useRef<HTMLSpanElement>(null);
 
@@ -99,21 +97,15 @@ export function IntroAnimation({
         className="inline-flex items-center"
         style={{ gap: GAP }}
       >
-        {/* Brand mark: heart + floating golden dot */}
+        {/* Brand mark: the attached heart artwork + floating golden dot */}
         <span className="relative inline-block shrink-0" style={{ width: MARK, height: MARK }}>
-          <motion.svg
+          <motion.span
             ref={heartRef}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#6B1E3A"
-            strokeWidth={1.4}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="h-full w-full"
+            className="block h-full w-full"
             style={{ opacity: 0, scale: 0.9 }}
           >
-            <path d={HEART_PATH} />
-          </motion.svg>
+            <HeartArt stroke="#6B1E3A" />
+          </motion.span>
           <motion.span
             ref={dotRef}
             className="absolute rounded-full"
@@ -122,7 +114,7 @@ export function IntroAnimation({
               height: DOT,
               left: "50%",
               marginLeft: -DOT / 2,
-              top: -DOT * 0.3,
+              top: -DOT * 0.4,
               background: "#D9B48C",
               opacity: 0,
             }}

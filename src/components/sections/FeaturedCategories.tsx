@@ -21,8 +21,8 @@ export function FeaturedCategories() {
                 href={`/tienda?categoria=${cat.slug}`}
                 className="group flex h-full flex-col justify-between gap-8 rounded-card border border-burgundy/10 bg-white/50 p-7 transition-all duration-300 ease-luxe hover:border-burgundy/25 hover:shadow-soft"
               >
-                <span className="h-8 w-8 text-burgundy">
-                  <HeartMark stroke="#6B1E3A" strokeWidth={1.3} />
+                <span className="h-9 w-9 text-burgundy">
+                  <HeartMark stroke="#6B1E3A" />
                 </span>
                 <div className="flex flex-col gap-2">
                   <h3 className="font-display text-2xl text-ink">{cat.name}</h3>

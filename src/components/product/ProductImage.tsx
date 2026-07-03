@@ -54,8 +54,8 @@ export function ProductImage({
           aria-hidden="true"
         >
           <div className="flex flex-col items-center gap-3 opacity-70">
-            <span className="h-9 w-9">
-              <HeartMark stroke="#6B1E3A" strokeWidth={1.2} />
+            <span className="h-10 w-10">
+              <HeartMark stroke="#6B1E3A" />
             </span>
             {label && (
               <span className="font-display text-lg text-burgundy/80">{label}</span>
