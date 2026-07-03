@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "framer-motion";
+import { LayoutGroup, motion, useReducedMotion } from "framer-motion";
 import { easing } from "@/config/tokens";
 import { useIntroStore } from "@/store/intro";
 import { PromoBar } from "./PromoBar";
@@ -61,9 +61,12 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
       <Footer />
 
-      <AnimatePresence>
-        {playing && <IntroAnimation key="intro" onComplete={finish} reduced={!!prefersReduced} />}
-      </AnimatePresence>
+      {/*
+        Plain conditional (no AnimatePresence): the overlay unmounts instantly
+        at hand-off so the header's brand-lockup morph is the only motion, on a
+        seamless ivory field. The content fade-in above provides the reveal.
+      */}
+      {playing && <IntroAnimation onComplete={finish} reduced={!!prefersReduced} />}
       <CartDrawer />
     </LayoutGroup>
   );
