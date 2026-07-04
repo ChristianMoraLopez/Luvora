@@ -10,6 +10,7 @@ import { ShieldIcon, PackageIcon, TruckIcon } from "@/components/brand/Icons";
 import { useCartStore, selectSubtotal } from "@/store/cart";
 import { formatCOP } from "@/lib/format";
 import { departamentos, shippingQuote, shippingRates } from "@/data/colombia";
+import { createClient } from "@/lib/supabase/client";
 
 export default function CheckoutPage() {
   const items = useCartStore((s) => s.items);
@@ -41,17 +42,34 @@ export default function CheckoutPage() {
     setSubmitting(true);
     setError(null);
     try {
-      // Server persists the order + recomputes prices AND shipping → MP total.
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, form }),
-      });
-      const data = await res.json();
-      if (data.init_point) {
+      // Prefer the Supabase Edge Function (create-checkout); if it's not
+      // available (not deployed / secret missing / error), fall back to the
+      // Next.js route. Both persist the order + recompute prices/shipping.
+      let data: { init_point?: string; message?: string } | null = null;
+
+      try {
+        const supabase = createClient();
+        const { data: fnData } = await supabase.functions.invoke("create-checkout", {
+          body: { items, form },
+        });
+        if (fnData?.init_point) data = fnData;
+      } catch {
+        /* fall back below */
+      }
+
+      if (!data?.init_point) {
+        const res = await fetch("/api/checkout", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ items, form }),
+        });
+        data = await res.json();
+      }
+
+      if (data?.init_point) {
         window.location.href = data.init_point;
       } else {
-        setError(data.message ?? "No fue posible iniciar el pago. Configura Mercado Pago.");
+        setError(data?.message ?? "No fue posible iniciar el pago. Configura Mercado Pago.");
       }
     } catch {
       setError("Ocurrió un error al procesar el pago.");
