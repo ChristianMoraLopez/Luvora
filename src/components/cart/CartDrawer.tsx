@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Drawer } from "@/components/ui/Drawer";
 import { IconButton } from "@/components/ui/IconButton";
 import { Button } from "@/components/ui/Button";
@@ -18,6 +20,12 @@ export function CartDrawer() {
   const remove = useCartStore((s) => s.remove);
   const subtotal = useCartStore(selectSubtotal);
   const count = useCartStore(selectCount);
+
+  // Close the drawer whenever the route changes (e.g. after "Ir a pagar").
+  const pathname = usePathname();
+  useEffect(() => {
+    close();
+  }, [pathname, close]);
 
   return (
     <Drawer open={isOpen} onClose={close} side="right" labelledBy="cart-title">
