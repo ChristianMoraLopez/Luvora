@@ -7,7 +7,6 @@ import { QuantityStepper } from "@/components/ui/QuantityStepper";
 import { ProductImage } from "@/components/product/ProductImage";
 import { BagIcon } from "@/components/brand/Icons";
 import { useCartStore, selectSubtotal, selectCount } from "@/store/cart";
-import { categoryName } from "@/data/categories";
 import { formatCOP } from "@/lib/format";
 
 export default function CarritoPage() {
@@ -51,7 +50,7 @@ export default function CarritoPage() {
               <div className="flex flex-1 flex-col gap-2">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="eyebrow text-mauve">{categoryName(item.category)}</p>
+                    <p className="eyebrow text-mauve">{item.category}</p>
                     <Link href={`/producto/${item.slug}`} className="font-display text-xl hover:text-burgundy">
                       {item.name}
                     </Link>

@@ -265,11 +265,23 @@ create policy "read product_tags"  on public.product_tags     for select using (
 -- STORAGE  (product photography lives in a public bucket)
 -- The seed references paths like:  products/{catalog}/{slug}/01.webp
 -- =====================================================================
-insert into storage.buckets (id, name, public)
-values ('product-images', 'product-images', true)
-on conflict (id) do nothing;
-
--- Public read of product images; writes restricted to service role.
-drop policy if exists "public read product-images" on storage.objects;
-create policy "public read product-images" on storage.objects
-  for select using ( bucket_id = 'product-images' );
+-- Guarded: on some plans the SQL role doesn't own storage tables; a public
+-- bucket is still publicly readable via its public URL, so failures here are
+-- non-fatal (you can also create the bucket in Dashboard → Storage).
+do $$
+begin
+  begin
+    insert into storage.buckets (id, name, public)
+    values ('product-images', 'product-images', true)
+    on conflict (id) do nothing;
+  exception when others then
+    raise notice 'bucket creation skipped: % (create it in Dashboard → Storage)', sqlerrm;
+  end;
+  begin
+    drop policy if exists "public read product-images" on storage.objects;
+    create policy "public read product-images" on storage.objects
+      for select using ( bucket_id = 'product-images' );
+  exception when others then
+    raise notice 'storage policy skipped: % (public bucket works without it)', sqlerrm;
+  end;
+end $$;

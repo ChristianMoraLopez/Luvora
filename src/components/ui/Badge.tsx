@@ -1,19 +1,22 @@
 import { cn } from "@/lib/utils";
-import type { ProductBadge } from "@/types";
 
+/**
+ * Product badge pill. Keys are the DB badge values
+ * (`nuevo`, `mas_vendido`, `regalo_ideal`, `premium`).
+ */
 const styles: Record<string, string> = {
-  "mas-vendido": "bg-burgundy text-ivory",
-  "regalo-ideal": "bg-champagne text-burgundy",
+  mas_vendido: "bg-burgundy text-ivory",
+  regalo_ideal: "bg-champagne text-burgundy",
   nuevo: "bg-ink text-ivory",
-  "edicion-limitada": "bg-blush text-burgundy",
+  premium: "bg-blush text-burgundy",
   neutral: "bg-blush-soft text-burgundy",
 };
 
-const labels: Record<ProductBadge, string> = {
-  "mas-vendido": "Más vendido",
-  "regalo-ideal": "Regalo ideal",
+const labels: Record<string, string> = {
+  mas_vendido: "Más vendido",
+  regalo_ideal: "Regalo ideal",
   nuevo: "Nuevo",
-  "edicion-limitada": "Edición limitada",
+  premium: "Premium",
 };
 
 export function Badge({
@@ -21,11 +24,11 @@ export function Badge({
   children,
   className,
 }: {
-  badge?: ProductBadge;
+  badge?: string;
   children?: React.ReactNode;
   className?: string;
 }) {
-  const key = badge ?? "neutral";
+  const key = badge && styles[badge] ? badge : "neutral";
   return (
     <span
       className={cn(
@@ -34,7 +37,7 @@ export function Badge({
         className,
       )}
     >
-      {children ?? (badge ? labels[badge] : null)}
+      {children ?? (badge ? labels[badge] ?? badge : null)}
     </span>
   );
 }

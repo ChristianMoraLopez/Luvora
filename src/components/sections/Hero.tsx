@@ -53,7 +53,7 @@ export function Hero() {
             <Button href="/tienda" variant="primary" size="md">
               Explorar tienda
             </Button>
-            <Button href="/tienda?categoria=kits" variant="outlineDark" size="md">
+            <Button href="/tienda?cat=juegos-y-regalos" variant="outlineDark" size="md">
               Kits y regalos
             </Button>
           </motion.div>

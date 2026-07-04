@@ -1,0 +1,18 @@
+{
+  "name": "catalog_build",
+  "version": "1.0.0",
+  "description": "Extracción completa y modelo de datos e-commerce a partir de los **3 catálogos PDF** de *Entre Besos 2025*, listo para **Supabase** + un frontend (React/Next).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.0",
+    "pg": "^8.22.0",
+    "sharp": "^0.35.3"
+  }
+}

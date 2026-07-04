@@ -8,7 +8,6 @@ import { QuantityStepper } from "@/components/ui/QuantityStepper";
 import { ProductImage } from "@/components/product/ProductImage";
 import { CloseIcon, BagIcon } from "@/components/brand/Icons";
 import { useCartStore, selectSubtotal, selectCount } from "@/store/cart";
-import { categoryName } from "@/data/categories";
 import { formatCOP } from "@/lib/format";
 
 export function CartDrawer() {
@@ -56,7 +55,7 @@ export function CartDrawer() {
                   <div className="flex flex-1 flex-col gap-1">
                     <div className="flex items-start justify-between gap-2">
                       <div>
-                        <p className="eyebrow text-mauve">{categoryName(item.category)}</p>
+                        <p className="eyebrow text-mauve">{item.category}</p>
                         <Link
                           href={`/producto/${item.slug}`}
                           onClick={close}

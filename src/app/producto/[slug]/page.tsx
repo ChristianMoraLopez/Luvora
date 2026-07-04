@@ -7,12 +7,10 @@ import { ProductGallery } from "@/components/product/ProductGallery";
 import { PurchasePanel } from "@/components/product/PurchasePanel";
 import { ProductGrid } from "@/components/product/ProductGrid";
 import { Badge } from "@/components/ui/Badge";
-import { getProductBySlug, getRelated, products } from "@/data/products";
-import { categoryName } from "@/data/categories";
+import { getProductBySlug, getRelated } from "@/lib/catalog";
 
-export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
-}
+// Render on-demand (235 products → don't prebuild; build stays DB-independent).
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -20,11 +18,11 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) return { title: "Producto no encontrado" };
   return {
     title: product.name,
-    description: product.subtitle ?? product.description.slice(0, 150),
+    description: (product.description || product.categoryName).slice(0, 150),
   };
 }
 
@@ -34,11 +32,20 @@ export default async function ProductoPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const product = getProductBySlug(slug);
+  const product = await getProductBySlug(slug);
   if (!product) notFound();
 
-  const related = getRelated(product, 4);
+  const related = await getRelated(product.categorySlug, product.slug, 4);
   const badge = product.badges?.[0];
+
+  const sizes = (product.attributes?.sizes as string[] | undefined) ?? [];
+  const care = [
+    product.brand ? `Marca: ${product.brand}.` : null,
+    sizes.length ? `Presentación: ${sizes.join(", ")}.` : null,
+    "Conserva en un lugar fresco y seco. Límpialo según las indicaciones del empaque.",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <>
@@ -61,14 +68,20 @@ export default async function ProductoPage({
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
               <span className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-mauve">
-                {categoryName(product.category)}
+                {product.categorySlug ? (
+                  <Link href={`/tienda?cat=${product.categorySlug}`} className="hover:text-burgundy">
+                    {product.categoryName}
+                  </Link>
+                ) : (
+                  product.categoryName
+                )}
                 {badge && <Badge badge={badge} />}
               </span>
               <h1 className="font-display text-[clamp(30px,3.6vw,46px)] leading-tight text-ink">
                 {product.name}
               </h1>
-              {product.subtitle && (
-                <p className="text-[14px] font-light text-ink/60">{product.subtitle}</p>
+              {product.subcategory && (
+                <p className="text-[14px] font-light text-ink/60">{product.subcategory}</p>
               )}
             </div>
 
@@ -76,16 +89,15 @@ export default async function ProductoPage({
 
             <Accordion
               items={[
-                { title: "Detalles", content: product.description },
                 {
-                  title: "Materiales y cuidado",
-                  content: product.materials ?? "Información disponible próximamente.",
+                  title: "Detalles",
+                  content: product.description || "Ficha del producto disponible próximamente.",
                 },
+                { title: "Materiales y cuidado", content: care },
                 {
                   title: "Envío discreto",
                   content:
-                    product.shipping ??
-                    "Envío discreto en empaque 100% neutro, sin logotipos ni referencias al contenido.",
+                    "Envío discreto en empaque 100% neutro, sin logotipos ni referencias al contenido. Entrega en 24–72h en las principales ciudades de Colombia.",
                 },
               ]}
             />

@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Bienestar íntimo · Placer · Conexión",
   description:
     "Bienestar íntimo premium. Productos seleccionados con cuidado, envío discreto y empaque 100% neutro. Solo para mayores de edad.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.luvoraoficial.com",
   locale: "es-CO",
   promoBar: "ENVÍO DISCRETO 24–72H · EMPAQUE 100% NEUTRO · PAGO SEGURO",
   ageNotice: "Solo para mayores de edad",
@@ -22,11 +22,12 @@ export const footerNav = {
   tienda: {
     title: "TIENDA",
     links: [
-      { label: "Juguetes", href: "/tienda?categoria=juguetes" },
-      { label: "Lencería", href: "/tienda?categoria=lenceria" },
-      { label: "Lubricantes", href: "/tienda?categoria=lubricantes" },
-      { label: "Bienestar", href: "/tienda?categoria=bienestar" },
-      { label: "Kits y regalos", href: "/tienda?categoria=kits" },
+      { label: "Lubricantes y Geles", href: "/tienda?cat=lubricantes-y-geles" },
+      { label: "Cosmética Íntima", href: "/tienda?cat=cosmetica-intima-y-sensual" },
+      { label: "Juguetes", href: "/tienda?cat=juguetes" },
+      { label: "Bienestar", href: "/tienda?cat=bienestar-y-salud-sexual" },
+      { label: "Lencería y Mallas", href: "/tienda?cat=lenceria-y-mallas" },
+      { label: "Juegos y Regalos", href: "/tienda?cat=juegos-y-regalos" },
     ],
   },
   ayuda: {

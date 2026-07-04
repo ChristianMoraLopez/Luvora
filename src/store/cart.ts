@@ -2,7 +2,19 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { CartItem, Product, ProductVariant } from "@/types";
+import type { CartItem } from "@/types";
+
+/** A resolved line to add — price already accounts for the chosen variant. */
+export interface AddToCartInput {
+  productId: string;
+  slug: string;
+  name: string;
+  category: string;
+  image?: string;
+  price: number;
+  variantId?: string;
+  variantLabel?: string;
+}
 
 interface CartState {
   items: CartItem[];
@@ -10,7 +22,7 @@ interface CartState {
   open: () => void;
   close: () => void;
   toggle: () => void;
-  add: (product: Product, opts?: { variant?: ProductVariant; quantity?: number }) => void;
+  add: (line: AddToCartInput, quantity?: number) => void;
   remove: (lineId: string) => void;
   setQuantity: (lineId: string, quantity: number) => void;
   clear: () => void;
@@ -28,11 +40,9 @@ export const useCartStore = create<CartState>()(
       close: () => set({ isOpen: false }),
       toggle: () => set((s) => ({ isOpen: !s.isOpen })),
 
-      add: (product, opts) =>
+      add: (line, quantity = 1) =>
         set((state) => {
-          const variant = opts?.variant;
-          const quantity = opts?.quantity ?? 1;
-          const id = lineId(product.id, variant?.id);
+          const id = lineId(line.productId, line.variantId);
           const existing = state.items.find((i) => i.id === id);
 
           if (existing) {
@@ -46,14 +56,14 @@ export const useCartStore = create<CartState>()(
 
           const item: CartItem = {
             id,
-            productId: product.id,
-            slug: product.slug,
-            name: product.name,
-            category: product.category,
-            image: product.images[0],
-            price: variant?.price ?? product.price,
-            variantId: variant?.id,
-            variantLabel: variant?.label,
+            productId: line.productId,
+            slug: line.slug,
+            name: line.name,
+            category: line.category,
+            image: line.image,
+            price: line.price,
+            variantId: line.variantId,
+            variantLabel: line.variantLabel,
             quantity,
           };
           return { isOpen: true, items: [...state.items, item] };

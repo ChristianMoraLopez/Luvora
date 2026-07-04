@@ -1,98 +1,93 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useTransition } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Container } from "@/components/ui/Container";
 import { Drawer } from "@/components/ui/Drawer";
 import { IconButton } from "@/components/ui/IconButton";
-import { Filters } from "./Filters";
+import { Filters, PRICE_BANDS, type PriceBand } from "./Filters";
 import { ProductGrid } from "./ProductGrid";
 import { FilterIcon, CloseIcon, ChevronDownIcon } from "@/components/brand/Icons";
-import { products as allProducts } from "@/data/products";
 import { formatNumber } from "@/lib/format";
-import type { CategorySlug, ProductFilters, SortOption } from "@/types";
+import type { DbCategory, ProductCardData } from "@/types";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
-const PAGE_SIZE = 9;
-
-const sortOptions: SortOption[] = [
+const sortOptions = [
   { value: "destacados", label: "Destacados" },
   { value: "nuevos", label: "Novedades" },
   { value: "precio-asc", label: "Precio: menor a mayor" },
   { value: "precio-desc", label: "Precio: mayor a menor" },
-];
+] as const;
 
-const priceBounds: Record<NonNullable<ProductFilters["priceRange"]>, [number, number]> = {
-  "0-60000": [0, 60000],
-  "60000-150000": [60000, 150000],
-  "150000-300000": [150000, 300000],
-  "300000+": [300000, Infinity],
-};
-
-export function Catalog() {
-  const params = useSearchParams();
-  const initialCategory = params.get("categoria") as CategorySlug | null;
-
-  const [selectedCategories, setSelectedCategories] = useState<CategorySlug[]>(
-    initialCategory ? [initialCategory] : [],
-  );
-  const [priceRange, setPriceRange] = useState<ProductFilters["priceRange"]>();
-  const [sort, setSort] = useState<SortOption["value"]>("destacados");
-  const [page, setPage] = useState(1);
+/**
+ * Shop view — presentational + URL-driven. All data (server-fetched via
+ * `search_products`) arrives as props; every interaction updates the URL
+ * (`?q=&cat=&min=&max=&sort=&page=`), which re-runs the server fetch.
+ */
+export function CatalogView({
+  products,
+  total,
+  page,
+  totalPages,
+  categories,
+  selectedCategories,
+  min,
+  max,
+  sort,
+}: {
+  products: ProductCardData[];
+  total: number;
+  page: number;
+  totalPages: number;
+  categories: DbCategory[];
+  selectedCategories: string[];
+  min?: number;
+  max?: number;
+  sort: string;
+}) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [isPending, startTransition] = useTransition();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
-  const filtered = useMemo(() => {
-    let list = [...allProducts];
+  const activeBand = PRICE_BANDS.find(
+    (b) => b.min === (min ?? -1) && (b.max ?? null) === (max ?? null),
+  )?.id;
 
-    if (selectedCategories.length) {
-      list = list.filter((p) => selectedCategories.includes(p.category));
+  const navigate = (updates: Record<string, string | null>) => {
+    const next = new URLSearchParams(searchParams.toString());
+    for (const [key, value] of Object.entries(updates)) {
+      if (value === null || value === "") next.delete(key);
+      else next.set(key, value);
     }
-    if (priceRange) {
-      const [min, max] = priceBounds[priceRange];
-      list = list.filter((p) => p.price >= min && p.price < max);
-    }
-
-    switch (sort) {
-      case "precio-asc":
-        list.sort((a, b) => a.price - b.price);
-        break;
-      case "precio-desc":
-        list.sort((a, b) => b.price - a.price);
-        break;
-      case "nuevos":
-        list.sort((a, b) => (b.createdAt ?? "").localeCompare(a.createdAt ?? ""));
-        break;
-      default:
-        list.sort((a, b) => Number(b.bestSeller) - Number(a.bestSeller));
-    }
-    return list;
-  }, [selectedCategories, priceRange, sort]);
-
-  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-  const current = Math.min(page, totalPages);
-  const paged = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
-
-  const toggleCategory = (slug: CategorySlug) => {
-    setPage(1);
-    setSelectedCategories((prev) =>
-      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug],
-    );
+    const qs = next.toString();
+    startTransition(() => router.push(qs ? `${pathname}?${qs}` : pathname, { scroll: false }));
   };
-  const setPrice = (value: ProductFilters["priceRange"]) => {
-    setPage(1);
-    setPriceRange(value);
+
+  const toggleCategory = (slug: string) => {
+    const set = new Set(selectedCategories);
+    set.has(slug) ? set.delete(slug) : set.add(slug);
+    navigate({ cat: set.size ? [...set].join(",") : null, page: null });
   };
-  const clear = () => {
-    setSelectedCategories([]);
-    setPriceRange(undefined);
-    setPage(1);
+
+  const setBand = (band?: PriceBand) => {
+    navigate({
+      min: band ? String(band.min) : null,
+      max: band && band.max != null ? String(band.max) : null,
+      page: null,
+    });
   };
+
+  const clear = () => navigate({ cat: null, min: null, max: null, page: null });
 
   const filterProps = {
+    categories,
     selectedCategories,
     onToggleCategory: toggleCategory,
-    priceRange,
-    onSetPrice: setPrice,
+    activeBand,
+    onSetBand: setBand,
     onClear: clear,
   };
 
@@ -109,8 +104,8 @@ export function Catalog() {
         {/* Toolbar */}
         <div className="mb-8 flex items-center justify-between gap-4 border-b border-border pb-4">
           <p className="text-[13px] text-ink/70">
-            <span className="font-semibold text-ink">{formatNumber(filtered.length)}</span>{" "}
-            {filtered.length === 1 ? "producto" : "productos"}
+            <span className="font-semibold text-ink">{formatNumber(total)}</span>{" "}
+            {total === 1 ? "producto" : "productos"}
           </p>
 
           <div className="flex items-center gap-2">
@@ -125,7 +120,7 @@ export function Catalog() {
               <span className="sr-only">Ordenar por</span>
               <select
                 value={sort}
-                onChange={(e) => setSort(e.target.value as SortOption["value"])}
+                onChange={(e) => navigate({ sort: e.target.value, page: null })}
                 className="appearance-none rounded-sm border border-burgundy/20 bg-transparent py-2 pl-3.5 pr-9 text-[12px] uppercase tracking-nav text-ink focus:border-burgundy focus:outline-none"
               >
                 {sortOptions.map((o) => (
@@ -134,39 +129,38 @@ export function Catalog() {
                   </option>
                 ))}
               </select>
-              <ChevronDownIcon
-                size={16}
-                className="pointer-events-none absolute right-2.5 text-burgundy"
-              />
+              <ChevronDownIcon size={16} className="pointer-events-none absolute right-2.5 text-burgundy" />
             </label>
           </div>
         </div>
 
         {/* Grid / empty state */}
-        {paged.length > 0 ? (
-          <ProductGrid products={paged} minColumn={210} />
-        ) : (
-          <div className="flex flex-col items-center gap-3 py-24 text-center">
-            <p className="font-display text-2xl">No hay productos con estos filtros</p>
-            <button onClick={clear} className="text-[13px] uppercase tracking-nav text-burgundy underline underline-offset-4">
-              Limpiar filtros
-            </button>
-          </div>
-        )}
+        <div className={cn("transition-opacity duration-300", isPending && "opacity-50")}>
+          {products.length > 0 ? (
+            <ProductGrid products={products} minColumn={210} />
+          ) : (
+            <div className="flex flex-col items-center gap-3 py-24 text-center">
+              <p className="font-display text-2xl">No hay productos con estos filtros</p>
+              <button onClick={clear} className="text-[13px] uppercase tracking-nav text-burgundy underline underline-offset-4">
+                Limpiar filtros
+              </button>
+            </div>
+          )}
+        </div>
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <nav className="mt-12 flex items-center justify-center gap-2" aria-label="Paginación">
+          <nav className="mt-12 flex flex-wrap items-center justify-center gap-2" aria-label="Paginación">
             {Array.from({ length: totalPages }).map((_, i) => {
               const n = i + 1;
               return (
                 <button
                   key={n}
-                  onClick={() => setPage(n)}
-                  aria-current={current === n}
+                  onClick={() => navigate({ page: n === 1 ? null : String(n) })}
+                  aria-current={page === n}
                   className={cn(
                     "grid h-9 w-9 place-items-center rounded-sm border text-[13px] transition-colors",
-                    current === n
+                    page === n
                       ? "border-burgundy bg-burgundy text-ivory"
                       : "border-burgundy/25 text-ink hover:border-burgundy",
                   )}

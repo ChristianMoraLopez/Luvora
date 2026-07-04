@@ -66,12 +66,72 @@ export interface CartItem {
   productId: string;
   slug: string;
   name: string;
-  category: CategorySlug;
-  image: string;
+  /** Display category name (es-CO), e.g. "Juguetes". */
+  category: string;
+  image?: string;
   price: number;
   variantId?: string;
   variantLabel?: string;
   quantity: number;
+}
+
+/* ── Supabase catalog shapes (normalized for the UI) ── */
+
+/** A row of `v_product_cards`, normalized for grids/cards. */
+export interface ProductCardData {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string | null;
+  price: number;
+  priceMax: number | null;
+  badges: string[];
+  rating: number | null;
+  /** Display category name, e.g. "Juguetes". */
+  category: string;
+  categorySlug: string;
+  subcategory: string | null;
+  /** Built Storage URL (or undefined → branded placeholder). */
+  image?: string;
+  variantCount: number;
+  tags: string[];
+}
+
+export interface DbCategory {
+  id?: string;
+  slug: string;
+  name: string;
+  description?: string | null;
+  position?: number;
+}
+
+export interface Variant {
+  id: string;
+  sku: string;
+  name: string;
+  /** sabor | aroma | color | tamaño | modelo | tipo | genero | default */
+  optionType: string;
+  price: number | null;
+  size: string | null;
+  inStock: boolean;
+}
+
+export interface ProductDetail {
+  id: string;
+  slug: string;
+  name: string;
+  brand: string | null;
+  description: string;
+  price: number;
+  priceMax: number | null;
+  badges: string[];
+  rating: number | null;
+  subcategory: string | null;
+  categoryName: string;
+  categorySlug: string;
+  attributes: Record<string, unknown> | null;
+  images: { url?: string; alt: string }[];
+  variants: Variant[];
 }
 
 /* ── Commerce ── */

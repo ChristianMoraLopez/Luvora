@@ -1,31 +1,41 @@
 "use client";
 
-import { categories } from "@/data/categories";
-import type { CategorySlug, ProductFilters } from "@/types";
+import type { DbCategory } from "@/types";
 import { CheckIcon } from "@/components/brand/Icons";
 import { cn } from "@/lib/utils";
 
-const priceRanges: { value: NonNullable<ProductFilters["priceRange"]>; label: string }[] = [
-  { value: "0-60000", label: "Hasta $60.000" },
-  { value: "60000-150000", label: "$60.000 – $150.000" },
-  { value: "150000-300000", label: "$150.000 – $300.000" },
-  { value: "300000+", label: "Más de $300.000" },
+export interface PriceBand {
+  id: string;
+  label: string;
+  min: number;
+  max: number | null;
+}
+
+/** COP price bands tuned to the real catalog range. */
+export const PRICE_BANDS: PriceBand[] = [
+  { id: "0-15000", label: "Hasta $15.000", min: 0, max: 15000 },
+  { id: "15000-30000", label: "$15.000 – $30.000", min: 15000, max: 30000 },
+  { id: "30000-60000", label: "$30.000 – $60.000", min: 30000, max: 60000 },
+  { id: "60000-120000", label: "$60.000 – $120.000", min: 60000, max: 120000 },
+  { id: "120000-", label: "Más de $120.000", min: 120000, max: null },
 ];
 
 export function Filters({
+  categories,
   selectedCategories,
   onToggleCategory,
-  priceRange,
-  onSetPrice,
+  activeBand,
+  onSetBand,
   onClear,
 }: {
-  selectedCategories: CategorySlug[];
-  onToggleCategory: (slug: CategorySlug) => void;
-  priceRange?: ProductFilters["priceRange"];
-  onSetPrice: (value: ProductFilters["priceRange"]) => void;
+  categories: DbCategory[];
+  selectedCategories: string[];
+  onToggleCategory: (slug: string) => void;
+  activeBand?: string;
+  onSetBand: (band?: PriceBand) => void;
   onClear: () => void;
 }) {
-  const hasFilters = selectedCategories.length > 0 || !!priceRange;
+  const hasFilters = selectedCategories.length > 0 || !!activeBand;
 
   return (
     <div className="flex flex-col gap-8">
@@ -38,7 +48,7 @@ export function Filters({
               <label key={cat.slug} className="flex cursor-pointer items-center gap-3 text-[13px] text-ink">
                 <span
                   className={cn(
-                    "grid h-[15px] w-[15px] place-items-center rounded-[3px] border transition-colors",
+                    "grid h-[15px] w-[15px] shrink-0 place-items-center rounded-[3px] border transition-colors",
                     checked ? "border-burgundy bg-burgundy text-ivory" : "border-burgundy/45",
                   )}
                 >
@@ -60,13 +70,13 @@ export function Filters({
       <fieldset>
         <legend className="eyebrow mb-4 text-burgundy">Precio</legend>
         <div className="flex flex-col gap-3">
-          {priceRanges.map((range) => {
-            const checked = priceRange === range.value;
+          {PRICE_BANDS.map((band) => {
+            const checked = activeBand === band.id;
             return (
-              <label key={range.value} className="flex cursor-pointer items-center gap-3 text-[13px] text-ink">
+              <label key={band.id} className="flex cursor-pointer items-center gap-3 text-[13px] text-ink">
                 <span
                   className={cn(
-                    "grid h-[15px] w-[15px] place-items-center rounded-full border transition-colors",
+                    "grid h-[15px] w-[15px] shrink-0 place-items-center rounded-full border transition-colors",
                     checked ? "border-burgundy" : "border-burgundy/45",
                   )}
                 >
@@ -77,9 +87,9 @@ export function Filters({
                   name="price"
                   className="sr-only"
                   checked={checked}
-                  onChange={() => onSetPrice(checked ? undefined : range.value)}
+                  onChange={() => onSetBand(checked ? undefined : band)}
                 />
-                {range.label}
+                {band.label}
               </label>
             );
           })}

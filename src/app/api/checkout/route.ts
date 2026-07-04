@@ -2,20 +2,21 @@ import { NextResponse } from "next/server";
 import type { CartItem } from "@/types";
 import { siteConfig } from "@/config/site";
 import { shippingFor } from "@/data/colombia";
+import { getMercadoPagoConfig } from "@/lib/mercadopago";
+import { createPublicClient } from "@/lib/supabase/public";
 
 /**
  * Creates a Mercado Pago Checkout Pro preference and returns its `init_point`.
  *
- * Requires MERCADOPAGO_ACCESS_TOKEN (server-only). Without it we respond 200
- * with a helpful message so the checkout UI degrades gracefully in dev.
+ * Credentials come from getMercadoPagoConfig() (MERCADOPAGO_MODE = test | prod).
+ * Prices are recomputed from the DB — client-sent prices are never trusted.
  *
- * Production hardening TODO:
- *  - Recompute prices from the DB (never trust client-sent prices).
- *  - Persist a "pendiente" order, pass its id as external_reference.
- *  - Verify payment via the /api/webhooks/mercadopago handler before fulfilling.
+ * Remaining for production:
+ *  - Persist a "pendiente" order and pass its id as external_reference.
+ *  - Verify payment via /api/webhooks/mercadopago before fulfilling.
  */
 export async function POST(request: Request) {
-  const token = process.env.MERCADOPAGO_ACCESS_TOKEN;
+  const { accessToken, mode, configured } = getMercadoPagoConfig();
 
   let items: CartItem[] = [];
   try {
@@ -29,24 +30,47 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "El carrito está vacío." }, { status: 400 });
   }
 
-  if (!token) {
+  if (!configured || !accessToken) {
     return NextResponse.json({
-      message:
-        "Mercado Pago no está configurado. Añade MERCADOPAGO_ACCESS_TOKEN en .env.local para habilitar el pago.",
+      message: `Mercado Pago no está configurado para el modo "${mode}". Añade las credenciales en .env.local.`,
     });
   }
 
-  const subtotal = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
-  const shipping = shippingFor(subtotal);
+  // ── Recompute authoritative unit prices from the DB ──
+  const supabase = await createClient();
+  const variantIds = [...new Set(items.map((i) => i.variantId).filter(Boolean) as string[])];
+  const productIds = [...new Set(items.filter((i) => !i.variantId).map((i) => i.productId))];
 
-  const preference = {
-    items: items.map((i) => ({
+  const priceByVariant = new Map<string, number>();
+  const priceByProduct = new Map<string, number>();
+
+  if (variantIds.length) {
+    const { data } = await supabase.from("product_variants").select("id, price").in("id", variantIds);
+    for (const v of data ?? []) if (v.price != null) priceByVariant.set(v.id, v.price);
+  }
+  if (productIds.length) {
+    const { data } = await supabase.from("products").select("id, price").in("id", productIds);
+    for (const p of data ?? []) if (p.price != null) priceByProduct.set(p.id, p.price);
+  }
+
+  const lineItems = items.map((i) => {
+    const unit = i.variantId
+      ? priceByVariant.get(i.variantId) ?? priceByProduct.get(i.productId) ?? i.price
+      : priceByProduct.get(i.productId) ?? i.price;
+    return {
       id: i.productId,
       title: i.variantLabel ? `${i.name} — ${i.variantLabel}` : i.name,
       quantity: i.quantity,
-      unit_price: i.price,
+      unit_price: unit,
       currency_id: "COP",
-    })),
+    };
+  });
+
+  const subtotal = lineItems.reduce((sum, i) => sum + i.unit_price * i.quantity, 0);
+  const shipping = shippingFor(subtotal);
+
+  const preference = {
+    items: lineItems,
     shipments: { cost: shipping, mode: "not_specified" },
     back_urls: {
       success: `${siteConfig.url}/checkout/exito`,
@@ -62,12 +86,14 @@ export async function POST(request: Request) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${accessToken}`,
     },
     body: JSON.stringify(preference),
   });
 
   if (!res.ok) {
+    const detail = await res.text();
+    console.error("Mercado Pago preference error:", res.status, detail);
     return NextResponse.json(
       { message: "Mercado Pago rechazó la preferencia de pago." },
       { status: 502 },
@@ -75,5 +101,5 @@ export async function POST(request: Request) {
   }
 
   const data = await res.json();
-  return NextResponse.json({ init_point: data.init_point, id: data.id });
+  return NextResponse.json({ init_point: data.init_point, id: data.id, mode });
 }

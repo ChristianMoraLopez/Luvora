@@ -1,6 +1,6 @@
 import { ProductCard } from "./ProductCard";
 import { ProductCardSkeleton } from "@/components/ui/Skeleton";
-import type { Product } from "@/types";
+import type { ProductCardData } from "@/types";
 import { cn } from "@/lib/utils";
 
 /** Responsive product grid — auto-fills columns down to a single column. */
@@ -10,7 +10,7 @@ export function ProductGrid({
   priorityCount = 0,
   className,
 }: {
-  products: Product[];
+  products: ProductCardData[];
   minColumn?: number;
   priorityCount?: number;
   className?: string;

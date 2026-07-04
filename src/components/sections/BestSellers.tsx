@@ -1,11 +1,11 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "./SectionHeader";
 import { ProductGrid } from "@/components/product/ProductGrid";
-import { getBestSellers } from "@/data/products";
+import type { ProductCardData } from "@/types";
 
-/** "Los más deseados" — best-selling products grid. */
-export function BestSellers() {
-  const products = getBestSellers(4);
+/** "Los más deseados" — best-selling products grid (from v_product_cards). */
+export function BestSellers({ products }: { products: ProductCardData[] }) {
+  if (products.length === 0) return null;
 
   return (
     <section className="bg-ivory">

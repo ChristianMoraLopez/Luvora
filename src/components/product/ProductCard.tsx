@@ -5,22 +5,22 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ProductImage } from "./ProductImage";
 import { Badge } from "@/components/ui/Badge";
 import { HeartIcon } from "@/components/brand/Icons";
-import { categoryName } from "@/data/categories";
 import { formatCOP } from "@/lib/format";
 import { useWishlistStore } from "@/store/wishlist";
-import type { Product } from "@/types";
+import type { ProductCardData } from "@/types";
 import { cn } from "@/lib/utils";
 
 /**
  * Product card — image (4:5) → category eyebrow → name (Playfair) → price.
  * Hover lifts the card 4px (per handoff). Badge overlay + wishlist toggle.
+ * Data comes from `v_product_cards` (see lib/catalog).
  */
 export function ProductCard({
   product,
   priority,
   index = 0,
 }: {
-  product: Product;
+  product: ProductCardData;
   priority?: boolean;
   index?: number;
 }) {
@@ -29,6 +29,7 @@ export function ProductCard({
   const toggle = useWishlistStore((s) => s.toggle);
   const saved = ids.includes(product.id);
   const badge = product.badges?.[0];
+  const isRange = product.priceMax != null && product.priceMax > product.price;
 
   return (
     <motion.article
@@ -44,7 +45,7 @@ export function ProductCard({
       >
         <div className="relative">
           <ProductImage
-            src={product.images[0]}
+            src={product.image}
             alt={product.name}
             label={product.name}
             priority={priority}
@@ -59,18 +60,14 @@ export function ProductCard({
 
         <div className="flex flex-col gap-1.5">
           <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-mauve">
-            {categoryName(product.category)}
+            {product.category}
           </span>
           <h3 className="font-display text-xl leading-tight text-ink">{product.name}</h3>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
+            {isRange && <span className="text-[11px] font-light text-mauve">Desde</span>}
             <span className="text-[13px] font-semibold text-burgundy">
               {formatCOP(product.price)}
             </span>
-            {product.compareAtPrice && (
-              <span className="text-[12px] font-light text-mauve line-through">
-                {formatCOP(product.compareAtPrice)}
-              </span>
-            )}
           </div>
         </div>
       </Link>

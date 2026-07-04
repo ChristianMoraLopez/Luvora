@@ -1,22 +1,34 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { easing } from "@/config/tokens";
-import { SearchIcon, CloseIcon } from "@/components/brand/Icons";
-import { products } from "@/data/products";
-import { categoryName } from "@/data/categories";
+import { SearchIcon, CloseIcon, ArrowRightIcon } from "@/components/brand/Icons";
+import { createClient } from "@/lib/supabase/client";
 import { formatCOP } from "@/lib/format";
 
-/** Lightweight instant search over the local catalog (client-side). */
+interface Hit {
+  id: string;
+  slug: string;
+  name: string;
+  category: string;
+  price: number;
+}
+
+/** Instant search over the live catalog (Supabase `search_products` RPC, debounced). */
 export function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const router = useRouter();
   const [q, setQ] = useState("");
+  const [results, setResults] = useState<Hit[]>([]);
+  const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (!open) return;
     setQ("");
+    setResults([]);
     const t = setTimeout(() => inputRef.current?.focus(), 60);
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", onKey);
@@ -26,18 +38,47 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
     };
   }, [open, onClose]);
 
-  const results = useMemo(() => {
-    const term = q.trim().toLowerCase();
-    if (!term) return [];
-    return products
-      .filter(
-        (p) =>
-          p.name.toLowerCase().includes(term) ||
-          categoryName(p.category).toLowerCase().includes(term) ||
-          p.subtitle?.toLowerCase().includes(term),
-      )
-      .slice(0, 6);
+  // Debounced search against the RPC.
+  useEffect(() => {
+    const term = q.trim();
+    if (!term) {
+      setResults([]);
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
+    const handle = setTimeout(async () => {
+      const supabase = createClient();
+      const { data } = await supabase.rpc("search_products", {
+        q: term,
+        cat_slugs: null,
+        tag_slugs: null,
+        min_price: null,
+        max_price: null,
+        badges_in: null,
+        sort: "relevance",
+        lim: 6,
+        off: 0,
+      });
+      setResults(((data ?? []) as any[]).map((r) => ({
+        id: r.id,
+        slug: r.slug,
+        name: r.name,
+        category: r.category,
+        price: r.price ?? 0,
+      })));
+      setLoading(false);
+    }, 250);
+    return () => clearTimeout(handle);
   }, [q]);
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const term = q.trim();
+    if (!term) return;
+    onClose();
+    router.push(`/tienda?q=${encodeURIComponent(term)}`);
+  };
 
   return (
     <AnimatePresence>
@@ -59,7 +100,7 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
             transition={{ duration: 0.4, ease: easing.luxe }}
           >
             <div className="mx-auto max-w-content px-gutter py-6">
-              <div className="flex items-center gap-3 border-b border-burgundy/20 pb-3">
+              <form onSubmit={submit} className="flex items-center gap-3 border-b border-burgundy/20 pb-3">
                 <SearchIcon size={22} className="text-burgundy" />
                 <input
                   ref={inputRef}
@@ -68,13 +109,13 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
                   placeholder="Buscar productos, categorías…"
                   className="w-full bg-transparent font-display text-2xl text-ink placeholder:text-mauve/50 focus:outline-none"
                 />
-                <button aria-label="Cerrar búsqueda" onClick={onClose} className="text-ink hover:text-burgundy">
+                <button type="button" aria-label="Cerrar búsqueda" onClick={onClose} className="text-ink hover:text-burgundy">
                   <CloseIcon size={24} />
                 </button>
-              </div>
+              </form>
 
               <div className="mt-4">
-                {q && results.length === 0 && (
+                {q && !loading && results.length === 0 && (
                   <p className="py-6 text-center text-[14px] text-mauve">
                     No encontramos resultados para “{q}”.
                   </p>
@@ -89,7 +130,7 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
                       >
                         <span>
                           <span className="block font-display text-lg">{p.name}</span>
-                          <span className="eyebrow text-mauve">{categoryName(p.category)}</span>
+                          <span className="eyebrow text-mauve">{p.category}</span>
                         </span>
                         <span className="text-[13px] font-semibold text-burgundy">
                           {formatCOP(p.price)}
@@ -98,6 +139,16 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
                     </li>
                   ))}
                 </ul>
+
+                {q && results.length > 0 && (
+                  <button
+                    onClick={submit}
+                    className="mt-4 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-nav text-burgundy"
+                  >
+                    Ver todos los resultados
+                    <ArrowRightIcon size={16} />
+                  </button>
+                )}
               </div>
             </div>
           </motion.div>

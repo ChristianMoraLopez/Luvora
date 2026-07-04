@@ -7,69 +7,82 @@ import { HeartIcon, TruckIcon, ShieldIcon, PackageIcon } from "@/components/bran
 import { useCartStore } from "@/store/cart";
 import { useWishlistStore } from "@/store/wishlist";
 import { formatCOP } from "@/lib/format";
-import type { Product } from "@/types";
+import type { ProductDetail } from "@/types";
 import { cn } from "@/lib/utils";
 
+const OPTION_LABELS: Record<string, string> = {
+  sabor: "Sabor",
+  aroma: "Aroma",
+  color: "Color",
+  tamaño: "Tamaño",
+  modelo: "Modelo",
+  tipo: "Tipo",
+  genero: "Género",
+};
+
 /** Right-column purchase controls for the product detail page. */
-export function PurchasePanel({ product }: { product: Product }) {
-  const [variant, setVariant] = useState(product.variants?.[0]);
+export function PurchasePanel({ product }: { product: ProductDetail }) {
+  const [variant, setVariant] = useState(product.variants[0]);
   const [qty, setQty] = useState(1);
   const add = useCartStore((s) => s.add);
   const saved = useWishlistStore((s) => s.ids.includes(product.id));
   const toggleSaved = useWishlistStore((s) => s.toggle);
 
+  const hasSelector = product.variants.length > 1;
   const price = variant?.price ?? product.price;
-  const hasSwatches = product.variants?.some((v) => v.swatch);
+  const optionLabel = variant ? OPTION_LABELS[variant.optionType] ?? "Opción" : "Opción";
+  const outOfStock = !!variant && !variant.inStock;
+
+  const addToCart = () => {
+    if (outOfStock) return;
+    add(
+      {
+        productId: product.id,
+        slug: product.slug,
+        name: product.name,
+        category: product.categoryName,
+        image: product.images[0]?.url,
+        price,
+        variantId: variant?.id,
+        variantLabel: variant && variant.optionType !== "default" ? variant.name : undefined,
+      },
+      qty,
+    );
+  };
 
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-baseline gap-3">
         <span className="font-display text-[28px] text-burgundy">{formatCOP(price)}</span>
-        {product.compareAtPrice && (
-          <span className="text-[15px] font-light text-mauve line-through">
-            {formatCOP(product.compareAtPrice)}
-          </span>
-        )}
       </div>
 
       <p className="max-w-prose text-[15px] font-light leading-[1.8] text-ink/75">
         {product.description}
       </p>
 
-      {/* Variants */}
-      {product.variants && product.variants.length > 0 && (
+      {/* Variant selector */}
+      {hasSelector && (
         <div className="flex flex-col gap-3">
           <span className="eyebrow text-mauve">
-            {hasSwatches ? "Color" : "Talla"} — {variant?.label}
+            {optionLabel} — {variant?.name}
           </span>
           <div className="flex flex-wrap gap-2.5">
             {product.variants.map((v) => {
               const active = variant?.id === v.id;
-              return hasSwatches ? (
-                <button
-                  key={v.id}
-                  onClick={() => setVariant(v)}
-                  aria-label={v.label}
-                  aria-pressed={active}
-                  className={cn(
-                    "h-9 w-9 rounded-full ring-offset-2 transition-all",
-                    active ? "ring-2 ring-burgundy" : "ring-1 ring-burgundy/20 hover:ring-burgundy/50",
-                  )}
-                  style={{ background: v.swatch }}
-                />
-              ) : (
+              return (
                 <button
                   key={v.id}
                   onClick={() => setVariant(v)}
                   aria-pressed={active}
+                  disabled={!v.inStock}
                   className={cn(
-                    "min-w-[44px] rounded-sm border px-3 py-2 text-[13px] transition-colors",
+                    "min-w-[44px] rounded-sm border px-3 py-2 text-[13px] transition-colors disabled:cursor-not-allowed disabled:opacity-40 disabled:line-through",
                     active
                       ? "border-burgundy bg-burgundy text-ivory"
                       : "border-burgundy/25 text-ink hover:border-burgundy",
                   )}
                 >
-                  {v.label}
+                  {v.name}
                 </button>
               );
             })}
@@ -84,9 +97,10 @@ export function PurchasePanel({ product }: { product: Product }) {
           variant="solid"
           size="lg"
           className="flex-1"
-          onClick={() => add(product, { variant, quantity: qty })}
+          onClick={addToCart}
+          disabled={outOfStock}
         >
-          Añadir al carrito
+          {outOfStock ? "Agotado" : "Añadir al carrito"}
         </Button>
         <button
           onClick={() => toggleSaved(product.id)}

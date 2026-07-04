@@ -9,6 +9,7 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { IntroAnimation } from "@/components/intro/IntroAnimation";
 import { CartDrawer } from "@/components/cart/CartDrawer";
+import { AgeGate } from "./AgeGate";
 
 /**
  * App chrome + intro orchestration.
@@ -68,6 +69,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       */}
       {playing && <IntroAnimation onComplete={finish} reduced={!!prefersReduced} />}
       <CartDrawer />
+      <AgeGate />
     </LayoutGroup>
   );
 }
