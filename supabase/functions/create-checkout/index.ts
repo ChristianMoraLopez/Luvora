@@ -11,11 +11,13 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 //   SITE_URL         (optional)   -- defaults to https://www.luvoraoficial.com
 // Auto-injected: SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY.
 
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
-const MP_TOKEN = Deno.env.get("MP_ACCESS_TOKEN") ?? "";
-const SITE_URL = Deno.env.get("SITE_URL") ?? "https://www.luvoraoficial.com";
+const SUPABASE_URL = (Deno.env.get("SUPABASE_URL") ?? "").trim();
+const SERVICE_KEY = (Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "").trim();
+const ANON_KEY = (Deno.env.get("SUPABASE_ANON_KEY") ?? "").trim();
+// Strip stray non-printable chars — a trailing newline in the secret makes the
+// Authorization header an invalid ByteString.
+const MP_TOKEN = (Deno.env.get("MP_ACCESS_TOKEN") ?? "").replace(/[^\x20-\x7E]/g, "").trim();
+const SITE_URL = (Deno.env.get("SITE_URL") ?? "https://www.luvoraoficial.com").trim();
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -47,15 +49,16 @@ function shippingCost(dep?: string, city?: string): number {
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: cors });
   try {
+    if (!MP_TOKEN) return json({ message: "Configura MP_ACCESS_TOKEN en los secretos de la funcion." });
+
     const { items, form = {} } = await req.json();
     if (!Array.isArray(items) || items.length === 0) return json({ message: "El carrito esta vacio." }, 400);
-    if (!MP_TOKEN) return json({ message: "Configura MP_ACCESS_TOKEN en los secretos de la funcion." });
 
     const admin = createClient(SUPABASE_URL, SERVICE_KEY, { auth: { persistSession: false } });
 
     let userId: string | null = null;
-    const auth = req.headers.get("Authorization");
-    if (auth) {
+    const auth = (req.headers.get("Authorization") ?? "").trim();
+    if (auth && auth !== `Bearer ${ANON_KEY}`) {
       const uc = createClient(SUPABASE_URL, ANON_KEY, {
         global: { headers: { Authorization: auth } },
         auth: { persistSession: false },
@@ -139,7 +142,7 @@ Deno.serve(async (req) => {
     );
 
     const isHttps = SITE_URL.startsWith("https://");
-    const preference = {
+    const preference: Record<string, unknown> = {
       items: lines.map((l: any) => ({
         id: l.productId,
         title: l.variantName ? `${l.productName} - ${l.variantName}` : l.productName,
@@ -147,7 +150,6 @@ Deno.serve(async (req) => {
         unit_price: l.unitPrice,
         currency_id: "COP",
       })),
-      payer: form.email ? { email: form.email } : undefined,
       shipments: { cost: ship, mode: "not_specified" },
       external_reference: order.id,
       back_urls: {
@@ -155,15 +157,16 @@ Deno.serve(async (req) => {
         failure: `${SITE_URL}/checkout?estado=fallido`,
         pending: `${SITE_URL}/checkout/pendiente`,
       },
-      ...(isHttps ? { auto_return: "approved" } : {}),
       binary_mode: true,
       statement_descriptor: "LUVORA",
       notification_url: `${SUPABASE_URL}/functions/v1/mp-webhook`,
     };
+    if (form.email) preference.payer = { email: form.email };
+    if (isHttps) preference.auto_return = "approved";
 
     const mpRes = await fetch("https://api.mercadopago.com/checkout/preferences", {
       method: "POST",
-      headers: { "Content-Type": "application/json", Authorization: `Bearer ${MP_TOKEN}` },
+      headers: { "Content-Type": "application/json", Authorization: "Bearer " + MP_TOKEN },
       body: JSON.stringify(preference),
     });
     if (!mpRes.ok) {

@@ -11,8 +11,8 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const MP_TOKEN = Deno.env.get("MP_ACCESS_TOKEN") ?? "";
-const WEBHOOK_SECRET = Deno.env.get("MP_WEBHOOK_SECRET") ?? "";
+const MP_TOKEN = (Deno.env.get("MP_ACCESS_TOKEN") ?? "").replace(/[^\x20-\x7E]/g, "").trim();
+const WEBHOOK_SECRET = (Deno.env.get("MP_WEBHOOK_SECRET") ?? "").trim();
 
 const STATUS_MAP: Record<string, string> = {
   approved: "pagado",
