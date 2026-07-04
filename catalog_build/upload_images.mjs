@@ -1,7 +1,7 @@
 // LUVORA · product image uploader → Supabase Storage (bucket: product-images)
 //
 // AUTO FIRST-PASS: for each of the 235 products in image_map.json, take the
-// FIRST candidate raster, convert jpeg -> webp (resized/optimized), and upload
+// LARGEST candidate raster on its page, convert jpeg -> webp (resized/optimized), and upload
 // it to the product's target_storage_path — which equals product_images.path,
 // the key the storefront already reads. No code change needed; images appear
 // automatically. Idempotent: re-running overwrites (upsert), so wrong picks can
@@ -77,21 +77,30 @@ async function processOne(item) {
     skipped++; failures.push({ slug: item.product_slug, reason: "no candidate" }); return;
   }
 
-  // Auto first-pass: use the FIRST candidate sharp can actually decode.
-  // (Some catalog rasters are JPEG 2000 mislabeled as .jpeg, which the prebuilt
-  //  sharp binary can't read — fall back to the next real image on the page.)
-  let webp = null, used = null, lastErr = null;
+  // Pick the LARGEST decodable candidate on the page (highest resolution →
+  // sharp product cards; the first candidate is often a small thumbnail).
+  // (Some catalog rasters are JPEG 2000 mislabeled .jpeg, which the prebuilt
+  //  sharp binary can't read — those are skipped.)
+  let best = null, lastErr = null; // best = { candidate, srcPath, area }
   for (const candidate of candidates) {
     const srcPath = path.join(CANDIDATES_DIR, candidate);
     if (!fs.existsSync(srcPath)) { lastErr = `missing file ${candidate}`; continue; }
     try {
-      webp = await sharp(srcPath)
+      const m = await sharp(srcPath).metadata();
+      const area = (m.width || 0) * (m.height || 0);
+      if (!best || area > best.area) best = { candidate, srcPath, area };
+    } catch (e) { lastErr = e.message || String(e); }
+  }
+
+  let webp = null, used = null;
+  if (best) {
+    try {
+      webp = await sharp(best.srcPath)
         .rotate()                                        // respect EXIF orientation
         .resize({ width: MAX_WIDTH, withoutEnlargement: true })
         .webp({ quality: WEBP_QUALITY })
         .toBuffer();
-      used = candidate;
-      break;
+      used = best.candidate;
     } catch (e) { lastErr = e.message || String(e); }
   }
 
