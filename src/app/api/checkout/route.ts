@@ -37,7 +37,7 @@ export async function POST(request: Request) {
   }
 
   // ── Recompute authoritative unit prices from the DB ──
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const variantIds = [...new Set(items.map((i) => i.variantId).filter(Boolean) as string[])];
   const productIds = [...new Set(items.filter((i) => !i.variantId).map((i) => i.productId))];
 
@@ -69,6 +69,10 @@ export async function POST(request: Request) {
   const subtotal = lineItems.reduce((sum, i) => sum + i.unit_price * i.quantity, 0);
   const shipping = shippingFor(subtotal);
 
+  // Mercado Pago only accepts `auto_return` with a valid public (https) URL.
+  // Locally (http://localhost) we omit it so the sandbox flow still works.
+  const isHttps = siteConfig.url.startsWith("https://");
+
   const preference = {
     items: lineItems,
     shipments: { cost: shipping, mode: "not_specified" },
@@ -77,7 +81,7 @@ export async function POST(request: Request) {
       failure: `${siteConfig.url}/checkout`,
       pending: `${siteConfig.url}/checkout/pendiente`,
     },
-    auto_return: "approved",
+    ...(isHttps ? { auto_return: "approved" } : {}),
     statement_descriptor: "LUVORA",
     notification_url: `${siteConfig.url}/api/webhooks/mercadopago`,
   };
