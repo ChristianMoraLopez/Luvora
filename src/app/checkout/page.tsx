@@ -25,16 +25,27 @@ export default function CheckoutPage() {
   const shipping = quote?.cost ?? 0;
   const total = subtotal + shipping;
 
-  const pay = async (e: React.FormEvent) => {
+  const pay = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Capture form values synchronously (before any await nulls currentTarget).
+    const fd = new FormData(e.currentTarget);
+    const form = {
+      fullName: String(fd.get("fullName") ?? ""),
+      email: String(fd.get("email") ?? ""),
+      phone: String(fd.get("phone") ?? ""),
+      department: String(fd.get("department") ?? department),
+      city: String(fd.get("city") ?? city),
+      addressLine: String(fd.get("addressLine") ?? ""),
+      notes: String(fd.get("notes") ?? ""),
+    };
     setSubmitting(true);
     setError(null);
     try {
-      // Server recomputes prices AND shipping (from department/city) → MP total.
+      // Server persists the order + recomputes prices AND shipping → MP total.
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items, department, city }),
+        body: JSON.stringify({ items, form }),
       });
       const data = await res.json();
       if (data.init_point) {

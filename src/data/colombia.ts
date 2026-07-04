@@ -24,7 +24,7 @@ const norm = (s: string) =>
   s
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+    .replace(/\p{Diacritic}/gu, "") // strip accents: í→i, ñ→n, etc.
     .replace(/\s+/g, " ")
     .trim();
 

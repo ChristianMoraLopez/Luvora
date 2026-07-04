@@ -16,9 +16,11 @@ export function ExitoView() {
     clear();
   }, [clear]);
 
+  const orderNumber = params.get("order") ?? undefined;
   const reference =
-    params.get("external_reference") ??
+    orderNumber ??
     params.get("payment_id") ??
+    params.get("external_reference") ??
     params.get("merchant_order_id") ??
     undefined;
 
@@ -34,7 +36,8 @@ export function ExitoView() {
       </p>
       {reference && (
         <p className="text-[13px] text-mauve">
-          Referencia de pago: <span className="font-semibold text-ink">{reference}</span>
+          {orderNumber ? "Número de pedido" : "Referencia de pago"}:{" "}
+          <span className="font-semibold text-ink">{reference}</span>
         </p>
       )}
       <div className="mt-3 flex flex-wrap justify-center gap-3">

@@ -11,7 +11,7 @@ export function slugify(value: string) {
   return value
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "") // strip accents
+    .replace(/\p{Diacritic}/gu, "") // strip accents
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
 }
