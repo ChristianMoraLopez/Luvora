@@ -6,29 +6,35 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { ProductImage } from "@/components/product/ProductImage";
-import { ShieldIcon, PackageIcon } from "@/components/brand/Icons";
+import { ShieldIcon, PackageIcon, TruckIcon } from "@/components/brand/Icons";
 import { useCartStore, selectSubtotal } from "@/store/cart";
 import { formatCOP } from "@/lib/format";
-import { departamentos, shippingFor } from "@/data/colombia";
+import { departamentos, shippingQuote, shippingRates } from "@/data/colombia";
 
 export default function CheckoutPage() {
   const items = useCartStore((s) => s.items);
   const subtotal = useCartStore(selectSubtotal);
-  const shipping = shippingFor(subtotal);
-  const total = subtotal + shipping;
+
+  const [department, setDepartment] = useState("");
+  const [city, setCity] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // Live shipping quote from the chosen location.
+  const quote = shippingQuote(department, city);
+  const shipping = quote?.cost ?? 0;
+  const total = subtotal + shipping;
 
   const pay = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
     setError(null);
     try {
-      // Creates a Mercado Pago preference server-side and redirects to init_point.
+      // Server recomputes prices AND shipping (from department/city) → MP total.
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ items }),
+        body: JSON.stringify({ items, department, city }),
       });
       const data = await res.json();
       if (data.init_point) {
@@ -83,7 +89,8 @@ export default function CheckoutPage() {
                   id="dep"
                   name="department"
                   required
-                  defaultValue=""
+                  value={department}
+                  onChange={(e) => setDepartment(e.target.value)}
                   className="w-full rounded-sm border border-burgundy/15 bg-white/60 px-4 py-3 text-[14px] focus:border-burgundy focus:outline-none focus:ring-2 focus:ring-burgundy/30"
                 >
                   <option value="" disabled>Selecciona…</option>
@@ -92,7 +99,14 @@ export default function CheckoutPage() {
                   ))}
                 </select>
               </div>
-              <Input label="Ciudad" name="city" required autoComplete="address-level2" />
+              <Input
+                label="Ciudad / Municipio"
+                name="city"
+                required
+                autoComplete="address-level2"
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+              />
             </div>
             <Input label="Dirección" name="addressLine" required autoComplete="street-address" />
             <Input label="Indicaciones (opcional)" name="notes" hint="Apto, torre, referencia para la entrega." />
@@ -132,15 +146,38 @@ export default function CheckoutPage() {
               <dt className="text-ink/70">Subtotal</dt>
               <dd>{formatCOP(subtotal)}</dd>
             </div>
-            <div className="flex justify-between">
-              <dt className="text-ink/70">Envío</dt>
-              <dd>{shipping === 0 ? "Gratis" : formatCOP(shipping)}</dd>
+            <div className="flex justify-between gap-4">
+              <dt className="text-ink/70">
+                Envío
+                {quote && <span className="block text-[11px] text-mauve">{quote.zone}</span>}
+              </dt>
+              <dd className="text-right">
+                {quote ? formatCOP(quote.cost) : <span className="text-[12px] font-light text-mauve">Se calcula con tu ciudad</span>}
+              </dd>
             </div>
           </dl>
-          <div className="mt-3 flex justify-between border-t border-border pt-4">
+          <div className="mt-3 flex items-baseline justify-between border-t border-border pt-4">
             <span className="text-[13px] uppercase tracking-nav">Total</span>
             <span className="font-display text-2xl text-burgundy">{formatCOP(total)}</span>
           </div>
+          {!quote && (
+            <p className="mt-1 text-[11px] font-light text-ink/55">El envío se suma al elegir tu ciudad.</p>
+          )}
+
+          {/* Rates disclosure */}
+          <details className="mt-5 border-t border-border pt-4 text-[13px]">
+            <summary className="flex cursor-pointer items-center gap-2 text-burgundy">
+              <TruckIcon size={18} /> Tarifas de envío
+            </summary>
+            <ul className="mt-3 flex flex-col gap-1.5 text-ink/70">
+              {shippingRates.map((r) => (
+                <li key={r.zone} className="flex justify-between gap-4">
+                  <span>{r.zone}</span>
+                  <span className="whitespace-nowrap font-medium text-ink">{r.price}</span>
+                </li>
+              ))}
+            </ul>
+          </details>
 
           {error && <p className="mt-4 text-[13px] text-red-500">{error}</p>}
 

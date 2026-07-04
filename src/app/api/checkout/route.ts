@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { CartItem } from "@/types";
 import { siteConfig } from "@/config/site";
-import { shippingFor } from "@/data/colombia";
+import { shippingCostFor } from "@/data/colombia";
 import { getMercadoPagoConfig } from "@/lib/mercadopago";
 import { createPublicClient } from "@/lib/supabase/public";
 
@@ -19,9 +19,13 @@ export async function POST(request: Request) {
   const { accessToken, mode, configured } = getMercadoPagoConfig();
 
   let items: CartItem[] = [];
+  let department: string | undefined;
+  let city: string | undefined;
   try {
     const body = await request.json();
     items = Array.isArray(body.items) ? body.items : [];
+    department = typeof body.department === "string" ? body.department : undefined;
+    city = typeof body.city === "string" ? body.city : undefined;
   } catch {
     return NextResponse.json({ message: "Cuerpo inválido." }, { status: 400 });
   }
@@ -66,8 +70,7 @@ export async function POST(request: Request) {
     };
   });
 
-  const subtotal = lineItems.reduce((sum, i) => sum + i.unit_price * i.quantity, 0);
-  const shipping = shippingFor(subtotal);
+  const shipping = shippingCostFor(department, city);
 
   // Mercado Pago only accepts `auto_return` with a valid public (https) URL.
   // Locally (http://localhost) we omit it so the sandbox flow still works.
