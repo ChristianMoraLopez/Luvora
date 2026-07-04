@@ -19,7 +19,7 @@ export function ProductGrid({
     <div
       className={cn("grid gap-[clamp(24px,3vw,36px)]", className)}
       style={{
-        gridTemplateColumns: `repeat(auto-fill, minmax(${minColumn}px, 1fr))`,
+        gridTemplateColumns: `repeat(auto-fill, minmax(min(${minColumn}px, 45%), 1fr))`,
       }}
     >
       {products.map((product, i) => (

@@ -10,6 +10,7 @@ import { Footer } from "./Footer";
 import { IntroAnimation } from "@/components/intro/IntroAnimation";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { AgeGate } from "./AgeGate";
+import { WhatsAppButton } from "./WhatsAppButton";
 
 /**
  * App chrome + intro orchestration.
@@ -28,13 +29,16 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
   const [mounted, setMounted] = useState(false);
   const [introDone, setIntroDone] = useState(false);
+  const [ageOk, setAgeOk] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     if (hasPlayed || prefersReduced) setIntroDone(true);
   }, [hasPlayed, prefersReduced]);
 
-  const playing = mounted && !introDone;
+  // The intro only plays once the +18 gate is resolved, so it isn't hidden
+  // behind the gate on a first visit.
+  const playing = mounted && ageOk && !introDone;
 
   const finish = useCallback(() => {
     setIntroDone(true);
@@ -69,7 +73,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       */}
       {playing && <IntroAnimation onComplete={finish} reduced={!!prefersReduced} />}
       <CartDrawer />
-      <AgeGate />
+      <AgeGate onResolved={() => setAgeOk(true)} />
+      <WhatsAppButton />
     </LayoutGroup>
   );
 }

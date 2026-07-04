@@ -45,6 +45,15 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
           })}
         </nav>
 
+        <div className="flex gap-6 border-b border-border px-6 py-4">
+          <Link href="/cuenta" onClick={onClose} className="text-[13px] uppercase tracking-nav text-burgundy hover:opacity-70">
+            Mi cuenta
+          </Link>
+          <Link href="/wishlist" onClick={onClose} className="text-[13px] uppercase tracking-nav text-burgundy hover:opacity-70">
+            Favoritos
+          </Link>
+        </div>
+
         <div className="mt-auto space-y-3 px-6 py-6">
           <p className="eyebrow text-mauve">Categorías</p>
           <div className="flex flex-col gap-2.5">

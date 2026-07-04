@@ -43,6 +43,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    /* Safety guard: never allow horizontal scroll from wide/animated elements. */
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4 {

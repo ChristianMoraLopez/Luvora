@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ProductImage } from "@/components/product/ProductImage";
+import { HeroBrandCard } from "./HeroBrandCard";
 import { easing } from "@/config/tokens";
 
 /** Hero — brand statement on burgundy, editorial image right. */
@@ -65,14 +65,7 @@ export function Hero() {
           transition={{ duration: 1, ease: easing.luxe, delay: 0.15 }}
           className="max-h-[620px]"
         >
-          <ProductImage
-            src={undefined}
-            alt="Editorial de marca LUVORA"
-            label="LUVORA"
-            ratio="4/5"
-            priority
-            sizes="(max-width: 768px) 100vw, 560px"
-          />
+          <HeroBrandCard />
         </motion.div>
       </Container>
     </section>

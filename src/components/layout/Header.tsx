@@ -106,7 +106,7 @@ export function Header({
               href="/cuenta"
               aria-label="Mi cuenta"
               title="Mi cuenta"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink transition-colors duration-300 ease-luxe hover:text-burgundy"
+              className="hidden h-10 w-10 items-center justify-center rounded-full text-ink transition-colors duration-300 ease-luxe hover:text-burgundy sm:inline-flex"
             >
               <AccountIcon size={20} />
             </Link>

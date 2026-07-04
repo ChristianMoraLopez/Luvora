@@ -12,19 +12,25 @@ const STORAGE_KEY = "luvora-age-verified";
 /**
  * +18 age gate — shown once (persisted in localStorage), on-brand and blocking.
  * SSR-safe: renders nothing until mounted so first paint / no-JS isn't hidden.
+ * Calls `onResolved` once the visitor is confirmed (already-verified or just
+ * confirmed) so the brand intro can play AFTER the gate, not hidden behind it.
  */
-export function AgeGate() {
+export function AgeGate({ onResolved }: { onResolved?: () => void }) {
   const [mounted, setMounted] = useState(false);
   const [verified, setVerified] = useState(true);
   const [minor, setMinor] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    let ok = false;
     try {
-      setVerified(localStorage.getItem(STORAGE_KEY) === "true");
+      ok = localStorage.getItem(STORAGE_KEY) === "true";
     } catch {
-      setVerified(false);
+      ok = false;
     }
+    setVerified(ok);
+    if (ok) onResolved?.();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const confirm = () => {
@@ -34,6 +40,7 @@ export function AgeGate() {
       /* ignore */
     }
     setVerified(true);
+    onResolved?.();
   };
 
   const show = mounted && !verified;
