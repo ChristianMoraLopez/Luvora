@@ -85,6 +85,9 @@ export async function POST(request: Request) {
       pending: `${siteConfig.url}/checkout/pendiente`,
     },
     ...(isHttps ? { auto_return: "approved" } : {}),
+    // Resolve to approved/rejected only (no "pending"), so the approved →
+    // back_urls.success auto-return fires cleanly.
+    binary_mode: true,
     statement_descriptor: "LUVORA",
     notification_url: `${siteConfig.url}/api/webhooks/mercadopago`,
   };
